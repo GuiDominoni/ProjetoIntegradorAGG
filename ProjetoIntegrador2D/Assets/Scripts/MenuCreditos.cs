@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuCreditos : MonoBehaviour
 {
+   
     public void sair()
     {
         SceneManager.LoadScene("Cena do Gustavo");

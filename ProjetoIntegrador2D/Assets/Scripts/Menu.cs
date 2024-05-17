@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
 
+    public GameObject opcoes;
+
     public void Jogar()
     {
        
@@ -13,7 +15,8 @@ public class Menu : MonoBehaviour
     }
     public void Opcoes()
     {
-
+      
+        opcoes.SetActive(true);
 
     }
     public void Creditos() {
