@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -10,7 +11,6 @@ public class Player : MonoBehaviour
     public float velocidade, forcaDoPulo;
     Rigidbody2D rb;
     public bool olhandoDireita;
-
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +54,8 @@ public class Player : MonoBehaviour
             localscale.x *= -1;
             transform.localScale = localscale;
         }
+        
     }
+    
    
 }
