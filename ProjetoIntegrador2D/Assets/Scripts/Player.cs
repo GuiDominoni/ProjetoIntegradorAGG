@@ -25,18 +25,26 @@ public class Player : MonoBehaviour
     {
         movimento();
         Flip();
-       ;
+       
 
     }
 
-    void movimento()
-    {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
-        rb.velocity = new Vector2(horizontal * velocidade, vertical * velocidade);
-        
+    
+        void movimento()
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
 
-    }
+           
+            Vector2 movimento = new Vector2(horizontal, vertical).normalized;
+
+            
+            rb.velocity = movimento * velocidade;
+        }
+
+
+
+    
     void Flip()
     {
         if(horizontal > 0 && !olhandoDireita || horizontal < 0 && olhandoDireita)
