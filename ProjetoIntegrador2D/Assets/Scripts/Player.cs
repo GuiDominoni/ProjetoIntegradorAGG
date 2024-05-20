@@ -5,29 +5,47 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    private CharacterController cc;
+
     float horizontal, vertical;
-    public float speed;
+    public float velocidade, forcaDoPulo;
+    Rigidbody2D rb;
+    public bool olhandoDireita;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        cc = GetComponent<CharacterController>();
+        olhandoDireita = true;  
+        rb = GetComponent<Rigidbody2D>();
+        forcaDoPulo = 3;
     }
 
     // Update is called once per frame
     void Update()
     {
         movimento();
-
-
+        Flip();
+       ;
 
     }
 
     void movimento()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
-        Vector2 destino = new Vector2(horizontal, -1f);
-        cc.Move(destino * speed * Time.deltaTime);
+        vertical = Input.GetAxisRaw("Vertical");
+        rb.velocity = new Vector2(horizontal * velocidade, vertical * velocidade);
+        
 
     }
+    void Flip()
+    {
+        if(horizontal > 0 && !olhandoDireita || horizontal < 0 && olhandoDireita)
+        {
+            olhandoDireita = !olhandoDireita;
+            Vector2 localscale = transform.localScale;
+            localscale.x *= -1;
+            transform.localScale = localscale;
+        }
+    }
+   
 }
