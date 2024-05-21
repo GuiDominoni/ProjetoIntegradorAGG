@@ -7,7 +7,7 @@ public class SelecaoNiveis : MonoBehaviour
     public GameObject ImagemNv1, ImagemNv2, ImagemNv3, ImagemNv4, ImagemNv5, ImagemNv6, ImagemNv7, ImagemNv8, sairDaImagem;
     public void n1()
     {
-        
+            
             ImagemNv1.SetActive(true);
             sairDaImagem.SetActive(true);
         
@@ -128,6 +128,19 @@ public class SelecaoNiveis : MonoBehaviour
         ImagemNv8.SetActive(false);
         sairDaImagem.SetActive(false);
 
+    }
+    public void ProxPag1()
+    {
+
+
+
+    }
+    public void ProxPag2()
+    {
+
+    }
+    public void PagAnt()
+    {
 
 
     }
