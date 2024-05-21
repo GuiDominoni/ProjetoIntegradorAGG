@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1560646}
   - component: {fileID: 1560645}
   m_Layer: 5
-  m_Name: Options
+  m_Name: "Op\xE7\xF5es"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 432935350}
   - component: {fileID: 432935349}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Jogar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1670,7 +1670,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Play
+  m_text: 'Jogar
 
 '
   m_isRightToLeft: 0
