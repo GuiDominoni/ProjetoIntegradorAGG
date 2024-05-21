@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuCreditos : MonoBehaviour
+public class Cutscene : MonoBehaviour
 {
-   
-    public void sair()
+    public void Sair()
     {
-        SceneManager.LoadScene("MainMenu");
+
+        SceneManager.LoadScene("SelecaoNiveis");
+
     }
 }

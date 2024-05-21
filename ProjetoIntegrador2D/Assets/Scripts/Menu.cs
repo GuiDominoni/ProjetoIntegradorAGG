@@ -10,7 +10,7 @@ public class Menu : MonoBehaviour
 
     public void Jogar()
     {
-       
+        SceneManager.LoadScene("Cutscene");
 
     }
     public void Opcoes()
