@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 
 
     float horizontal, vertical;
-    public float velocidade, forcaDoPulo;
+    public float velocidade;
     Rigidbody2D rb;
     public bool olhandoDireita;
 
@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     {
         olhandoDireita = true;  
         rb = GetComponent<Rigidbody2D>();
-        forcaDoPulo = 3;
+       
     }
 
     // Update is called once per frame
