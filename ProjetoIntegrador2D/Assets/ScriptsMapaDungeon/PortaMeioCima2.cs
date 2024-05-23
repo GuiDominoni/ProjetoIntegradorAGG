@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PortaMeioCima : MonoBehaviour
+public class PortaMeioCima2 : MonoBehaviour
 {
 
     public GameObject pretoMeio, pretoCima;
@@ -12,14 +12,12 @@ public class PortaMeioCima : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
 
-            pretoMeio.SetActive(true);
-            pretoCima.SetActive(false);
+            pretoMeio.SetActive(false);
+            pretoCima.SetActive(true);
 
 
         }
 
 
     }
-
-
 }

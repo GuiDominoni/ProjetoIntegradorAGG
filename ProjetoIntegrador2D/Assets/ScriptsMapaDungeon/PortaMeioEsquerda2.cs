@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PortaMeioCima : MonoBehaviour
+public class PortaMeioEsquerda2 : MonoBehaviour
 {
 
-    public GameObject pretoMeio, pretoCima;
+    public GameObject pretoMeio, pretoEsquerda;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,13 +13,11 @@ public class PortaMeioCima : MonoBehaviour
         {
 
             pretoMeio.SetActive(true);
-            pretoCima.SetActive(false);
+            pretoEsquerda.SetActive(false);
 
 
         }
 
 
     }
-
-
 }
