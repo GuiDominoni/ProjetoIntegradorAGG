@@ -11,7 +11,8 @@ public class VidaJuiz : MonoBehaviour
     {
         vidaMaxima = 100;
         vidaMinima = 0;
-
+        vida = 50;
+        
     }
     private void Update()
     {
