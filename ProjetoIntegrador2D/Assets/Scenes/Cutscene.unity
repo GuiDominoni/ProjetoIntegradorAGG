@@ -457,8 +457,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 833, y: -468}
-  m_SizeDelta: {x: 160, y: 60.494}
+  m_AnchoredPosition: {x: 774.667, y: 438.777}
+  m_SizeDelta: {x: 167.334, y: 84.939}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1468801032
 MonoBehaviour:
@@ -612,7 +612,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Proximo
+  m_text: 'Pular
 
 '
   m_isRightToLeft: 0
