@@ -1,75 +1,81 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class Cutscene : MonoBehaviour
 {
-    public Image cut1, cut2, cut3, cut4, cut5, cut6, cut7, cut8, cut9, cut10;
+    public Image[] cutImages; // Array de imagens da cutscene
+    private int currentImageIndex = 0; // Índice da imagem atual
+    public float fadeDuration = 1.0f; // Duração do fade em segundos
+
+    private bool isTransitioning = false; // Flag para indicar se a transição entre imagens está ocorrendo
+
+    private void Start()
+    {
+        // Inicialize apenas a primeira imagem com opacidade 1
+        cutImages[0].color = new Color(1, 1, 1, 1);
+    }
+
     public void Sair()
     {
         SceneManager.LoadScene("SelecaoNiveis");
     }
-    public void proximo()
+
+    public void Proximo()
     {
-        if(Cut.c1 == 1)
+        if (!isTransitioning && currentImageIndex < cutImages.Length - 1)
         {
-            Cut.c1 = 0;
-            Cut.c2 = 1;
-
+            StartCoroutine(FadeToNextImage());
         }
-        if (Cut.c1 == 2)
-        {
-
-
-        }
-        if (Cut.c1 == 3)
-        {
-
-
-        }
-        if (Cut.c1 == 4)
-        {
-
-
-        }
-        if (Cut.c1 == 5)
-        {
-
-
-        }
-        if (Cut.c1 == 6)
-        {
-
-
-        }
-        if (Cut.c1 == 7)
-        {
-
-
-        }
-        if (Cut.c1 == 8)
-        {
-
-
-        }
-        if (Cut.c1 == 9)
-        {
-
-
-        }
-        if (Cut.c1 == 10)
-        {
-
-
-        }
-
     }
 
-}
-public static class Cut
-{
-    public static float c1 = 1, c2 = 0, c3 = 0, c4 = 0, c5 = 0, c6 = 0, c7 = 0, c8 = 0, c9 = 0, c10 = 0;
+    private IEnumerator FadeToNextImage()
+    {
+        isTransitioning = true; // Indica que a transição está em andamento
 
+        Image currentImage = cutImages[currentImageIndex];
+        Image nextImage = cutImages[currentImageIndex + 1];
 
+        // Fade out a imagem atual
+        yield return StartCoroutine(FadeOut(currentImage));
+
+        // Desativa a imagem atual
+        currentImage.gameObject.SetActive(false);
+
+        // Ative a próxima imagem
+        nextImage.gameObject.SetActive(true);
+
+        // Fade in a próxima imagem
+        yield return StartCoroutine(FadeIn(nextImage));
+
+        // Atualize o índice da imagem atual
+        currentImageIndex++;
+            
+        isTransitioning = false; // Indica que a transição terminou
+    }
+
+    private IEnumerator FadeIn(Image image)
+    {
+        float elapsedTime = 0.0f;
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Clamp01(elapsedTime / fadeDuration);
+            image.color = new Color(1, 1, 1, alpha);
+            yield return null;
+        }
+    }
+
+    private IEnumerator FadeOut(Image image)
+    {
+        float elapsedTime = 0.0f;
+        while (elapsedTime < fadeDuration)
+        {
+            elapsedTime += Time.deltaTime;
+            float alpha = Mathf.Clamp01(1.0f - (elapsedTime / fadeDuration));
+            image.color = new Color(1, 1, 1, alpha);
+            yield return null;
+        }
+    }
 }
