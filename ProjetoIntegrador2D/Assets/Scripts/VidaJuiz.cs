@@ -16,7 +16,7 @@ public class VidaJuiz : MonoBehaviour
     }
     private void Update()
     {
-        if(vida > vidaMinima && vida < vidaMaxima)
+        if(vida >= vidaMinima && vida <= vidaMaxima)
         {
             healthBarFill.fillAmount = vida / 100;
         

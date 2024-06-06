@@ -2,17 +2,20 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class SelecaoNiveis : MonoBehaviour
 {
     public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito;
     public GameObject[] ImagemNv;
+    public GameObject[] comecar;
     public void n1()
     {
-        ImagemNv[1].SetActive(true);
-            sairDaImagem1.SetActive(true);
-            prox1.SetActive(false);
+        ImagemNv[0].SetActive(true);
+        comecar[0].SetActive(true);
+        sairDaImagem1.SetActive(true);
+        prox1.SetActive(false);
     }
     public void n2()
     {
@@ -197,6 +200,7 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void sair1()
     {
+        ImagemNv[0].SetActive(false);
         ImagemNv[1].SetActive(false);
         ImagemNv[2].SetActive(false);
         ImagemNv[3].SetActive(false);
@@ -204,7 +208,7 @@ public class SelecaoNiveis : MonoBehaviour
         ImagemNv[5].SetActive(false);
         ImagemNv[6].SetActive(false);
         ImagemNv[7].SetActive(false);
-        ImagemNv[8].SetActive(false);
+        comecar[0].SetActive(false) ;
 
         prox1.SetActive(true);
         sairDaImagem1.SetActive(false);
@@ -212,6 +216,7 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void sair2()
     {
+        ImagemNv[6].SetActive(false);
         ImagemNv[9].SetActive(false);
         ImagemNv[10].SetActive(false);
         ImagemNv[11].SetActive(false);
@@ -219,17 +224,16 @@ public class SelecaoNiveis : MonoBehaviour
         ImagemNv[13].SetActive(false);
         ImagemNv[14].SetActive(false);
         ImagemNv[15].SetActive(false);
-        ImagemNv[16].SetActive(false);
         sairDaImagem2.SetActive(false);
         prox2.SetActive(true);
         ant1.SetActive(true);
     }
     public void sair3()
     {
+        ImagemNv[16].SetActive(false);
         ImagemNv[17].SetActive(false);
         ImagemNv[18].SetActive(false);
         ImagemNv[19].SetActive(false);
-        ImagemNv[20].SetActive(false);
         sairDaImagem3.SetActive(false);
         ant2.SetActive(false);
         ant2.SetActive(true);
@@ -271,6 +275,11 @@ public class SelecaoNiveis : MonoBehaviour
         ant2.SetActive(false);
         noveDezesseis.SetActive(true);
 
+
+    }
+    public void comecarNv1()
+    {
+        SceneManager.LoadScene("Fase1Tutorial");
 
     }
 
