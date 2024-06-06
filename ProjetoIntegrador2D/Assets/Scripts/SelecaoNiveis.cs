@@ -1,17 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SelecaoNiveis : MonoBehaviour
 {
-    public GameObject ImagemNv1, ImagemNv2, ImagemNv3, ImagemNv4, ImagemNv5, ImagemNv6, ImagemNv7,
-        ImagemNv8, ImagemNv9, ImagemNv10, ImagemNv11, ImagemNv12, ImagemNv13, ImagemNv14, ImagemNv15, ImagemNv16, ImagemNv17,
-        ImagemNv18, ImagemNv19, ImagemNv20, sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito;
-
+    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito;
+    public GameObject[] ImagemNv;
     public void n1()
     {
-            
-            ImagemNv1.SetActive(true);
+        ImagemNv[1].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
     }
@@ -19,7 +18,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n2 == 1)
         {
-            ImagemNv2.SetActive(true);
+            ImagemNv[2].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
         }
@@ -28,7 +27,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n3 == 1)
         {
-            ImagemNv3.SetActive(true);
+            ImagemNv[3].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
         }
@@ -37,7 +36,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n4 == 1)
         {
-            ImagemNv4.SetActive(true);
+            ImagemNv[4].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
         }
@@ -46,7 +45,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n5 == 1)
         {
-            ImagemNv5.SetActive(true);
+            ImagemNv[5].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
         }
@@ -55,7 +54,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n6 == 1)
         {
-            ImagemNv6.SetActive(true);
+            ImagemNv[6].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
         }
@@ -64,7 +63,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n7 == 1)
         {
-            ImagemNv7.SetActive(true);
+            ImagemNv[7].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
         }
@@ -73,7 +72,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n8 == 1)
         {
-            ImagemNv8.SetActive(true);
+            ImagemNv[8].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
         }
@@ -82,7 +81,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n9 == 1)
         {
-            ImagemNv9.SetActive(true);
+            ImagemNv[9].SetActive(true);
             sairDaImagem2.SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
@@ -92,7 +91,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n10 == 1)
         {
-            ImagemNv10.SetActive(true);
+            ImagemNv[10].SetActive(true);
             sairDaImagem2.SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
@@ -102,7 +101,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n11 == 1)
         {
-            ImagemNv11.SetActive(true);
+            ImagemNv[11].SetActive(true);
             sairDaImagem2.SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
@@ -112,7 +111,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n12 == 1)
         {
-            ImagemNv12.SetActive(true);
+            ImagemNv[12].SetActive(true);
             sairDaImagem2.SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
@@ -122,7 +121,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n13 == 1)
         {
-            ImagemNv13.SetActive(true);
+            ImagemNv[13].SetActive(true);
             sairDaImagem2.SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
@@ -134,7 +133,7 @@ public class SelecaoNiveis : MonoBehaviour
         {
             
             sairDaImagem2.SetActive(true);
-            ImagemNv14.SetActive(true);
+            ImagemNv[14].SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
         }
@@ -143,7 +142,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n15 == 1)
         {
-            ImagemNv15.SetActive(true);
+            ImagemNv[15].SetActive(true);
             sairDaImagem2.SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
@@ -153,7 +152,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n16 == 1)
         {
-            ImagemNv16.SetActive(true);
+            ImagemNv[16].SetActive(true);
             sairDaImagem2.SetActive(true);
             prox2.SetActive(false);
             ant1.SetActive(false);
@@ -164,7 +163,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n17 == 1)
         {
-            ImagemNv17.SetActive(true);
+            ImagemNv[17].SetActive(true);
             sairDaImagem3.SetActive(true);
             ant2.SetActive(false);
         }
@@ -173,7 +172,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n18 == 1)
         {
-            ImagemNv18.SetActive(true);
+            ImagemNv[18].SetActive(true);
             sairDaImagem3.SetActive(true);
             ant2.SetActive(false);
         }
@@ -182,7 +181,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n19 == 1)
         {
-            ImagemNv19.SetActive(true);
+            ImagemNv[19].SetActive(true);
             sairDaImagem3.SetActive(true);
             ant2.SetActive(false);
         }
@@ -191,21 +190,21 @@ public class SelecaoNiveis : MonoBehaviour
     {
         if (GlobalVariaveis.n20 == 1)
         {
-            ImagemNv20.SetActive(true);
+            ImagemNv[20].SetActive(true);
             sairDaImagem3.SetActive(true);
             ant2.SetActive(false);
         }
     }
     public void sair1()
     {
-        ImagemNv1.SetActive(false);
-        ImagemNv2.SetActive(false);
-        ImagemNv3.SetActive(false);
-        ImagemNv4.SetActive(false);
-        ImagemNv5.SetActive(false);
-        ImagemNv6.SetActive(false);
-        ImagemNv7.SetActive(false);
-        ImagemNv8.SetActive(false);
+        ImagemNv[1].SetActive(false);
+        ImagemNv[2].SetActive(false);
+        ImagemNv[3].SetActive(false);
+        ImagemNv[4].SetActive(false);
+        ImagemNv[5].SetActive(false);
+        ImagemNv[6].SetActive(false);
+        ImagemNv[7].SetActive(false);
+        ImagemNv[8].SetActive(false);
 
         prox1.SetActive(true);
         sairDaImagem1.SetActive(false);
@@ -213,24 +212,24 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void sair2()
     {
-        ImagemNv9.SetActive(false);
-        ImagemNv10.SetActive(false);
-        ImagemNv11.SetActive(false);
-        ImagemNv12.SetActive(false);
-        ImagemNv13.SetActive(false);
-        ImagemNv14.SetActive(false);
-        ImagemNv15.SetActive(false);
-        ImagemNv16.SetActive(false);
+        ImagemNv[9].SetActive(false);
+        ImagemNv[10].SetActive(false);
+        ImagemNv[11].SetActive(false);
+        ImagemNv[12].SetActive(false);
+        ImagemNv[13].SetActive(false);
+        ImagemNv[14].SetActive(false);
+        ImagemNv[15].SetActive(false);
+        ImagemNv[16].SetActive(false);
         sairDaImagem2.SetActive(false);
         prox2.SetActive(true);
         ant1.SetActive(true);
     }
     public void sair3()
     {
-        ImagemNv17.SetActive(false);
-        ImagemNv18.SetActive(false);
-        ImagemNv19.SetActive(false);
-        ImagemNv20.SetActive(false);
+        ImagemNv[17].SetActive(false);
+        ImagemNv[18].SetActive(false);
+        ImagemNv[19].SetActive(false);
+        ImagemNv[20].SetActive(false);
         sairDaImagem3.SetActive(false);
         ant2.SetActive(false);
         ant2.SetActive(true);
@@ -283,7 +282,9 @@ public static class GlobalVariaveis
 
 
     public static int n1, n2, n3, n4, n5, n6, n7, n8, n9,
-        n10, n11, n12, n13, n14 = 1, n15, n16, n17, n18 = 1, n19, n20;
+        n10, n11, n12, n13, n14
+        
+        , n15, n16, n17, n18, n19, n20;
 
 
 }
