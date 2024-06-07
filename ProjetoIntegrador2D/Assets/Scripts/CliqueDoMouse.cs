@@ -6,8 +6,8 @@ public class CliqueDoMouse : MonoBehaviour
 {
     // Tag dos itens
     public string item1 = "Item";
-
     public GameObject[] ItemN1;
+    public int luga = 0;
 
     void Update()
     {
@@ -22,15 +22,18 @@ public class CliqueDoMouse : MonoBehaviour
             // Verifica se o Raycast2D colidiu com um objeto
             if (hit.collider != null && hit.collider.CompareTag(item1))
             {
-                Inv.lugar += 1;
+                
                 Destroy(hit.collider.gameObject);
+                ItemN1[luga].SetActive(true);
+                luga += 1;
             }
         }
+        Inv.lugar = luga;
     }
 }
 public static class Inv
 {
-    public static int lugar = 1;
+    public static int lugar;
 
 
 }
