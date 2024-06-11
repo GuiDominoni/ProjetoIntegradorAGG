@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public float velocidade;
     Rigidbody2D rb;
     public bool olhandoDireita;
-    public GameObject awsd;
+  
 
 
     // Start is called before the first frame update
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     {
         olhandoDireita = true;  
         rb = GetComponent<Rigidbody2D>();
-       
+        velocidade = 5; 
     }
 
     // Update is called once per frame
@@ -43,18 +43,7 @@ public class Player : MonoBehaviour
             
             rb.velocity = movimento * velocidade;
         }
-    void AWSD()
-    {
-        awsd.SetActive(true);
-
-
-    }
-    void FAWSD()
-    {
-        awsd.SetActive(false);
-
-    }
-
+    
 
     
     void Flip()
@@ -69,26 +58,5 @@ public class Player : MonoBehaviour
         
     }
 
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        int caso = 1;
-        if(caso == 1 && other.gameObject.CompareTag("AWSD"))
-        {
-            Invoke("AWSD", 2f);
-            if(horizontal != 0 || vertical != 0 )
-            {
-                Invoke("FAWSD", 1.5f);
-
-            }
-            caso += 1;
-            a = caso;
-
-            
-
-
-        }
-
-
-
-    }
+    
 }
