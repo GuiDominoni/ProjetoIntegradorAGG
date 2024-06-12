@@ -8,18 +8,22 @@ public class Cutscene : MonoBehaviour
     public Image[] cutImages; // Array de imagens da cutscene
     private int currentImageIndex = 0; // Índice da imagem atual
     public float fadeDuration = 1.0f; // Duração do fade em segundos
+    public GameObject preto, preto2;
+    
 
     private bool isTransitioning = false; // Flag para indicar se a transição entre imagens está ocorrendo
 
     private void Start()
     {
+        Invoke("desatPreto", 1);
         // Inicialize apenas a primeira imagem com opacidade 1
         cutImages[0].color = new Color(1, 1, 1, 1);
     }
 
     public void Sair()
     {
-        SceneManager.LoadScene("SelecaoNiveis");
+        preto2.SetActive(true);
+        Invoke("sairCena", 1f);
     }
 
     public void Proximo()
@@ -77,5 +81,15 @@ public class Cutscene : MonoBehaviour
             image.color = new Color(1, 1, 1, alpha);
             yield return null;
         }
+    }
+    void desatPreto()
+    {
+        preto.SetActive(false);
+
+    }
+    void sairCena()
+    {
+        SceneManager.LoadScene("SelecaoNiveis");
+
     }
 }

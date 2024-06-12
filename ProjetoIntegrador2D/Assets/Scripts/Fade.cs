@@ -13,7 +13,7 @@ public class Fade : MonoBehaviour
         {
             // Inicialmente, certifique-se de que a imagem esteja invisível
             var tempColor = imageToFade.color;
-            tempColor.a = 0f;
+            tempColor.a = 1f;
             imageToFade.color = tempColor;
 
             // Ativar a imagem e iniciar a coroutine de fade
