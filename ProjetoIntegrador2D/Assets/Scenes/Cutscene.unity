@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imageToFade: {fileID: 47527751}
-  fadeDuration: 1
+  fadeDuration: 0.35
 --- !u!114 &47527751
 MonoBehaviour:
   m_ObjectHideFlags: 0
