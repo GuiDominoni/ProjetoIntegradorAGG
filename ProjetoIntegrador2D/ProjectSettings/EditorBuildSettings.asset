@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: b47e56152449ff44ab740a205617a958
   - enabled: 1
-    path: Assets/Scenes/Play.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Tribunal.unity
+    guid: 752ef1db52063e84d89c91ebd8f52391
+  - enabled: 1
+    path: Assets/Scenes/Fase2.unity
+    guid: 6a9cad8460a76b24a958a74838f37ac0
   - enabled: 1
     path: Assets/Scenes/SelecaoNiveis.unity
     guid: da8c9ca508a6a82469c346e6623a3227
@@ -24,6 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/CenaTutorial.unity
     guid: 2d2c33c682747d44e925ab8f025d39a5
   - enabled: 1
-    path: Assets/Mapas/Fase1Tutorial.unity
+    path: Assets/Scenes/Fase1Tutorial.unity
     guid: 9345f7f724df7b74b830f944418a7b51
   m_configObjects: {}

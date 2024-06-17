@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Tribunal : MonoBehaviour
 {
     public GameObject[] falas;
+    public bool venceu, perdeu;
+    public GameObject menuVenceu, menuPerdeu, unfade, fade; 
     public void fala11()
     {
 
@@ -87,4 +91,71 @@ public class Tribunal : MonoBehaviour
 
 
     }
+    public void Recomeçar()
+    {
+        unfade.SetActive(true);
+        Invoke("Recomec", 0.4f);
+        
+
+    }
+    public void proximoNivel()
+    {
+        unfade.SetActive(true);
+        Invoke("Fase2", 0.4f);
+
+
+
+    }
+    void Recomec()
+    {
+        SceneManager.LoadScene("Fase1Tutorial");
+
+    }
+    public void selecaoDeNiveis()
+    {
+        unfade .SetActive(true);
+        Invoke("SelecNiveis", 0.4f);
+
+    }
+    public void Fase2()
+    {
+        SceneManager.LoadScene("Fase2");
+
+
+    }
+    public void SelecNiveis()
+    {
+        SceneManager.LoadScene("SelecaoNiveis");
+
+
+    }
+    public void desatPreto()
+    {
+        fade.SetActive(false);
+
+
+    }
+    private void Update()
+    {
+        if(venceu ==  true)
+        {
+            menuVenceu.SetActive(true);
+                
+
+        }
+        if (perdeu == true)
+        {
+            menuPerdeu.SetActive(true);
+
+
+        }
+
+
+    }
+    private void Start()
+    {
+        Invoke("desatPreto", 1);
+
+    }
+
 }

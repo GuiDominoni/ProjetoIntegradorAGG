@@ -1,16 +1,15 @@
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CliqueDoMouse : MonoBehaviour
 {
-    public GameObject Item1, Item2, Item3, Item4; // Array de imagens para ativar
+    public GameObject Item1, Item2, Item3, Item4;
+    
 
-    private void Update()
-    {
-        Debug.Log(Inv.lugar);
-
-    }
+    
+   
     private void OnMouseDown()
     {
         
