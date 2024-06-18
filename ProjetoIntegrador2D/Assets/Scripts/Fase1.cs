@@ -15,7 +15,7 @@ public class Fase1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Inv.lugar == 5)
+        if (inv.lugar == 5)
         {
             tribunal.SetActive(true);
 

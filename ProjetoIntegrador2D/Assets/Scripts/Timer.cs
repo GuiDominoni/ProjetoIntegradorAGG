@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
 
         texto.text = timer.ToString();
      
-         if(timer <= 0 || Inv.lugar == 5)
+         if(timer <= 0 || inv.lugar == 5)
          {
             cinza.SetActive(true);
             novaPos();  
