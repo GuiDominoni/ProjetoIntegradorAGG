@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Timer : MonoBehaviour
+public class PauseNv2 : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto,  pause, opcoe;
+    public GameObject preto, pause;
     public Image inventario;
 
 
@@ -16,14 +16,14 @@ public class Timer : MonoBehaviour
     void Start()
     {
         InvokeRepeating("timerMenos", 1, 1);
-  
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if(Input.GetKeyUp(KeyCode.Escape))
+
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
 
             pause.SetActive(true);
@@ -33,15 +33,15 @@ public class Timer : MonoBehaviour
 
 
         texto.text = timer.ToString();
-     
-         if(timer <= 0 || inv.lugar == 5)
-         {
-            
-            novaPos();  
+
+        if (timer <= 0 || inv.lugar == 5)
+        {
+
+            novaPos();
             cancelInvoke();
-                
-            
-         }
+
+
+        }
 
     }
     public void continuar()
@@ -60,7 +60,7 @@ public class Timer : MonoBehaviour
     public void timerMenos()
     {
         timer -= 1;
-        
+
 
     }
     public void cancelInvoke()
@@ -79,5 +79,17 @@ public class Timer : MonoBehaviour
 
 
         SceneManager.LoadScene("SelecaoNiveis");
+    }
+    public void irTrib()
+    {
+        preto.SetActive(true);
+        Invoke("trib", 1);
+
+
+    }
+    void trib()
+    {
+
+        SceneManager.LoadScene("Tribunal");
     }
 }

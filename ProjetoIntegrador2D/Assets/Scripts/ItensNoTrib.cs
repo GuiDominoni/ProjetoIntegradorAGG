@@ -39,7 +39,7 @@ public class ItensNoTrib : MonoBehaviour
         }
         if (inv.i22 == true)
         {
-            i23.SetActive(true);
+            i22.SetActive(true);
 
         }
         if (inv.i23 == true)
