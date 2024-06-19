@@ -273,6 +273,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f641b2c81a55dce4486cbf1f46b964ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontal: 0
+  vertical: 0
+  a: 0
   velocidade: 5
   olhandoDireita: 0
 --- !u!50 &6093168387932365540
@@ -295,7 +298,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &6093168387932365541
 BoxCollider2D:
   m_ObjectHideFlags: 0

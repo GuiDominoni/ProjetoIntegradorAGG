@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject cinza, itens;
+    public GameObject cinza, preto,  pause, opcoe;
     public Image inventario;
 
 
@@ -22,7 +23,13 @@ public class Timer : MonoBehaviour
     void Update()
     {
         
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
 
+            pause.SetActive(true);
+            cancelInvoke();
+
+        }
 
 
         texto.text = timer.ToString();
@@ -37,10 +44,23 @@ public class Timer : MonoBehaviour
          }
 
     }
+    public void continuar()
+    {
+        pause.SetActive(false);
+        InvokeRepeating("timerMenos", 0, 1);
+
+
+    }
+    public void sair()
+    {
+        preto.SetActive(true);
+        Invoke("carregarNiveis", 0.4f);
+
+    }
     public void timerMenos()
     {
         timer -= 1;
-
+        
 
     }
     public void cancelInvoke()
@@ -53,5 +73,11 @@ public class Timer : MonoBehaviour
         RectTransform rectTransform = inventario.GetComponent<RectTransform>();
         rectTransform.anchoredPosition = new Vector2(0f, 0f);
 
+    }
+    public void carregarNiveis()
+    {
+
+
+        SceneManager.LoadScene("SelecaoNiveis");
     }
 }
