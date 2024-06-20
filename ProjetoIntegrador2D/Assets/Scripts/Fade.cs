@@ -6,6 +6,7 @@ public class Fade : MonoBehaviour
 {
     public Image imageToFade;
     public float fadeDuration = 2.0f;
+    public GameObject preto;
 
     private void Start()
     {
@@ -34,4 +35,5 @@ public class Fade : MonoBehaviour
             yield return null;
         }
     }
+   
 }

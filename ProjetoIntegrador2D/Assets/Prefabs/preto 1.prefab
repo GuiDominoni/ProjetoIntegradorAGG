@@ -91,3 +91,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageToUnfade: {fileID: 7443341316258997182}
   fadeDuration: 1
+  preto: {fileID: 7443341316258997155}

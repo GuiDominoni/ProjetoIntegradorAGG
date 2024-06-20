@@ -10,7 +10,7 @@ public class PauseNv2 : MonoBehaviour
     public Text texto;
     public GameObject preto, pause;
     public Image inventario;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -34,15 +34,20 @@ public class PauseNv2 : MonoBehaviour
 
         texto.text = timer.ToString();
 
-        if (timer <= 0 || inv.lugar == 5)
+        if (inv.lugar == 5)
         {
 
-            novaPos();
+            Invoke("irTrib", 4f);
             cancelInvoke();
+            novaPos();
+
+        }
+        if (timer <= 0)
+        {
+            irTrib();
 
 
         }
-
     }
     public void continuar()
     {
@@ -87,9 +92,11 @@ public class PauseNv2 : MonoBehaviour
 
 
     }
-    void trib()
+    public void trib()
     {
 
-        SceneManager.LoadScene("Tribunal");
+        SceneManager.LoadScene("Tribunal02");
+
     }
+    
 }

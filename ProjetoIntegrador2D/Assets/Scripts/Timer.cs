@@ -8,15 +8,18 @@ public class Timer : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto,  pause, opcoe;
+    public GameObject preto,  pause, opcoe, tribunal, aparecer;
     public Image inventario;
+    
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("timerMenos", 1, 1);
-  
+        timer = 60;  
+
     }
 
     // Update is called once per frame
@@ -28,20 +31,28 @@ public class Timer : MonoBehaviour
 
             pause.SetActive(true);
             cancelInvoke();
-
+            
+            
+            
         }
 
 
         texto.text = timer.ToString();
      
-         if(timer <= 0 || inv.lugar == 5)
+         if( inv.lugar == 5)
          {
-            
-            novaPos();  
+
+            Invoke("irTrib", 4f);
             cancelInvoke();
-                
-            
-         }
+            novaPos();
+
+        }
+         if(timer <= 0)
+        {
+            irTrib();
+
+
+        }
 
     }
     public void continuar()
@@ -79,5 +90,17 @@ public class Timer : MonoBehaviour
 
 
         SceneManager.LoadScene("SelecaoNiveis");
+    }
+    public void irTrib()
+    {
+        aparecer.SetActive(true);
+        Invoke("trib", 1);
+
+
+    }
+    void trib()
+    {
+
+        SceneManager.LoadScene("Tribunal");
     }
 }

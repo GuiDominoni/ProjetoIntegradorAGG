@@ -4,11 +4,11 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Tribunal : MonoBehaviour
+public class TribunalNv2 : MonoBehaviour
 {
     public GameObject[] falas;
     public bool venceu, perdeu;
-    public GameObject menuVenceu, menuPerdeu, unfade, fade; 
+    public GameObject menuVenceu, menuPerdeu, unfade, fade;
     public void fala11()
     {
 
@@ -50,7 +50,7 @@ public class Tribunal : MonoBehaviour
 
     }
     public void fala31()
-    { 
+    {
 
         falas[5].SetActive(false);
         falas[6].SetActive(false);
@@ -112,13 +112,13 @@ public class Tribunal : MonoBehaviour
     }
     public void fala52()
     {
-      
+
         falas[9].SetActive(false);
         falas[10].SetActive(false);
         if (venceu == true)
         {
             menuVenceu.SetActive(true);
-            GlobalVariaveis.n2 = 1;
+            GlobalVariaveis.n3 = 1;
 
 
         }
@@ -136,31 +136,31 @@ public class Tribunal : MonoBehaviour
     {
         unfade.SetActive(true);
         Invoke("Recomec", 0.4f);
-        
+
 
     }
     public void proximoNivel()
     {
         unfade.SetActive(true);
-        Invoke("Mapa2", 0.4f);
+        Invoke("Mapa03", 0.4f);
 
 
 
     }
     void Recomec()
     {
-        SceneManager.LoadScene("Fase1Tutorial");
+        SceneManager.LoadScene("Mapa2");
 
     }
     public void selecaoDeNiveis()
     {
-        unfade .SetActive(true);
+        unfade.SetActive(true);
         Invoke("SelecNiveis", 0.4f);
 
     }
-    public void Mapa2()
+    public void Mapa03()
     {
-        SceneManager.LoadScene("Mapa2");
+        SceneManager.LoadScene("Mapa03");
 
 
     }
@@ -178,8 +178,7 @@ public class Tribunal : MonoBehaviour
     }
     private void Update()
     {
-
-
+        
 
     }
     private void Start()

@@ -5,21 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Fase1 : MonoBehaviour
 {
-    public GameObject tribunal, desaparecer, aparecer; 
+    public GameObject desaparecer, aparecer; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        inv.lugar = 1;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (inv.lugar == 5)
-        {
-            tribunal.SetActive(true);
-
-        }
+       
         Invoke("unfad", 1);
     }
     public void irTrib()

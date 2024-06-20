@@ -27,6 +27,15 @@ EditorBuildSettings:
     path: Assets/Scenes/CenaTutorial.unity
     guid: 2d2c33c682747d44e925ab8f025d39a5
   - enabled: 1
+    path: Assets/Scenes/Mapa03.unity
+    guid: 16ca37042e58a0e498c42528e255b607
+  - enabled: 1
+    path: Assets/Scenes/Mapa2.unity
+    guid: 3451228d56fb1a74ea31604d421f9ed9
+  - enabled: 1
     path: Assets/Scenes/Fase1Tutorial.unity
     guid: 9345f7f724df7b74b830f944418a7b51
+  - enabled: 1
+    path: Assets/Scenes/Tribunal02.unity
+    guid: fccd1e5304ea7c045883cc9620af5704
   m_configObjects: {}

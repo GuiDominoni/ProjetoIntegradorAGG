@@ -21,7 +21,7 @@ public class CursorDoMouse : MonoBehaviour
     void Update()
     {
         
-        mouse.transform.position = Input.mousePosition;
+        mouse.transform.position = Input.mousePosition; 
 
 
 

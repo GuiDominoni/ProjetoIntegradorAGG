@@ -6,9 +6,11 @@ public class Unfade : MonoBehaviour
 {
     public Image imageToUnfade;
     public float fadeDuration = 2.0f;
+        public GameObject preto;
 
     private void Start()
     {
+        Invoke("desat", 1);
         if (imageToUnfade != null)
         {
             // Inicialmente, certifique-se de que a imagem esteja visível
@@ -33,6 +35,11 @@ public class Unfade : MonoBehaviour
             imageToUnfade.color = tempColor;
             yield return null;
         }
+    }
+    void desat()
+    {
+        preto.SetActive(false); 
+
     }
    
 }

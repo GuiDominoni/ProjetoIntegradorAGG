@@ -7,12 +7,18 @@ using UnityEngine.UI;
 
 public class SelecaoNiveis : MonoBehaviour
 {
-    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito;
+    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto;
     public GameObject[] ImagemNv;
     public GameObject[] comecar;
 
     //os ARRAYS sao essas coisas com [] no final, e sao mais facil para a organização,
     //ficou mais organizado no inspector fazendo assim, entao a imagemNv[i] o i vai ser igual ao número que está lá mais 1, ex: ImagemNv[1] é a imagem do nivel 2 
+    private void Start()
+    {
+        Invoke("pretoDestivar", 1f);
+
+
+    }
     public void n1()
     {
         ImagemNv[0].SetActive(true);
@@ -283,6 +289,12 @@ public class SelecaoNiveis : MonoBehaviour
     public void comecarNv1()
     {
         SceneManager.LoadScene("Fase1Tutorial");
+
+    }
+    void pretoDestivar()
+    {
+        preto.SetActive(false);
+
 
     }
 

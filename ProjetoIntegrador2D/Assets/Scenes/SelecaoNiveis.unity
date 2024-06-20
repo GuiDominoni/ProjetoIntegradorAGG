@@ -7813,6 +7813,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1558529497}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1558529499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7443341316258997155, guid: e6f46f3a39775ae4b841d557e1e28253,
+    type: 3}
+  m_PrefabInstance: {fileID: 1558529497}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1576310808
 GameObject:
   m_ObjectHideFlags: 0
@@ -7852,6 +7858,7 @@ MonoBehaviour:
   noveDezesseis: {fileID: 1525174535}
   dezesseteVinte: {fileID: 2136308477}
   umOito: {fileID: 1815510138}
+  preto: {fileID: 1558529499}
   ImagemNv:
   - {fileID: 630239296}
   - {fileID: 625341007}

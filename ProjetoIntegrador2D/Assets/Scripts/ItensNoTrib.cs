@@ -86,7 +86,7 @@ public class ItensNoTrib : MonoBehaviour
         }
         if (inv.i42 == true)
         {
-            i43.SetActive(true);
+            i42.SetActive(true);
 
         }
         if (inv.i43 == true)
@@ -132,7 +132,7 @@ public class ItensNoTrib : MonoBehaviour
         }
         if (inv.i62 == true)
         {
-            i63.SetActive(true);
+            i62.SetActive(true);
 
         }
         if (inv.i63 == true)
@@ -155,7 +155,7 @@ public class ItensNoTrib : MonoBehaviour
         }
         if (inv.i72 == true)
         {
-            i73.SetActive(true);
+            i72.SetActive(true);
 
         }
         if (inv.i73 == true)
