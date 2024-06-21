@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,6 +17,35 @@ public class SelecaoNiveis : MonoBehaviour
     private void Start()
     {
         Invoke("pretoDestivar", 1f);
+        inv.i11 = false; 
+        inv.i12 = false; 
+        inv.i13 = false; 
+        inv.i14 = false; 
+        inv.i21 = false; 
+        inv.i22 = false; 
+        inv.i23 = false; 
+        inv.i24 = false; 
+        inv.i31 = false; 
+        inv.i32 = false; 
+        inv.i33 = false; 
+        inv.i34 = false; 
+        inv.i41 = false;  
+        inv.i42 = false; 
+        inv.i43 = false; 
+        inv.i44 = false; 
+        inv.i51 = false;
+        inv.i52 = false;
+        inv.i53 = false; 
+        inv.i54 = false;
+        inv.i61 = false; 
+        inv.i62 = false; 
+        inv.i63 = false; 
+        inv.i64 = false;
+        inv.i71 = false; 
+        inv.i72 = false; 
+        inv.i73 = false;
+        inv.i74 = false;
+
 
 
     }
