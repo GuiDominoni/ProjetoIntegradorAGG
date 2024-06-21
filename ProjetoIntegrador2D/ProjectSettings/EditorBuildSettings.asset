@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CenaTutorial.unity
     guid: 2d2c33c682747d44e925ab8f025d39a5
   - enabled: 1
+    path: Assets/Scenes/Tribunal03.unity
+    guid: 2674328b847cb6b4ab22af991c8a7110
+  - enabled: 1
     path: Assets/Scenes/Mapa03.unity
     guid: 16ca37042e58a0e498c42528e255b607
   - enabled: 1

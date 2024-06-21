@@ -8,7 +8,7 @@ public class PauseNv2 : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto, pause;
+    public GameObject preto, pause, aviso;
     public Image inventario;
     
 
@@ -29,7 +29,7 @@ public class PauseNv2 : MonoBehaviour
 
             pause.SetActive(true);
             cancelInvoke();
-
+            
         }
 
 
@@ -41,6 +41,7 @@ public class PauseNv2 : MonoBehaviour
             Invoke("irTrib", 4f);
             cancelInvoke();
             novaPos();
+            aviso.SetActive(true);
 
         }
         if (timer <= 0)

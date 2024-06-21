@@ -8,7 +8,7 @@ public class PauseNv3 : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto, pause;
+    public GameObject preto, pause, aviso;
     public Image inventario;
 
 
@@ -28,6 +28,7 @@ public class PauseNv3 : MonoBehaviour
 
             pause.SetActive(true);
             cancelInvoke();
+           
 
         }
 
@@ -37,10 +38,10 @@ public class PauseNv3 : MonoBehaviour
         if (inv.lugar == 5)
         {
 
-            Invoke("irTrib", 4f);
+            Invoke("irTrib", 3f);
             cancelInvoke();
             novaPos();
-
+            aviso.SetActive(true);
         }
         if (timer <= 0)
         {
@@ -75,8 +76,11 @@ public class PauseNv3 : MonoBehaviour
     }
     public void novaPos()
     {
-        RectTransform rectTransform = inventario.GetComponent<RectTransform>();
-        rectTransform.anchoredPosition = new Vector2(0f, 0f);
+        if (inventario != null)
+        {
+            RectTransform rectTransform = inventario.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition = new Vector2(0f, 0f);
+        }
 
     }
     public void carregarNiveis()
@@ -88,7 +92,7 @@ public class PauseNv3 : MonoBehaviour
     public void irTrib()
     {
         preto.SetActive(true);
-        Invoke("trib", 1);
+        Invoke("trib", 0.4f);
 
 
     }
