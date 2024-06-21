@@ -2508,7 +2508,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 598628132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1576310809}
+        m_TargetAssemblyTypeName: SelecaoNiveis, Assembly-CSharp
+        m_MethodName: comecarNv2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &598628132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2917,7 +2929,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 632382391}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1576310808}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &632382391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7805,6 +7829,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: preto 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7443341316258997155, guid: e6f46f3a39775ae4b841d557e1e28253,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6f46f3a39775ae4b841d557e1e28253, type: 3}
 --- !u!224 &1558529498 stripped
@@ -7882,6 +7911,8 @@ MonoBehaviour:
   - {fileID: 1352148491}
   comecar:
   - {fileID: 1853146692}
+  - {fileID: 598628129}
+  - {fileID: 632382388}
 --- !u!4 &1576310810
 Transform:
   m_ObjectHideFlags: 0

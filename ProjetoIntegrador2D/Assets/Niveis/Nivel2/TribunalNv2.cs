@@ -95,18 +95,7 @@ public class TribunalNv2 : MonoBehaviour
     {
         falas[9].SetActive(false);
         falas[10].SetActive(false);
-        if (venceu == true)
-        {
-            menuVenceu.SetActive(true);
-
-
-        }
-        if (perdeu == true)
-        {
-            menuPerdeu.SetActive(true);
-
-
-        }
+       
 
 
     }
@@ -115,19 +104,7 @@ public class TribunalNv2 : MonoBehaviour
 
         falas[9].SetActive(false);
         falas[10].SetActive(false);
-        if (venceu == true)
-        {
-            menuVenceu.SetActive(true);
-            GlobalVariaveis.n3 = 1;
-
-
-        }
-        if (perdeu == true)
-        {
-            menuPerdeu.SetActive(true);
-
-
-        }
+    
 
 
 
@@ -178,8 +155,20 @@ public class TribunalNv2 : MonoBehaviour
     }
     private void Update()
     {
-        
 
+        if (venceu == true)
+        {
+            menuVenceu.SetActive(true);
+            GlobalVariaveis.n3 = 1;
+
+
+        }
+        if (perdeu == true)
+        {
+            menuPerdeu.SetActive(true);
+
+
+        }
     }
     private void Start()
     {

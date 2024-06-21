@@ -63,6 +63,8 @@ public class SelecaoNiveis : MonoBehaviour
             ImagemNv[1].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
+            comecar[1].SetActive
+                (true);
         }
     }
     public void n3()
@@ -72,6 +74,7 @@ public class SelecaoNiveis : MonoBehaviour
             ImagemNv[2].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
+            comecar[2].SetActive (true);    
         }
     }
     public void n4()
@@ -319,6 +322,16 @@ public class SelecaoNiveis : MonoBehaviour
     public void comecarNv1()
     {
         SceneManager.LoadScene("Fase1Tutorial");
+
+    }
+    public void comecarNv2()
+    {
+        SceneManager.LoadScene("Mapa2");
+
+    }
+    public void comecarNv3() {
+
+        SceneManager.LoadScene("Mapa03");   
 
     }
     void pretoDestivar()

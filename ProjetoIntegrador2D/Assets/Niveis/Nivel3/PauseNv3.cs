@@ -4,57 +4,50 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Timer : MonoBehaviour
+public class PauseNv3 : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto,  pause, opcoe, tribunal, aparecer;
+    public GameObject preto, pause;
     public Image inventario;
-    public GameObject aviso;
-    
-    
 
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("timerMenos", 1, 1);
-        timer = 60;  
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if(Input.GetKeyUp(KeyCode.Escape))
+
+        if (Input.GetKeyUp(KeyCode.Escape))
         {
 
             pause.SetActive(true);
             cancelInvoke();
-            
-            
-            
+
         }
 
 
         texto.text = timer.ToString();
-     
-         if( inv.lugar == 5)
-         {
-            aviso.SetActive(true);
+
+        if (inv.lugar == 5)
+        {
+
             Invoke("irTrib", 4f);
             cancelInvoke();
             novaPos();
 
         }
-         if(timer <= 0)
+        if (timer <= 0)
         {
             irTrib();
 
 
         }
-
     }
     public void continuar()
     {
@@ -72,7 +65,7 @@ public class Timer : MonoBehaviour
     public void timerMenos()
     {
         timer -= 1;
-        
+
 
     }
     public void cancelInvoke()
@@ -94,14 +87,16 @@ public class Timer : MonoBehaviour
     }
     public void irTrib()
     {
-        aparecer.SetActive(true);
+        preto.SetActive(true);
         Invoke("trib", 1);
 
 
     }
-    void trib()
+    public void trib()
     {
 
-        SceneManager.LoadScene("Tribunal");
+        SceneManager.LoadScene("Tribunal03");
+
     }
+
 }

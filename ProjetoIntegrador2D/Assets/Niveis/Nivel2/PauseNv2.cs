@@ -15,6 +15,7 @@ public class PauseNv2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        inv.lugar = 1;
         InvokeRepeating("timerMenos", 1, 1);
 
     }
@@ -88,7 +89,7 @@ public class PauseNv2 : MonoBehaviour
     public void irTrib()
     {
         preto.SetActive(true);
-        Invoke("trib", 1);
+        Invoke("trib", 0.4f);
 
 
     }

@@ -309,8 +309,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 413493295}
   - {fileID: 842557467}
+  - {fileID: 413493295}
   - {fileID: 1630810849}
   - {fileID: 987877213}
   - {fileID: 679368276}
@@ -858,6 +858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageToFade: {fileID: 679368279}
   fadeDuration: 0.34
+  preto: {fileID: 0}
 --- !u!114 &679368279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,12 +1035,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 223727033}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 421}
-  m_SizeDelta: {x: 438.15, y: 172.982}
+  m_AnchoredPosition: {x: -0.0048523, y: 451.16}
+  m_SizeDelta: {x: 1920, y: 177.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &842557468
 MonoBehaviour:
@@ -1947,7 +1948,7 @@ PrefabInstance:
     - target: {fileID: 7747860599344862773, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7747860599344862773, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -2058,7 +2059,7 @@ GameObject:
   - component: {fileID: 1541151737}
   - component: {fileID: 1541151736}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2080,7 +2081,6 @@ MonoBehaviour:
   texto: {fileID: 1630810847}
   preto: {fileID: 679368275}
   pause: {fileID: 987877210}
-  botaoTrib: {fileID: 0}
   inventario: {fileID: 413493296}
 --- !u!4 &1541151737
 Transform:
