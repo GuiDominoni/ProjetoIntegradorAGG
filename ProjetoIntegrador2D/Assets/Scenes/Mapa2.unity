@@ -487,51 +487,45 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259596507}
   m_Enabled: 1
-  m_Tiles:
-  - first: {x: 3, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+  m_Tiles: {}
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 895b8e5cdf8f0f14ea1db52f94222e8e, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -431297915, guid: 21e33093e900b7247a5ce7b17f1d42a3, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 1
+  - m_RefCount: 0
     m_Data:
-      e00: 1
+      e00: 0
       e01: 0
-      e02: 0
-      e03: 0
+      e02: -1.1020282e-38
+      e03: -1.1020282e-38
       e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
+      e11: 0
+      e12: 8.55e-43
+      e13: 8.55e-43
+      e20: 2.9323946e+29
+      e21: 1e-45
+      e22: 4.8707563e-29
+      e23: 4.702896e-10
+      e30: 4.5904e-41
       e31: 0
-      e32: 0
-      e33: 1
+      e32: 8.56e-43
+      e33: 8.59e-43
   m_TileColorArray:
-  - m_RefCount: 1
-    m_Data: {r: 1, g: 1, b: 1, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 3.6165e-41, g: 3.6165e-41, b: 3.6165e-41, a: 3.6165e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 4, y: 2, z: 1}
+  m_Origin: {x: 0, y: -1, z: 0}
+  m_Size: {x: 5, y: 3, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -741,6 +735,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093168387932365562, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5d7c08a2f8c1cc44ae05e3982bafed1, type: 3}
@@ -1163,6 +1162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ciano
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013313471368518434, guid: cd650ec6ca23ba046b9d4795f833e95f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1013313471368518445, guid: cd650ec6ca23ba046b9d4795f833e95f,
         type: 3}
@@ -1981,6 +1985,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: rosa
       objectReference: {fileID: 0}
+    - target: {fileID: 1177196152855584151, guid: c2dfed0545b46a0448ce2ca2cdc09773,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2dfed0545b46a0448ce2ca2cdc09773, type: 3}
 --- !u!1 &1219604641
@@ -2559,6 +2568,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laranja
       objectReference: {fileID: 0}
+    - target: {fileID: 2127358055689171147, guid: eb93145a3b2edd546ba9245a6e60de92,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb93145a3b2edd546ba9245a6e60de92, type: 3}
 --- !u!1 &1673268518 stripped
@@ -2645,6 +2659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: azul forte
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200120880944931877, guid: 7b7f27074ccb52149b4688d76038ef6b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8200120880944931886, guid: 7b7f27074ccb52149b4688d76038ef6b,
         type: 3}
@@ -2735,6 +2754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: amarelo
       objectReference: {fileID: 0}
+    - target: {fileID: 5946597288488863118, guid: bbb5a4589e638ab4493d1b2a2dac1c69,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5946597288488863221, guid: bbb5a4589e638ab4493d1b2a2dac1c69,
         type: 3}
       propertyPath: item4.Array.data[0]
@@ -2768,6 +2792,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Verde
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725140835870976659, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8725140835870976663, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
         type: 3}
@@ -2932,6 +2961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vermelho
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070739401364828808, guid: ea3f8d82cff87304ebb42cad920b8744,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea3f8d82cff87304ebb42cad920b8744, type: 3}
