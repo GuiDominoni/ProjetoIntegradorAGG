@@ -16,7 +16,7 @@ public class PauseNv3 : MonoBehaviour
     void Start()
     {
         InvokeRepeating("timerMenos", 1, 1);
-
+        inv.lugar = 1;
     }
 
     // Update is called once per frame
