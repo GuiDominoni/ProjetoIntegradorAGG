@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class SelecaoNiveis : MonoBehaviour
 {
-    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto;
+    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto;
     public GameObject[] ImagemNv;
     public GameObject[] comecar;
 
@@ -340,7 +340,18 @@ public class SelecaoNiveis : MonoBehaviour
 
 
     }
+    public void menuPrincipal()
+    {
+        outroPreto.SetActive(true);
+        Invoke("MainMenuCarregar", 0.4f);
 
+
+    }
+    public void MainMenuCarregar()
+    {
+        SceneManager.LoadScene("MainMenu");
+
+    }
 
 
 }
