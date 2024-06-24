@@ -121,6 +121,17 @@ public class TribunalNv2 : MonoBehaviour
             falas[7].SetActive(false);
             falas[8].SetActive(false);
         }
+        if(cond >= 3)
+        {
+            venceu = true;
+
+
+        }else if (cond <= 2)
+        {
+            perdeu = true;
+
+
+        }
 
 
 
