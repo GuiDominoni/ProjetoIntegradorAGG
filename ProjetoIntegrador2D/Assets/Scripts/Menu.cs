@@ -36,9 +36,21 @@ public class Menu : MonoBehaviour
     }
     public void Cut()
     {
-
-        SceneManager.LoadScene("Cutscene");
+        if (cutcene.cut == 0)
+        {
+            SceneManager.LoadScene("Cutscene");
+        }
+        if(cutcene.cut >= 1)
+         {
+            SceneManager.LoadScene("SelecaoNiveis");
+         }
 
     }
+    
+}
+public static class cutcene
+{
+
+    public static int cut = 0;
 
 }
