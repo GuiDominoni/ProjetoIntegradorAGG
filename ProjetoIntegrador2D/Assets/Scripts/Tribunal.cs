@@ -8,7 +8,8 @@ public class Tribunal : MonoBehaviour
 {
     public GameObject[] falas, pergunta;
     public bool venceu, perdeu;
-    public GameObject menuVenceu, menuPerdeu, unfade, fade; 
+    public GameObject menuVenceu, menuPerdeu, unfade, fade;
+    public int cond = 0;
     public void fala11()
     {
         pergunta[1].SetActive(false);
@@ -17,6 +18,11 @@ public class Tribunal : MonoBehaviour
         falas[3].SetActive(true);
         falas[4].SetActive(true);
         pergunta[2].SetActive(true);
+        if(inv.i21 || inv.i22 || inv.i23 || inv.i24 == true)
+        {
+            cond++;
+
+        }
 
     }
     public void fala12()
@@ -31,6 +37,11 @@ public class Tribunal : MonoBehaviour
     }
     public void fala21()
     {
+        if (inv.i11 || inv.i12 || inv.i13 || inv.i14 == true)
+        {
+            cond++;
+
+        }
         pergunta[2].SetActive(false);
         pergunta[3].SetActive(true);
         falas[3].SetActive(false);
