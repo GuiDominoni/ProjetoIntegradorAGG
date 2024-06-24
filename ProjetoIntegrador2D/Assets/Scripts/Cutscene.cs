@@ -15,6 +15,7 @@ public class Cutscene : MonoBehaviour
 
     private void Start()
     {
+        cutcene.cut += 1;
         Invoke("desatPreto", 1);
         // Inicialize apenas a primeira imagem com opacidade 1
         cutImages[0].color = new Color(1, 1, 1, 1);
