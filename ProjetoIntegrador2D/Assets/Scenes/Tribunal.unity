@@ -522,7 +522,7 @@ PrefabInstance:
     - target: {fileID: 7747860599344862773, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7747860599344862773, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -3670,5 +3670,45 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1389986146}
+    - target: {fileID: 7986082050611661071, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_text
+      value: Onde Roberto estava no momento do furto?
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986082050611661071, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986082050611661071, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7986082050611661071, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035072432591895665, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 436.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035072432591895665, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 181.937
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035072432591895665, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.000020504
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035072432591895665, guid: 5d8a699d280b5cf49ab62ed8fb415b28,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d8a699d280b5cf49ab62ed8fb415b28, type: 3}
