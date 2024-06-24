@@ -6,29 +6,33 @@ using UnityEngine.SceneManagement;
 
 public class TribunalNv2 : MonoBehaviour
 {
-    public GameObject[] falas;
+    public GameObject[] falas,  pergunta;
     public bool venceu, perdeu;
     public GameObject menuVenceu, menuPerdeu, unfade, fade;
     public void fala11()
     {
-
+        pergunta[1].SetActive(false);
         falas[1].SetActive(false);
         falas[2].SetActive(false);
         falas[3].SetActive(true);
         falas[4].SetActive(true);
+        pergunta[2].SetActive(true);
 
     }
     public void fala12()
     {
-
+        pergunta[1].SetActive(false);
         falas[1].SetActive(false);
         falas[2].SetActive(false);
         falas[3].SetActive(true);
         falas[4].SetActive(true);
+        pergunta[2].SetActive(true);
 
     }
     public void fala21()
     {
+        pergunta[2].SetActive(false);
+        pergunta[3].SetActive(true);
         falas[3].SetActive(false);
         falas[4].SetActive(false);
         falas[5].SetActive(true);
@@ -40,6 +44,8 @@ public class TribunalNv2 : MonoBehaviour
     }
     public void fala22()
     {
+        pergunta[2].SetActive(false);
+        pergunta[3].SetActive(true);
         falas[3].SetActive(false);
         falas[4].SetActive(false);
         falas[5].SetActive(true);
@@ -51,7 +57,8 @@ public class TribunalNv2 : MonoBehaviour
     }
     public void fala31()
     {
-
+        pergunta[3].SetActive(false);
+        pergunta[4].SetActive(true);
         falas[5].SetActive(false);
         falas[6].SetActive(false);
         falas[7].SetActive(true);
@@ -63,7 +70,8 @@ public class TribunalNv2 : MonoBehaviour
     }
     public void fala32()
     {
-
+        pergunta[3].SetActive(false);
+        pergunta[4].SetActive(true);
         falas[5].SetActive(false);
         falas[6].SetActive(false);
         falas[7].SetActive(true);
@@ -75,40 +83,24 @@ public class TribunalNv2 : MonoBehaviour
     }
     public void fala41()
     {
+        pergunta[4].SetActive(false);
         falas[7].SetActive(false);
         falas[8].SetActive(false);
-        falas[9].SetActive(true);
-        falas[10].SetActive(true);
+
 
 
     }
     public void fala42()
     {
+        pergunta[4].SetActive(false);
+
         falas[7].SetActive(false);
         falas[8].SetActive(false);
-        falas[9].SetActive(true);
-        falas[10].SetActive(true);
 
-
-    }
-    public void fala51()
-    {
-        falas[9].SetActive(false);
-        falas[10].SetActive(false);
-       
 
 
     }
-    public void fala52()
-    {
-
-        falas[9].SetActive(false);
-        falas[10].SetActive(false);
     
-
-
-
-    }
     public void Recomeçar()
     {
         unfade.SetActive(true);
