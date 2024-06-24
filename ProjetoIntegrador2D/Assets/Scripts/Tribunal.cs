@@ -8,21 +8,23 @@ public class Tribunal : MonoBehaviour
 {
     public GameObject[] falas, pergunta;
     public bool venceu, perdeu;
-    public GameObject menuVenceu, menuPerdeu, unfade, fade;
+    public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2;
     public int cond = 0;
     public void fala11()
     {
-        pergunta[1].SetActive(false);
+        if (inv.i21 || inv.i22 || inv.i23 || inv.i24 == true)
+        {
+            pergunta[1].SetActive(false);
         falas[1].SetActive(false);
         falas[2].SetActive(false);
         falas[3].SetActive(true);
         falas[4].SetActive(true);
         pergunta[2].SetActive(true);
-        if(inv.i21 || inv.i22 || inv.i23 || inv.i24 == true)
-        {
+        
             cond++;
 
         }
+       
 
     }
     public void fala12()
@@ -41,13 +43,16 @@ public class Tribunal : MonoBehaviour
         {
             cond++;
 
+
+            pergunta[2].SetActive(false);
+            pergunta[3].SetActive(true);
+            falas[3].SetActive(false);
+            falas[4].SetActive(false);
+            falas[5].SetActive(true);
+            falas[6].SetActive(true);
         }
-        pergunta[2].SetActive(false);
-        pergunta[3].SetActive(true);
-        falas[3].SetActive(false);
-        falas[4].SetActive(false);
-        falas[5].SetActive(true);
-        falas[6].SetActive(true);
+        
+      
 
 
 
@@ -68,12 +73,20 @@ public class Tribunal : MonoBehaviour
     }
     public void fala31()
     {
-        pergunta[3].SetActive(false);
-        pergunta[4].SetActive(true);
-        falas[5].SetActive(false);
-        falas[6].SetActive(false);
-        falas[7].SetActive(true);
-        falas[8].SetActive(true);
+        if (inv.i31 || inv.i32 || inv.i33 || inv.i34 == true)
+        {
+            cond++;
+
+
+            pergunta[3].SetActive(false);
+            pergunta[4].SetActive(true);
+            falas[5].SetActive(false);
+            falas[6].SetActive(false);
+            falas[7].SetActive(true);
+            falas[8].SetActive(true);
+        }
+        
+
 
 
 
@@ -94,20 +107,47 @@ public class Tribunal : MonoBehaviour
     }
     public void fala41()
     {
-        pergunta[4].SetActive(false);
-        falas[7].SetActive(false);
-        falas[8].SetActive(false);
-       
+        
+
+            pergunta[4].SetActive(false);
+            falas[7].SetActive(false);
+            falas[8].SetActive(false);
+        
+        if (cond >= 3)
+        {
+            venceu = true;
+
+        }else if (cond >= 2)
+        {
+            perdeu = true;
+
+        }
 
 
     }
     public void fala42()
     {
-        pergunta[4].SetActive(false);
-      
-        falas[7].SetActive(false);
-        falas[8].SetActive(false);
-        
+        if (inv.i61 || inv.i62 || inv.i63 || inv.i64 == true)
+        {
+            cond++;
+
+
+
+
+            pergunta[4].SetActive(false);
+            falas[7].SetActive(false);
+            falas[8].SetActive(false);
+        }
+        if (cond >= 3)
+        {
+            venceu = true;
+
+        }
+        if (cond <= 2)
+        {
+            perdeu = true;  
+
+        }
 
 
     }
@@ -158,6 +198,7 @@ public class Tribunal : MonoBehaviour
     }
     private void Update()
     {
+        Debug.Log(cond);
         if (venceu == true)
         {
             menuVenceu.SetActive(true);
