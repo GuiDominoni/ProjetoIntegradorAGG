@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: pixel-art-tree-icon-png
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 290566e91ce7fff478b266a5b0777eda, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74ebd2dbc32cbd549a87dc65e8f49712, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
