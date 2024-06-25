@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TribunalNv2 : MonoBehaviour
 {
     public GameObject[] falas, pergunta;
     public bool venceu, perdeu;
-    public GameObject menuVenceu, menuPerdeu, unfade, fade;
-    public int cond;
+    public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2;
+    public int cond = 0;
+    public Image healthBarFill; // Referência ao Image de preenchimento
+    public float vida, vidaMaxima, vidaMinima;
     public void fala11()
     {
 
@@ -193,7 +196,13 @@ public class TribunalNv2 : MonoBehaviour
     }
     private void Update()
     {
+        vida = cond * 25;
+        if (vida >= vidaMinima && vida <= vidaMaxima)
+        {
+            healthBarFill.fillAmount = vida / 100;
 
+
+        }
         if (venceu == true)
         {
             menuVenceu.SetActive(true);
@@ -211,7 +220,9 @@ public class TribunalNv2 : MonoBehaviour
     private void Start()
     {
         Invoke("desatPreto", 1);
-
+        vidaMaxima = 100;
+        vidaMinima = 0;
+        vida = 0;
     }
 
 }

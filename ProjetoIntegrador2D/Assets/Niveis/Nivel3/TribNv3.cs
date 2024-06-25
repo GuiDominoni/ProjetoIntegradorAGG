@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TribNv3 : MonoBehaviour
 {
     public GameObject[] falas, pergunta;
     public bool venceu, perdeu;
-    public GameObject menuVenceu, menuPerdeu, unfade;
-    private int cond;
+    public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2;
+    public int cond = 0;
+    public Image healthBarFill; // Referência ao Image de preenchimento
+    public float vida, vidaMaxima, vidaMinima;
     public void fala11()
     {
 
@@ -196,6 +199,13 @@ public class TribNv3 : MonoBehaviour
  
     private void Update()
     {
+        vida = cond * 25;
+        if (vida >= vidaMinima && vida <= vidaMaxima)
+        {
+            healthBarFill.fillAmount = vida / 100;
+
+
+        }
         if (venceu == true)
         {
             menuVenceu.SetActive(true);
@@ -210,5 +220,12 @@ public class TribNv3 : MonoBehaviour
         }
 
     }
-   
+    private void Start()
+    {
+        vidaMaxima = 100;
+        vidaMinima = 0;
+        vida = 0;
+
+    }
+
 }
