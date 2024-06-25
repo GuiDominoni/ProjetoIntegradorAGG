@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class SelecaoNiveis : MonoBehaviour
 {
-    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto;
+    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto, tuto;
     public GameObject[] ImagemNv;
     public GameObject[] comecar;
 
@@ -17,37 +17,57 @@ public class SelecaoNiveis : MonoBehaviour
     private void Start()
     {
         Invoke("pretoDestivar", 1f);
-        inv.i11 = false; 
-        inv.i12 = false; 
-        inv.i13 = false; 
-        inv.i14 = false; 
-        inv.i21 = false; 
-        inv.i22 = false; 
-        inv.i23 = false; 
-        inv.i24 = false; 
-        inv.i31 = false; 
-        inv.i32 = false; 
-        inv.i33 = false; 
-        inv.i34 = false; 
-        inv.i41 = false;  
-        inv.i42 = false; 
-        inv.i43 = false; 
-        inv.i44 = false; 
+        inv.i11 = false;
+        inv.i12 = false;
+        inv.i13 = false;
+        inv.i14 = false;
+        inv.i21 = false;
+        inv.i22 = false;
+        inv.i23 = false;
+        inv.i24 = false;
+        inv.i31 = false;
+        inv.i32 = false;
+        inv.i33 = false;
+        inv.i34 = false;
+        inv.i41 = false;
+        inv.i42 = false;
+        inv.i43 = false;
+        inv.i44 = false;
         inv.i51 = false;
         inv.i52 = false;
-        inv.i53 = false; 
+        inv.i53 = false;
         inv.i54 = false;
-        inv.i61 = false; 
-        inv.i62 = false; 
-        inv.i63 = false; 
+        inv.i61 = false;
+        inv.i62 = false;
+        inv.i63 = false;
         inv.i64 = false;
-        inv.i71 = false; 
-        inv.i72 = false; 
+        inv.i71 = false;
+        inv.i72 = false;
         inv.i73 = false;
         inv.i74 = false;
+        if (GlobalVariaveis.tuto == 0)
+        {
+            tuto.SetActive(true);
+            
+
+        }
 
 
 
+    }
+    void Update()
+    {
+
+
+        Debug.Log(GlobalVariaveis.tuto);
+
+
+    }
+    public void fecharTuto()
+    {
+
+        tuto.SetActive(false);
+        GlobalVariaveis.tuto++;
     }
     public void n1()
     {
@@ -251,6 +271,8 @@ public class SelecaoNiveis : MonoBehaviour
         ImagemNv[6].SetActive(false);
         ImagemNv[7].SetActive(false);
         comecar[0].SetActive(false) ;
+        comecar[1].SetActive(false);
+        comecar[2].SetActive(false);
 
         prox1.SetActive(true);
         sairDaImagem1.SetActive(false);
@@ -362,7 +384,7 @@ public static class GlobalVariaveis
     public static int n1, n2, n3, n4, n5, n6, n7, n8, n9,
         n10, n11, n12, n13, n14
         
-        ,n15, n16, n17, n18, n19, n20;
+        ,n15, n16, n17, n18, n19, n20, tuto;
 
 
 }

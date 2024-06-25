@@ -2,21 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TribunalNv2 : MonoBehaviour
 {
-    public GameObject[] falas,  pergunta;
+    public GameObject[] falas, pergunta;
     public bool venceu, perdeu;
-    public GameObject menuVenceu, menuPerdeu, unfade, fade;
+    public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2;
+    public int cond = 0;
+    public Image healthBarFill; // Referência ao Image de preenchimento
+    public float vida, vidaMaxima, vidaMinima;
     public void fala11()
     {
-        pergunta[1].SetActive(false);
-        falas[1].SetActive(false);
-        falas[2].SetActive(false);
-        falas[3].SetActive(true);
-        falas[4].SetActive(true);
-        pergunta[2].SetActive(true);
+
+        if (inv.i21 || inv.i22 || inv.i23 || inv.i24 == true)
+        {
+            cond++;
+
+
+
+
+            pergunta[1].SetActive(false);
+            falas[1].SetActive(false);
+            falas[2].SetActive(false);
+            falas[3].SetActive(true);
+            falas[4].SetActive(true);
+            pergunta[2].SetActive(true);
+        }
 
     }
     public void fala12()
@@ -31,12 +44,21 @@ public class TribunalNv2 : MonoBehaviour
     }
     public void fala21()
     {
-        pergunta[2].SetActive(false);
-        pergunta[3].SetActive(true);
-        falas[3].SetActive(false);
-        falas[4].SetActive(false);
-        falas[5].SetActive(true);
-        falas[6].SetActive(true);
+
+        if (inv.i41 || inv.i42 || inv.i43 || inv.i44 == true)
+        {
+            cond++;
+
+
+
+
+            pergunta[2].SetActive(false);
+            pergunta[3].SetActive(true);
+            falas[3].SetActive(false);
+            falas[4].SetActive(false);
+            falas[5].SetActive(true);
+            falas[6].SetActive(true);
+        }
 
 
 
@@ -57,12 +79,20 @@ public class TribunalNv2 : MonoBehaviour
     }
     public void fala31()
     {
-        pergunta[3].SetActive(false);
-        pergunta[4].SetActive(true);
-        falas[5].SetActive(false);
-        falas[6].SetActive(false);
-        falas[7].SetActive(true);
-        falas[8].SetActive(true);
+
+        if (inv.i51 || inv.i52 || inv.i53 || inv.i54 == true)
+        {
+            cond++;
+
+
+
+            pergunta[3].SetActive(false);
+            pergunta[4].SetActive(true);
+            falas[5].SetActive(false);
+            falas[6].SetActive(false);
+            falas[7].SetActive(true);
+            falas[8].SetActive(true);
+        }
 
 
 
@@ -83,9 +113,28 @@ public class TribunalNv2 : MonoBehaviour
     }
     public void fala41()
     {
-        pergunta[4].SetActive(false);
-        falas[7].SetActive(false);
-        falas[8].SetActive(false);
+        if (inv.i71 || inv.i72 || inv.i73 || inv.i74 == true)
+        {
+            cond++;
+
+
+
+
+            pergunta[4].SetActive(false);
+            falas[7].SetActive(false);
+            falas[8].SetActive(false);
+        }
+        if(cond >= 3)
+        {
+            venceu = true;
+
+
+        }else if (cond <= 2)
+        {
+            perdeu = true;
+
+
+        }
 
 
 
@@ -147,7 +196,13 @@ public class TribunalNv2 : MonoBehaviour
     }
     private void Update()
     {
+        vida = cond * 25;
+        if (vida >= vidaMinima && vida <= vidaMaxima)
+        {
+            healthBarFill.fillAmount = vida / 100;
 
+
+        }
         if (venceu == true)
         {
             menuVenceu.SetActive(true);
@@ -165,7 +220,9 @@ public class TribunalNv2 : MonoBehaviour
     private void Start()
     {
         Invoke("desatPreto", 1);
-
+        vidaMaxima = 100;
+        vidaMinima = 0;
+        vida = 0;
     }
 
 }
