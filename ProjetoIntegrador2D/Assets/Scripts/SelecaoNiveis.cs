@@ -59,7 +59,7 @@ public class SelecaoNiveis : MonoBehaviour
     {
 
 
-        Debug.Log(GlobalVariaveis.tuto);
+      
 
 
     }
