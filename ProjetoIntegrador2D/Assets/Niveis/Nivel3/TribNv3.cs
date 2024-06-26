@@ -118,8 +118,7 @@ public class TribNv3 : MonoBehaviour
             pergunta[4].SetActive(false); 
             falas[7].SetActive(false);
             falas[8].SetActive(false);
-            falas[9].SetActive(true);
-            falas[10].SetActive(true);
+     
         }
         if (cond >= 3)
         {
@@ -140,8 +139,7 @@ public class TribNv3 : MonoBehaviour
         pergunta[4].SetActive(false);
         falas[7].SetActive(false);
         falas[8].SetActive(false);
-        falas[9].SetActive(true);
-        falas[10].SetActive(true);
+       
         if (cond >= 3)
         {
             venceu = true;

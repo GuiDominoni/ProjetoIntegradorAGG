@@ -124,15 +124,14 @@ public class TribunalNv2 : MonoBehaviour
             falas[7].SetActive(false);
             falas[8].SetActive(false);
         }
-        if(cond >= 3)
+        if (cond >= 3)
         {
             venceu = true;
 
-
-        }else if (cond <= 2)
+        }
+        if (cond <= 2)
         {
             perdeu = true;
-
 
         }
 
@@ -145,11 +144,21 @@ public class TribunalNv2 : MonoBehaviour
 
         falas[7].SetActive(false);
         falas[8].SetActive(false);
+        if (cond >= 3)
+        {
+            venceu = true;
+
+        }
+        if (cond <= 2)
+        {
+            perdeu = true;
+
+        }
 
 
 
     }
-    
+
     public void Recomeçar()
     {
         unfade.SetActive(true);
