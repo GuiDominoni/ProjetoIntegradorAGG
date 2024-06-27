@@ -2661,6 +2661,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1964194532}
     m_Modifications:
+    - target: {fileID: 2691393620743473360, guid: 348bdf2e575f6c44f9d1d329dbdced25,
+        type: 3}
+      propertyPath: m_text
+      value: "Pr\xF3ximo N\xEDvel\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 2691393620894624141, guid: 348bdf2e575f6c44f9d1d329dbdced25,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2785,6 +2790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Condicoes
+      objectReference: {fileID: 0}
+    - target: {fileID: 2691393622564014801, guid: 348bdf2e575f6c44f9d1d329dbdced25,
+        type: 3}
+      propertyPath: m_text
+      value: "Sele\xE7\xE3o de n\xEDveis"
       objectReference: {fileID: 0}
     - target: {fileID: 2691393622587646449, guid: 348bdf2e575f6c44f9d1d329dbdced25,
         type: 3}
