@@ -9,7 +9,7 @@ public class Tribunal : MonoBehaviour
 {
     public GameObject[] falas, pergunta;
     public bool venceu, perdeu;
-    public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2;
+    public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2, proximoNivel;
     public int cond = 0;
     public Image healthBarFill; // Referência ao Image de preenchimento
     public float vida, vidaMaxima, vidaMinima;
@@ -162,7 +162,21 @@ public class Tribunal : MonoBehaviour
         
 
     }
-    public void proximoNivel()
+    public void proxNv()
+    {
+        proximoNivel.SetActive(true);
+
+
+
+    }
+    public void Sair()
+    {
+        proximoNivel.SetActive(false);
+
+
+
+    }
+    public void Jogar()
     {
         unfade.SetActive(true);
         Invoke("Mapa2", 0.4f);
