@@ -3,12 +3,11 @@ using UnityEngine;
 public class Item7 : MonoBehaviour
 {
     public GameObject[] item7;
-    public GameObject interactionPrompt;
+    public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
-    public GameObject tela;
-
+    public GameObject preto, pega, ignorar;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -37,7 +36,13 @@ public class Item7 : MonoBehaviour
 
     public void Interact()
     {
-        tela.SetActive(true);
+        preto.SetActive(true);
+        item.SetActive(true);
+        pega.SetActive(true);
+        ignorar.SetActive(true);
+    }
+    public void pegar()
+    {
         if (inv.lugar == 4)
         {
             item7[3].SetActive(true);
@@ -66,5 +71,6 @@ public class Item7 : MonoBehaviour
             inv.i51 = true;
             Destroy(gameObject);
         }
+
     }
 }

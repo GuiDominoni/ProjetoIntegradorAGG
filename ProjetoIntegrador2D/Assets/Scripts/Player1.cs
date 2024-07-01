@@ -6,12 +6,13 @@ using UnityEngine;
 public class Player1 : MonoBehaviour
 {
 
-
+    public GameObject preto;
     public float horizontal, vertical, a;
     public float velocidade;
     Rigidbody2D rb;
     public bool olhandoDireita;
     Animator anim;
+
   
 
 
@@ -27,6 +28,7 @@ public class Player1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         movimento();
       
         if( vertical < 0)

@@ -1,19 +1,20 @@
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class Item1 : MonoBehaviour
 {
     public GameObject[] item1;
-    public GameObject interactionPrompt;
+    public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
-    public GameObject tela;
+    public GameObject preto, pega, ignorar;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
-    }
+    }       
 
     void Update()
     {
@@ -37,7 +38,23 @@ public class Item1 : MonoBehaviour
 
     public void Interact()
     {
-        tela.SetActive(true);
+        preto.SetActive(true);
+        item.SetActive(true);
+        pega.SetActive(true);
+        ignorar.SetActive(true);
+        
+    }
+    public void ignora()
+    {
+        preto.SetActive(false);
+        item.SetActive(false);
+        pega.SetActive(false);
+        ignorar.SetActive(false);
+
+
+    }
+    public void pegar()
+    {
         if (inv.lugar == 4)
         {
             item1[3].SetActive(true);
@@ -66,6 +83,8 @@ public class Item1 : MonoBehaviour
             inv.i51 = true;
             Destroy(gameObject);
         }
+        ignora();
+
     }
 }
 

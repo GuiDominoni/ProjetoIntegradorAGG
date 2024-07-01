@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         }
         else {
 
-            velocidade = 5;
+                velocidade = 5;
 
 
         }
