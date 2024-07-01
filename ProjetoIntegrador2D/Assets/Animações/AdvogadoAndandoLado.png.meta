@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bc3ff7ac625ec1a4095a508605050fe9
+guid: fb1649462f0334c4db267593f3003708
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,49 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AdvogadoCostasAndando_0
+      name: AdvogadoAndandoLado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42b4242a9c6e7f48a82f001c57b0134
+      internalID: 514130005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdvogadoAndandoLado_1
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 84
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c0ee792c0c24c42af9100cec26ffd9
+      internalID: -2036725908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdvogadoAndandoLado_2
       rect:
         serializedVersion: 2
         x: 0
@@ -119,29 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6549fbb71ee09fa4aa32958e13d215f1
-      internalID: 875733108
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdvogadoCostasAndando_1
-      rect:
-        serializedVersion: 2
-        x: 84
-        y: 0
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52df2d9830056ad458df21cb9a9faf1d
-      internalID: -1051059878
+      spriteID: 80a157892117ee743876568b85dcf440
+      internalID: 167600165
       vertices: []
       indices: 
       edges: []
@@ -157,8 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      AdvogadoCostasAndando_0: 875733108
-      AdvogadoCostasAndando_1: -1051059878
+      AdvogadoAndandoLado_2: 167600165
+      AdvogadoAndandoLado_1: -2036725908
+      AdvogadoAndandoLado_0: 514130005
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

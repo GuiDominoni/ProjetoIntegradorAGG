@@ -1,49 +1,70 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Item3 : MonoBehaviour
 {
     public GameObject[] item3;
-    private void OnMouseDown()
+    public GameObject interactionPrompt;
+    public KeyCode interactionKey = KeyCode.E;
+    public float interactionRange = 2.0f;
+    private Transform player;
+    public GameObject tela;
+
+    private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        interactionPrompt.SetActive(false);
+    }
 
+    void Update()
+    {
+        float distance = Vector2.Distance(transform.position, player.position);
 
+        if (distance <= interactionRange)
+        {
+            interactionPrompt.SetActive(true);
+            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
 
+            if (Input.GetKeyDown(interactionKey))
+            {
+                Interact();
+            }
+        }
+        else
+        {
+            interactionPrompt.SetActive(false);
+        }
+    }
 
+    public void Interact()
+    {
+        tela.SetActive(true);
         if (inv.lugar == 4)
         {
             item3[3].SetActive(true);
             inv.lugar++;
-            inv.i34 = true;
+            inv.i54 = true;
             Destroy(gameObject);
         }
-        if (inv.lugar == 3)
+        else if (inv.lugar == 3)
         {
             item3[2].SetActive(true);
             inv.lugar++;
-            inv.i33 = true;
+            inv.i53 = true;
             Destroy(gameObject);
-
         }
-        if (inv.lugar == 2)
+        else if (inv.lugar == 2)
         {
             item3[1].SetActive(true);
             inv.lugar++;
-            inv.i32 = true;
+            inv.i52 = true;
             Destroy(gameObject);
-
         }
-        if (inv.lugar == 1)
+        else if (inv.lugar == 1)
         {
             item3[0].SetActive(true);
             inv.lugar++;
-            inv.i31 = true;
+            inv.i51 = true;
             Destroy(gameObject);
-
         }
-
-
-
     }
 }

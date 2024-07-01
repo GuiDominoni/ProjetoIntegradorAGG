@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player1 : MonoBehaviour
 {
 
 
@@ -11,13 +11,14 @@ public class Player : MonoBehaviour
     public float velocidade;
     Rigidbody2D rb;
     public bool olhandoDireita;
-    public GameObject preto;
-
+    Animator anim;
+  
 
 
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         olhandoDireita = true;  
         rb = GetComponent<Rigidbody2D>();
         velocidade = 5; 
@@ -26,21 +27,39 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (preto.activeSelf)
-        {
-            velocidade = 0;
-
-
-        }
-        else {
-
-            velocidade = 5;
-
-
-        }
         movimento();
-        Flip();
-       
+      
+        if( vertical < 0)
+        {
+            anim.SetInteger("Transicao", 1);
+
+
+        }
+        if (vertical > 0)
+        {
+            anim.SetInteger("Transicao", 2);
+
+
+        }
+        if (horizontal < 0)
+        {
+            anim.SetInteger("Transicao", 4);
+
+
+        }
+        if (horizontal == 0 && vertical == 0 )
+        {
+
+            anim.SetInteger("Transicao", 0);
+
+        }
+        if (horizontal > 0)
+        {
+            anim.SetInteger("Transicao", 3);
+
+
+        }
+
 
     }
 
