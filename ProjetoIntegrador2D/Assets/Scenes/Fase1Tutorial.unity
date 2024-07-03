@@ -65091,6 +65091,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Verde
       objectReference: {fileID: 0}
+    - target: {fileID: 8725140835870976660, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725140835870976660, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725140835870976662, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
+        type: 3}
     - target: {fileID: 8725140835870976663, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
         type: 3}
       propertyPath: m_RootOrder

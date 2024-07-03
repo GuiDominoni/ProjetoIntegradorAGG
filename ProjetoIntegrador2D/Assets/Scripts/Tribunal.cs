@@ -120,7 +120,7 @@ public class Tribunal : MonoBehaviour
         {
             venceu = true;
 
-        }else if (cond >= 2)
+        }else if (cond <= 2)
         {
             perdeu = true;
 

@@ -181,12 +181,12 @@ public class TribNv3 : MonoBehaviour
         Invoke("SelecNiveis", 0.4f);
 
     }
-    /*public void Mapa03()
+    public void Mapa03()
     {
         SceneManager.LoadScene("Mapa03");
 
 
-    }*/
+    }
     public void SelecNiveis()
     {
 
