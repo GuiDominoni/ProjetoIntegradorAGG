@@ -12,13 +12,19 @@ public class Tribunal : MonoBehaviour
     public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2, proximoNivel;
     public int cond = 0;
     public Image healthBarFill; // Referência ao Image de preenchimento
-    public float vida, vidaMaxima, vidaMinima;
-    public bool cli1, cli2, cli3, cli4, cli5, cli6, cli7;
+    public float vida, vidaMaxima, vidaMinima, condVerdadeira;
+    public bool cli1, cli2, cli3, cli4, cli5, cli6, cli7, clicou1, clicou2, clicou3, clicou4;
    
     public void i1()
     {
 
-        cli1 = true;
+        
+        if(clicou1 == false)
+        {
+            cli1 = true;
+            clicou1 = true;
+
+        }
 
 
     }
@@ -125,37 +131,62 @@ public class Tribunal : MonoBehaviour
     }
     private void Update()
     {
-        if (pergunta[1].activeSelf && cli1 == true)
+        if (pergunta[1].activeSelf && clicou1)
         {
+            if( cli1 == true)
+            {
+
+                cond++;
+
+            }
+           
             pergunta[1].SetActive(false);
             pergunta[2].SetActive(true);
-            cond++;
+            
+
 
 
         }
-        if (pergunta[2].activeSelf && cli7 == true)
+        if (pergunta[2].activeSelf)
         {
+            if (cli7 == true)
+            {
 
+                cond++;
+
+            }
             pergunta[2].SetActive(false);
             pergunta[3].SetActive(true);
-            cond++;
+           
                 
         }
-        if (pergunta[3].activeSelf && cli4   == true)
+        if (pergunta[3].activeSelf)
         {
+            if (cli4 == true)
+            {
+
+                cond++;
+
+            }
             pergunta[3].SetActive(false);
             pergunta[4].SetActive(true);
-            cond++;
-
+           
         }
-        if (pergunta[4].activeSelf && cli6 == true)
+        if (pergunta[4].activeSelf)
         {
             cond++;
             pergunta[4].SetActive(false);
-            
+            condVerdadeira = cond;
+           
 
         }
-        Debug.Log(cli6 + "cli6");
+        Debug.Log(cli1);
+        Debug.Log(cli2);
+        Debug.Log(cli3);
+        Debug.Log(cli4);
+        Debug.Log(cli5);
+        Debug.Log(cli6);
+        Debug.Log(cli7);
         vida = cond * 25;
         if (vida >= vidaMinima && vida <= vidaMaxima)
         {

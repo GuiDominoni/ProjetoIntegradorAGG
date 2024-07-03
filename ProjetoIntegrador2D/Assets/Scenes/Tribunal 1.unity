@@ -225,9 +225,9 @@ RectTransform:
   - {fileID: 10921394}
   - {fileID: 1756753904}
   - {fileID: 154973720}
-  - {fileID: 320133738}
   - {fileID: 1654785103}
   - {fileID: 250221414}
+  - {fileID: 320133738}
   - {fileID: 1439303692}
   - {fileID: 858005574}
   - {fileID: 384335088}
@@ -415,7 +415,7 @@ PrefabInstance:
     - target: {fileID: 7747860599344862773, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7747860599344862773, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -809,7 +809,7 @@ RectTransform:
   - {fileID: 195802125}
   - {fileID: 1044108573}
   m_Father: {fileID: 154141769}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -2753,6 +2753,7 @@ MonoBehaviour:
   vida: 0
   vidaMaxima: 0
   vidaMinima: 0
+  condVerdadeira: 0
   cli1: 0
   cli2: 0
   cli3: 0
@@ -2760,6 +2761,10 @@ MonoBehaviour:
   cli5: 0
   cli6: 0
   cli7: 0
+  clicou1: 0
+  clicou2: 0
+  clicou3: 0
+  clicou4: 0
 --- !u!4 &1389986147
 Transform:
   m_ObjectHideFlags: 0
@@ -3008,7 +3013,7 @@ PrefabInstance:
     - target: {fileID: 7443341316258997152, guid: e6f46f3a39775ae4b841d557e1e28253,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7443341316258997152, guid: e6f46f3a39775ae4b841d557e1e28253,
         type: 3}
@@ -3137,7 +3142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -3166,7 +3171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 4
     callback:
       m_PersistentCalls:
         m_Calls:
