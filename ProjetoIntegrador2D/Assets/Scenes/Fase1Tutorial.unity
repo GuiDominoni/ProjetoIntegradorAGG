@@ -358,8 +358,8 @@ RectTransform:
   m_LocalScale: {x: 0.59034604, y: 0.610321, z: 0.77501}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 1464084077}
-  m_RootOrder: 8
+  m_Father: {fileID: 667036687}
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -372,18 +372,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4776556351960585375}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &142479621 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4776556352057338290, guid: d01684bb579bacc4c912460d2e437f30,
-    type: 3}
-  m_PrefabInstance: {fileID: 4776556351960585375}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &146369024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4776556352099483295, guid: d01684bb579bacc4c912460d2e437f30,
     type: 3}
   m_PrefabInstance: {fileID: 4776556351960585375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &158233261 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5946597288488863221, guid: bbb5a4589e638ab4493d1b2a2dac1c69,
+    type: 3}
+  m_PrefabInstance: {fileID: 5946597288361740085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aaf030f58fce6e488e53312f20ad560, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &187262958
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,8 +677,8 @@ RectTransform:
   m_LocalScale: {x: 0.590346, y: 0.610321, z: 0.77501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1464084077}
-  m_RootOrder: 12
+  m_Father: {fileID: 667036687}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -1150,7 +1156,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 353324070}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1542161977}
+        m_TargetAssemblyTypeName: Item3, Assembly-CSharp
+        m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &353324070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1291,8 +1309,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708490907}
-        m_TargetAssemblyTypeName: Item1, Assembly-CSharp
+      - m_Target: {fileID: 598715255}
+        m_TargetAssemblyTypeName: Item7, Assembly-CSharp
         m_MethodName: ignora
         m_Mode: 1
         m_Arguments:
@@ -1950,8 +1968,8 @@ RectTransform:
   m_LocalScale: {x: 0.590346, y: 0.610321, z: 0.77501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1464084077}
-  m_RootOrder: 9
+  m_Father: {fileID: 667036687}
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2080,8 +2098,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708490907}
-        m_TargetAssemblyTypeName: Item1, Assembly-CSharp
+      - m_Target: {fileID: 158233261}
+        m_TargetAssemblyTypeName: Item4, Assembly-CSharp
         m_MethodName: ignora
         m_Mode: 1
         m_Arguments:
@@ -2136,6 +2154,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1177196151706882200}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &598715255 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1177196152855584140, guid: c2dfed0545b46a0448ce2ca2cdc09773,
+    type: 3}
+  m_PrefabInstance: {fileID: 1177196151706882200}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6a938877adff4c41901c72fb8162ad5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &609606202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2219,7 +2249,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 609606205}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 800821866}
+        m_TargetAssemblyTypeName: Item6, Assembly-CSharp
+        m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &609606205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2617,6 +2659,13 @@ RectTransform:
   - {fileID: 1674630832}
   - {fileID: 1501516069}
   - {fileID: 437089083}
+  - {fileID: 105264048}
+  - {fileID: 541105652}
+  - {fileID: 688754127}
+  - {fileID: 1980927288}
+  - {fileID: 231209152}
+  - {fileID: 1544206798}
+  - {fileID: 1618474726}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2849,8 +2898,8 @@ RectTransform:
   m_LocalScale: {x: 0.590346, y: 0.610321, z: 0.77501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1464084077}
-  m_RootOrder: 10
+  m_Father: {fileID: 667036687}
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -3459,6 +3508,18 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &800821866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1013313471368518445, guid: cd650ec6ca23ba046b9d4795f833e95f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1013313470639488951}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2156455352529d04494263f6f551e43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &801783226
 GameObject:
   m_ObjectHideFlags: 0
@@ -59582,6 +59643,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8200120880932962678}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &996345218 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8200120880944931886, guid: 7b7f27074ccb52149b4688d76038ef6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8200120880932962678}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b89ccc58f57dc4fb0f786251464048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1001660868
 GameObject:
   m_ObjectHideFlags: 0
@@ -59665,7 +59738,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1001660871}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 158233261}
+        m_TargetAssemblyTypeName: Item4, Assembly-CSharp
+        m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1001660871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60976,6 +61061,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365946068}
   m_CullTransparentMesh: 1
+--- !u!114 &1366914629 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4070739401364828805, guid: ea3f8d82cff87304ebb42cad920b8744,
+    type: 3}
+  m_PrefabInstance: {fileID: 4070739400891498636}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2e7faa4acd6c5b43b6b4221ed605cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1390373653 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4776556351199412106, guid: d01684bb579bacc4c912460d2e437f30,
@@ -61663,8 +61760,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708490907}
-        m_TargetAssemblyTypeName: Item1, Assembly-CSharp
+      - m_Target: {fileID: 800821866}
+        m_TargetAssemblyTypeName: Item6, Assembly-CSharp
         m_MethodName: ignora
         m_Mode: 1
         m_Arguments:
@@ -61719,6 +61816,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2127358056038544892}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1542161977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2127358055689171136, guid: eb93145a3b2edd546ba9245a6e60de92,
+    type: 3}
+  m_PrefabInstance: {fileID: 2127358056038544892}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6772b7851ee2079458c24172a768f7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1544206797
 GameObject:
   m_ObjectHideFlags: 0
@@ -61749,8 +61858,8 @@ RectTransform:
   m_LocalScale: {x: 0.590346, y: 0.610321, z: 0.77501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1464084077}
-  m_RootOrder: 13
+  m_Father: {fileID: 667036687}
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -62262,8 +62371,8 @@ RectTransform:
   m_LocalScale: {x: 0.590346, y: 0.610321, z: 0.77501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1464084077}
-  m_RootOrder: 14
+  m_Father: {fileID: 667036687}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -62638,8 +62747,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708490907}
-        m_TargetAssemblyTypeName: Item1, Assembly-CSharp
+      - m_Target: {fileID: 996345218}
+        m_TargetAssemblyTypeName: Item5, Assembly-CSharp
         m_MethodName: ignora
         m_Mode: 1
         m_Arguments:
@@ -62946,13 +63055,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 142479621}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1366914629}
+        m_TargetAssemblyTypeName: Item2, Assembly-CSharp
+        m_MethodName: pegar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -63356,8 +63465,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708490907}
-        m_TargetAssemblyTypeName: Item1, Assembly-CSharp
+      - m_Target: {fileID: 1366914629}
+        m_TargetAssemblyTypeName: Item2, Assembly-CSharp
         m_MethodName: ignora
         m_Mode: 1
         m_Arguments:
@@ -63436,8 +63545,8 @@ RectTransform:
   m_LocalScale: {x: 0.590346, y: 0.610321, z: 0.77501}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1464084077}
-  m_RootOrder: 11
+  m_Father: {fileID: 667036687}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -63565,7 +63674,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1982422314}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 996345218}
+        m_TargetAssemblyTypeName: Item5, Assembly-CSharp
+        m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1982422314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63687,7 +63808,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2042471888}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 598715255}
+        m_TargetAssemblyTypeName: Item7, Assembly-CSharp
+        m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2042471888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63810,8 +63943,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1708490907}
-        m_TargetAssemblyTypeName: Item1, Assembly-CSharp
+      - m_Target: {fileID: 1542161977}
+        m_TargetAssemblyTypeName: Item3, Assembly-CSharp
         m_MethodName: ignora
         m_Mode: 1
         m_Arguments:
@@ -64436,7 +64569,7 @@ PrefabInstance:
         type: 3}
       propertyPath: pega
       value: 
-      objectReference: {fileID: 353324067}
+      objectReference: {fileID: 1807724054}
     - target: {fileID: 4070739401364828805, guid: ea3f8d82cff87304ebb42cad920b8744,
         type: 3}
       propertyPath: preto

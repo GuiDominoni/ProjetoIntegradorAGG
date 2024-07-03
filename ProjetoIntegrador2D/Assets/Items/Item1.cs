@@ -59,28 +59,28 @@ public class Item1 : MonoBehaviour
         {
             item1[3].SetActive(true);
             inv.lugar++;
-            inv.i54 = true;
+            inv.i14 = true;
             Destroy(gameObject);
         }
         else if (inv.lugar == 3)
         {
             item1[2].SetActive(true);
             inv.lugar++;
-            inv.i53 = true;
+            inv.i13 = true;
             Destroy(gameObject);
         }
         else if (inv.lugar == 2)
         {
             item1[1].SetActive(true);
             inv.lugar++;
-            inv.i52 = true;
+            inv.i12 = true;
             Destroy(gameObject);
         }
         else if (inv.lugar == 1)
         {
             item1[0].SetActive(true);
             inv.lugar++;
-            inv.i51 = true;
+            inv.i11 = true;
             Destroy(gameObject);
         }
         ignora();

@@ -33,7 +33,15 @@ public class Item5 : MonoBehaviour
             interactionPrompt.SetActive(false);
         }
     }
+    public void ignora()
+    {
+        preto.SetActive(false);
+        item.SetActive(false);
+        pega.SetActive(false);
+        ignorar.SetActive(false);
 
+
+    }
     public void Interact()
     {
         preto.SetActive(true);
@@ -72,7 +80,7 @@ public class Item5 : MonoBehaviour
             inv.i51 = true;
             Destroy(gameObject);
         }
-
+        ignora();
 
     }
 }

@@ -33,6 +33,15 @@ public class Item2 : MonoBehaviour
             interactionPrompt.SetActive(false);
         }
     }
+    public void ignora()
+    {
+        preto.SetActive(false);
+        item.SetActive(false);
+        pega.SetActive(false);
+        ignorar.SetActive(false);
+
+
+    }
 
     public void Interact()
     {
@@ -48,30 +57,31 @@ public class Item2 : MonoBehaviour
         {
             item2[3].SetActive(true);
             inv.lugar++;
-            inv.i54 = true;
+            inv.i24 = true;
             Destroy(gameObject);
         }
         else if (inv.lugar == 3)
         {
             item2[2].SetActive(true);
             inv.lugar++;
-            inv.i53 = true;
+            inv.i23 = true;
             Destroy(gameObject);
         }
         else if (inv.lugar == 2)
         {
             item2[1].SetActive(true);
             inv.lugar++;
-            inv.i52 = true;
+            inv.i22 = true;
             Destroy(gameObject);
         }
         else if (inv.lugar == 1)
         {
             item2[0].SetActive(true);
             inv.lugar++;
-            inv.i51 = true;
+            inv.i21 = true;
             Destroy(gameObject);
         }
+        ignora();    
 
 
     }
