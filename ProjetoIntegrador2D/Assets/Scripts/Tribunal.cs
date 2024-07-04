@@ -416,7 +416,7 @@ public class Tribunal : MonoBehaviour
         }
         if (clicou4 == true && cond <= 2)
         {
-            venceu = true;
+            perdeu = true;
 
 
         }
