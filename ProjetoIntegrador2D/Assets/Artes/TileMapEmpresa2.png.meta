@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1561837a81c8dd544be9de461f0ba872
-      internalID: -1581578752
+      spriteID: e54f972784393574d90b0fd2fdd98d87
+      internalID: -815208720
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b149fb8dc601194bb81f0538f43caa3
-      internalID: -94325628
+      spriteID: 8063a55ee7036034396d2b18ded42a16
+      internalID: -159794876
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 989150f221e4f4d469261df1dfff55ff
-      internalID: -1291029964
+      spriteID: 72f499a89676dbc43880b06cf1f6cacf
+      internalID: 1032384202
       vertices: []
       indices: 
       edges: []
@@ -171,7 +171,7 @@ TextureImporter:
       name: TileMapEmpresa2_3
       rect:
         serializedVersion: 2
-        x: 336
+        x: 252
         y: 336
         width: 84
         height: 84
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890bf32eb2ed24244bd075ede36eb2f8
-      internalID: 1463327449
+      spriteID: b1d85e6c1d2c2af40ab0d6c36b280142
+      internalID: -281953624
       vertices: []
       indices: 
       edges: []
@@ -192,6 +192,27 @@ TextureImporter:
       name: TileMapEmpresa2_4
       rect:
         serializedVersion: 2
+        x: 336
+        y: 336
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8c0512985c27a439b616117177fde3
+      internalID: 1128472198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_5
+      rect:
+        serializedVersion: 2
         x: 420
         y: 336
         width: 84
@@ -203,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e77084c1fc6653a4e888422a76dd7d68
-      internalID: -993668296
+      spriteID: 531b945deef6423499660a0eacb5d072
+      internalID: -992092664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_5
+      name: TileMapEmpresa2_6
       rect:
         serializedVersion: 2
         x: 504
@@ -224,14 +245,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74179b07fdbae84408a2bc3c7e9c6459
-      internalID: 1518779651
+      spriteID: 2b8f3f08a6223a544b5d6f88875ff20d
+      internalID: -1130995652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_6
+      name: TileMapEmpresa2_7
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 336
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d2b32a80b342545b3d15bddd8f40b0
+      internalID: 1278141477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_8
       rect:
         serializedVersion: 2
         x: 672
@@ -245,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50173359b7f6f024f9caec7903eacbb5
-      internalID: -639346503
+      spriteID: fec9ba20474278c4bb1a3e5897bca172
+      internalID: -1916845079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_7
+      name: TileMapEmpresa2_9
       rect:
         serializedVersion: 2
         x: 756
@@ -266,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fae6b83a51b688941a66b4e958e38375
-      internalID: 1547201494
+      spriteID: 7370d655b15585c4bbe9b14b708710b2
+      internalID: 868698152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_8
+      name: TileMapEmpresa2_10
       rect:
         serializedVersion: 2
         x: 840
@@ -287,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69696ce2026ada14fb8fa4251027d33e
-      internalID: 715865796
+      spriteID: 6cdeb3757e7de3642b2c32dec5689f05
+      internalID: 601013863
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_9
+      name: TileMapEmpresa2_11
       rect:
         serializedVersion: 2
         x: 0
@@ -308,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce025caa9bf7bf2479be8310355e8224
-      internalID: 1524485069
+      spriteID: feb4af052a54d954c92a9e5c34de28b0
+      internalID: -2029246434
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_10
+      name: TileMapEmpresa2_12
       rect:
         serializedVersion: 2
         x: 84
@@ -329,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f3195fcb39fe44aa07296cd08633f3
-      internalID: -669645154
+      spriteID: 825ac92a953ce6f4b9d48bed25cfeb3d
+      internalID: -1728945892
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_11
+      name: TileMapEmpresa2_13
       rect:
         serializedVersion: 2
         x: 168
@@ -350,14 +392,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 230160690931d964297fcbc6ab8e3537
-      internalID: 1504466554
+      spriteID: f89297c61d7fe3f41a5403fd5b2d840f
+      internalID: -685184006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_12
+      name: TileMapEmpresa2_14
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 252
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aed6ef788e0e84da176353237f9019
+      internalID: 1696708552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_15
       rect:
         serializedVersion: 2
         x: 336
@@ -371,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c49552ef30d5f4409e1be8bf460d7bd
-      internalID: 809604168
+      spriteID: b4b7effcf3c375b4c98a0f277f3da7c7
+      internalID: -1876987957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_13
+      name: TileMapEmpresa2_16
       rect:
         serializedVersion: 2
         x: 420
@@ -392,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e94f31d0e0bc4124da0a47deb995b149
-      internalID: -1510320614
+      spriteID: 72e46609acd89a24395ffc7ed2c79e2c
+      internalID: -2012537541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_14
+      name: TileMapEmpresa2_17
       rect:
         serializedVersion: 2
         x: 504
@@ -413,14 +476,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7107be05fd6e3244383cccbc454c48cc
-      internalID: 527884015
+      spriteID: b23efd81b0f1d944f86905b3d2ee76a3
+      internalID: 1471249330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_15
+      name: TileMapEmpresa2_18
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 252
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ffe709932e578429371f905625a9de
+      internalID: -638616746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_19
       rect:
         serializedVersion: 2
         x: 672
@@ -434,14 +518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4902266062b4be14d99a5098aec1e841
-      internalID: 706471441
+      spriteID: b2080efd9788fe746ad27d0754e13681
+      internalID: -1568979875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_16
+      name: TileMapEmpresa2_20
       rect:
         serializedVersion: 2
         x: 756
@@ -455,14 +539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73f7302eefe98824caaf5d745b1d558e
-      internalID: 907417932
+      spriteID: 4ff6398f1ebcfbb4d9211b7fb90d48a4
+      internalID: -1449022537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_17
+      name: TileMapEmpresa2_21
       rect:
         serializedVersion: 2
         x: 840
@@ -476,14 +560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66f4fc60969377741a4a2cff4ca160ea
-      internalID: -1376116554
+      spriteID: 0de8157788109a9478641e79779506cf
+      internalID: 305208644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_18
+      name: TileMapEmpresa2_22
       rect:
         serializedVersion: 2
         x: 0
@@ -497,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cb21dad2811edb40b9d9a2cda31af94
-      internalID: -1463387758
+      spriteID: eff4d4dbac76b794f8bfcb8f65dc8939
+      internalID: 664793281
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_19
+      name: TileMapEmpresa2_23
       rect:
         serializedVersion: 2
         x: 84
@@ -518,14 +602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d20f140771403f43a4abd2ef49ca848
-      internalID: 463835980
+      spriteID: 9c4e7f241cfeb1e41b5ed9050f770637
+      internalID: -1951987167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_20
+      name: TileMapEmpresa2_24
       rect:
         serializedVersion: 2
         x: 168
@@ -539,14 +623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abc79120a1866e443aab5bdfb2e67629
-      internalID: -1694244540
+      spriteID: bcb1d489b4fd18a4dbb23b28e7521e96
+      internalID: -1813909621
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_21
+      name: TileMapEmpresa2_25
       rect:
         serializedVersion: 2
         x: 252
@@ -560,14 +644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e585f6533db9b9f4c949f69118effa39
-      internalID: 2015847592
+      spriteID: 9145bc46dbb9bfc4b98002f32adc3632
+      internalID: 972977029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_22
+      name: TileMapEmpresa2_26
       rect:
         serializedVersion: 2
         x: 336
@@ -581,14 +665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed373ed438a40424fbb49f70101ecf4f
-      internalID: 490128423
+      spriteID: 00d3711eaac477143b2741ef9d486599
+      internalID: -1149978492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_23
+      name: TileMapEmpresa2_27
       rect:
         serializedVersion: 2
         x: 420
@@ -602,92 +686,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c02768a317fad3a4f98a6eb0dd343c38
-      internalID: 1547041731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapEmpresa2_24
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 168
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0d6ca2c325a85d54a9bdbdfc236a4602
-      internalID: -546037134
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapEmpresa2_25
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 168
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ead3ec10b5666ab43b32e0117b2cb6c9
-      internalID: 1837748197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapEmpresa2_26
-      rect:
-        serializedVersion: 2
-        x: 756
-        y: 168
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 45b6319c3d89f4a41ae7c5466a41a92b
-      internalID: 1360508836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapEmpresa2_27
-      rect:
-        serializedVersion: 2
-        x: 840
-        y: 168
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49b5b75fc881ffc469b17e147e58ad11
-      internalID: -492858111
+      spriteID: bc57b50c55c544848b4e73878669c99c
+      internalID: -1937765622
       vertices: []
       indices: 
       edges: []
@@ -696,8 +696,8 @@ TextureImporter:
       name: TileMapEmpresa2_28
       rect:
         serializedVersion: 2
-        x: 0
-        y: 84
+        x: 504
+        y: 168
         width: 84
         height: 84
       alignment: 0
@@ -707,8 +707,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5410fb9d080af014eb69b858d2a84420
-      internalID: -2026407494
+      spriteID: fae1a8dcf8fd5154bbc01b3a197e2ae1
+      internalID: -1443278198
       vertices: []
       indices: 
       edges: []
@@ -717,6 +717,69 @@ TextureImporter:
       name: TileMapEmpresa2_29
       rect:
         serializedVersion: 2
+        x: 588
+        y: 168
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec6c33962b617f43928083cfc0454c3
+      internalID: -596058625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_30
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 168
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faba851ef829cf749932bfce85d02d55
+      internalID: -933817351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e276db3955b5584cb87bc62321f63b3
+      internalID: -817335945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_32
+      rect:
+        serializedVersion: 2
         x: 84
         y: 84
         width: 84
@@ -728,14 +791,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34724524b0b02234f9fd6a0179b81524
-      internalID: -736749296
+      spriteID: 680cd627e64143d4d93d12bb054b10d1
+      internalID: 576154953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_30
+      name: TileMapEmpresa2_33
       rect:
         serializedVersion: 2
         x: 168
@@ -749,14 +812,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb64084cce4f8f746bfc259821c8e044
-      internalID: 173575775
+      spriteID: 70a7fe9d808d4c940a576434dfa400f6
+      internalID: 1195281110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_31
+      name: TileMapEmpresa2_34
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 84
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49634e396b4f4843bd27a465216100e
+      internalID: -2082576507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_35
       rect:
         serializedVersion: 2
         x: 336
@@ -770,17 +854,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98020209522c4fb45982d84aad4912ea
-      internalID: 1325771931
+      spriteID: e6eaa731412c7f64f95bab7f4cff00d6
+      internalID: -355444219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_32
+      name: TileMapEmpresa2_36
       rect:
         serializedVersion: 2
-        x: 504
+        x: 420
         y: 84
         width: 84
         height: 84
@@ -791,14 +875,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e7b241ceb0bb2f43af6b9d58be13bd2
-      internalID: -721126573
+      spriteID: cc4399b2adb3b65488c60e32b8c11c9b
+      internalID: -106063355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_33
+      name: TileMapEmpresa2_37
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 84
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1768de10442304fa61b648a8218c34
+      internalID: -816792533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_38
       rect:
         serializedVersion: 2
         x: 672
@@ -812,14 +917,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e58d85e5b303dd74c8b9ffda338d51cb
-      internalID: 1412567138
+      spriteID: ce28382e178c82248bd05514da4709be
+      internalID: -973021456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_34
+      name: TileMapEmpresa2_39
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 84
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d0a9c079636c746ba632967c8bbf79
+      internalID: -1038487653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_40
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 84
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6e091235820d34a81b0b01f95ddefa
+      internalID: -1348034521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_41
       rect:
         serializedVersion: 2
         x: 0
@@ -833,14 +980,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 036aee7121a7c2e40a63be693a82fdca
-      internalID: 56004145
+      spriteID: 3a0e24857bafa7349bcffebd7944e491
+      internalID: 1152191586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_35
+      name: TileMapEmpresa2_42
       rect:
         serializedVersion: 2
         x: 84
@@ -854,14 +1001,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1faf078adbd09874c867fb1c1a2fa5c1
-      internalID: -2028474435
+      spriteID: 476626622e68c1e40a8553a359eab6d9
+      internalID: 1061876611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_36
+      name: TileMapEmpresa2_43
       rect:
         serializedVersion: 2
         x: 168
@@ -875,14 +1022,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fae01014f712fde458558137f95abbf8
-      internalID: 732360394
+      spriteID: 7ae70fa6f352ab84295d6f34bbc0e97d
+      internalID: 799935381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_37
+      name: TileMapEmpresa2_44
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34be661ac1f1f84390f70148b5f80a9
+      internalID: -748707903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_45
       rect:
         serializedVersion: 2
         x: 336
@@ -896,17 +1064,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc355a442bf453648b6e20831509aff3
-      internalID: 73544508
+      spriteID: ec8b0982ecb1a664a9ec3017964bcbef
+      internalID: 789939123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_38
+      name: TileMapEmpresa2_46
       rect:
         serializedVersion: 2
-        x: 504
+        x: 420
         y: 0
         width: 84
         height: 84
@@ -917,14 +1085,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c67b799afa81ed40971ef4536504e8e
-      internalID: -136175471
+      spriteID: 20392f099b0e83d4ba650942102fff8c
+      internalID: -1967641219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapEmpresa2_39
+      name: TileMapEmpresa2_47
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 0
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d729aa96b6bbd0a4e8371c35ebcb3b6c
+      internalID: -1851077878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_48
       rect:
         serializedVersion: 2
         x: 672
@@ -938,8 +1127,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 283a394ad6942514782a45338a2a71e8
-      internalID: -460200524
+      spriteID: 3e74dee74e6794442b2cfa90cf70aa9c
+      internalID: -995860403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_49
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73b54b74646f844e91cf9e4c9f079b5
+      internalID: -1069036755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMapEmpresa2_50
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 84
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4992b95a7b576504295e937c870e7d3b
+      internalID: 8239417
       vertices: []
       indices: 
       edges: []
@@ -955,46 +1186,57 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TileMapEmpresa2_19: 463835980
-      TileMapEmpresa2_35: -2028474435
-      TileMapEmpresa2_32: -721126573
-      TileMapEmpresa2_15: 706471441
-      TileMapEmpresa2_25: 1837748197
-      TileMapEmpresa2_8: 715865796
-      TileMapEmpresa2_22: 490128423
-      TileMapEmpresa2_23: 1547041731
-      TileMapEmpresa2_39: -460200524
-      TileMapEmpresa2_7: 1547201494
-      TileMapEmpresa2_29: -736749296
-      TileMapEmpresa2_16: 907417932
-      TileMapEmpresa2_26: 1360508836
-      TileMapEmpresa2_34: 56004145
-      TileMapEmpresa2_27: -492858111
-      TileMapEmpresa2_31: 1325771931
-      TileMapEmpresa2_36: 732360394
-      TileMapEmpresa2_24: -546037134
-      TileMapEmpresa2_4: -993668296
-      TileMapEmpresa2_2: -1291029964
-      TileMapEmpresa2_9: 1524485069
-      TileMapEmpresa2_6: -639346503
-      TileMapEmpresa2_5: 1518779651
-      TileMapEmpresa2_10: -669645154
-      TileMapEmpresa2_38: -136175471
-      TileMapEmpresa2_0: -1581578752
-      TileMapEmpresa2_21: 2015847592
-      TileMapEmpresa2_33: 1412567138
-      TileMapEmpresa2_18: -1463387758
-      TileMapEmpresa2_28: -2026407494
-      TileMapEmpresa2_12: 809604168
-      TileMapEmpresa2_30: 173575775
-      TileMapEmpresa2_11: 1504466554
-      TileMapEmpresa2_1: -94325628
-      TileMapEmpresa2_20: -1694244540
-      TileMapEmpresa2_3: 1463327449
-      TileMapEmpresa2_14: 527884015
-      TileMapEmpresa2_37: 73544508
-      TileMapEmpresa2_13: -1510320614
-      TileMapEmpresa2_17: -1376116554
+      TileMapEmpresa2_19: -1568979875
+      TileMapEmpresa2_22: 664793281
+      TileMapEmpresa2_39: -1038487653
+      TileMapEmpresa2_7: 1278141477
+      TileMapEmpresa2_29: -596058625
+      TileMapEmpresa2_16: -2012537541
+      TileMapEmpresa2_50: 8239417
+      TileMapEmpresa2_26: -1149978492
+      TileMapEmpresa2_27: -1937765622
+      TileMapEmpresa2_31: -817335945
+      TileMapEmpresa2_36: -106063355
+      TileMapEmpresa2_43: 799935381
+      TileMapEmpresa2_6: -1130995652
+      TileMapEmpresa2_5: -992092664
+      TileMapEmpresa2_0: -815208720
+      TileMapEmpresa2_33: 1195281110
+      TileMapEmpresa2_49: -1069036755
+      TileMapEmpresa2_18: -638616746
+      TileMapEmpresa2_28: -1443278198
+      TileMapEmpresa2_12: -1728945892
+      TileMapEmpresa2_46: -1967641219
+      TileMapEmpresa2_30: -933817351
+      TileMapEmpresa2_14: 1696708552
+      TileMapEmpresa2_48: -995860403
+      TileMapEmpresa2_37: -816792533
+      TileMapEmpresa2_13: -685184006
+      TileMapEmpresa2_17: 1471249330
+      TileMapEmpresa2_35: -355444219
+      TileMapEmpresa2_32: 576154953
+      TileMapEmpresa2_41: 1152191586
+      TileMapEmpresa2_15: -1876987957
+      TileMapEmpresa2_25: 972977029
+      TileMapEmpresa2_8: -1916845079
+      TileMapEmpresa2_23: -1951987167
+      TileMapEmpresa2_42: 1061876611
+      TileMapEmpresa2_47: -1851077878
+      TileMapEmpresa2_34: -2082576507
+      TileMapEmpresa2_38: -973021456
+      TileMapEmpresa2_24: -1813909621
+      TileMapEmpresa2_4: 1128472198
+      TileMapEmpresa2_2: 1032384202
+      TileMapEmpresa2_9: 868698152
+      TileMapEmpresa2_45: 789939123
+      TileMapEmpresa2_10: 601013863
+      TileMapEmpresa2_21: 305208644
+      TileMapEmpresa2_11: -2029246434
+      TileMapEmpresa2_1: -159794876
+      TileMapEmpresa2_20: -1449022537
+      TileMapEmpresa2_3: -281953624
+      TileMapEmpresa2_40: -1348034521
+      TileMapEmpresa2_44: -748707903
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
