@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tribunal.unity
     guid: 752ef1db52063e84d89c91ebd8f52391
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/TribunalV.unity
+    guid: 1f3c713df5208d446bcbb06cedf7dc80
   - enabled: 1
     path: Assets/Scenes/SelecaoNiveis.unity
     guid: da8c9ca508a6a82469c346e6623a3227

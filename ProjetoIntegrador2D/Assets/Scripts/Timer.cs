@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +9,7 @@ public class Timer : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto,  pause, opcoe, tribunal, aparecer;
+    public GameObject preto,  pause, opcoe, tribunal, aparecer, cinza;
     public Image inventario;
     public GameObject aviso;
     
@@ -54,7 +55,13 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (cinza.activeSelf)
+        {
+            cancelInvoke();
+
+
+
+        }
         if(Input.GetKeyUp(KeyCode.Escape))
         {
 
@@ -108,6 +115,7 @@ public class Timer : MonoBehaviour
 
         CancelInvoke("timerMenos");
     }
+   
     public void novaPos()
     {
         RectTransform rectTransform = inventario.GetComponent<RectTransform>();
@@ -130,6 +138,6 @@ public class Timer : MonoBehaviour
     void trib()
     {
 
-        SceneManager.LoadScene("Tribunal");
+        SceneManager.LoadScene("TribunalV");
     }
 }
