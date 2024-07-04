@@ -7,69 +7,299 @@ using UnityEngine.SceneManagement;
 
 public class Tribunal : MonoBehaviour
 {
-    public GameObject[] falas, pergunta;
-    public bool venceu, perdeu;
+    public GameObject[] falas, pergunta, item1, item2, item3, item4, item5, item6, item7;
+    public bool venceu, perdeu, clicouI1, clicouI2, clicouI3, clicouI4, clicouI5, clicouI6, clicouI7, clicou1, clicou2, clicou3, clicou4;
     public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2, proximoNivel;
     public int cond = 0;
     public Image healthBarFill; // Referência ao Image de preenchimento
     public float vida, vidaMaxima, vidaMinima, condVerdadeira;
-    public bool cli1, cli2, cli3, cli4, cli5, cli6, cli7, clicou1, clicou2, clicou3, clicou4;
-   
-    public void i1()
-    {
 
+    public void Verde()
+    {
+        item1[1].SetActive(false);
+        item1[2].SetActive(false);
+        item1[3].SetActive(false);
+        item1[4].SetActive(false);
+       
         
-        if(clicou1 == false)
+       
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
         {
-            cli1 = true;
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+
+
+        }
+
+        if (clicou1 == false)
+        {
             clicou1 = true;
+            cond++;
+
+        }
+    }
+    public void Vermelho()
+    {
+        item2[1].SetActive(false);
+        item2[2].SetActive(false);
+        item2[3].SetActive(false);
+        item2[4].SetActive(false);
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
 
         }
 
 
     }
-    public void i2()
+    public void Laranja()
     {
+        item3[1].SetActive(false);
+        item3[2].SetActive(false);
+        item3[3].SetActive(false);
+        item3[4].SetActive(false);
 
-        cli2 = true;
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
 
 
     }
-    public void i3()
+    public void Amarelo()
     {
+        item4[1].SetActive(false);
+        item4[2].SetActive(false);
+        item4[3].SetActive(false);
+        item4[4].SetActive(false);
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
 
 
-        cli3 = true;
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+            cond++;
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
+
 
     }
-    public void i4()
+    public void AzulForte()
     {
-        cli4 = true;
+        item5[1].SetActive(false);
+        item5[2].SetActive(false);
+        item5[3].SetActive(false);
+        item5[4].SetActive(false);
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
 
 
 
     }
-    public void i5()
+    public void Ciano()
     {
+        item6[1].SetActive(false);
+        item6[2].SetActive(false);
+        item6[3].SetActive(false);
+        item6[4].SetActive(false);
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+            cond++;
 
 
-        cli5 = true;
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
+
 
     }
-    public void i6()
+    public void Rosa()
     {
+        item7[1].SetActive(false);
+        item7[2].SetActive(false);
+        item7[3].SetActive(false);
+        item7[4].SetActive(false);
 
-        cli6 = true;
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+            cond++;
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
 
 
     }
-    public void i7()
-    {
 
-        cli7 = true;
-
-
-    }
 
     public void Recomeçar()
     {
@@ -131,15 +361,10 @@ public class Tribunal : MonoBehaviour
     }
     private void Update()
     {
-        if (pergunta[1].activeSelf && clicou1)
+
+
+        if (pergunta[1].activeSelf && clicou1 == true)
         {
-            if( cli1 == true)
-            {
-
-                cond++;
-
-            }
-           
             pergunta[1].SetActive(false);
             pergunta[2].SetActive(true);
             
@@ -147,50 +372,51 @@ public class Tribunal : MonoBehaviour
 
 
         }
-        if (pergunta[2].activeSelf)
+
+        if (pergunta[2].activeSelf && clicou2 == true)
         {
-            if (cli7 == true)
-            {
-
-                cond++;
-
-            }
             pergunta[2].SetActive(false);
             pergunta[3].SetActive(true);
-           
-                
+
+
+
+
         }
-        if (pergunta[3].activeSelf)
+
+        if (pergunta[3].activeSelf && clicou3 == true)
         {
-            if (cli4 == true)
-            {
-
-                cond++;
-
-            }
             pergunta[3].SetActive(false);
             pergunta[4].SetActive(true);
-           
-        }
-        if (pergunta[4].activeSelf)
-        {
-            cond++;
-            pergunta[4].SetActive(false);
-            condVerdadeira = cond;
-           
+
+
+
 
         }
-        Debug.Log(cli1);
-        Debug.Log(cli2);
-        Debug.Log(cli3);
-        Debug.Log(cli4);
-        Debug.Log(cli5);
-        Debug.Log(cli6);
-        Debug.Log(cli7);
+
+        if (pergunta[4].activeSelf && clicou4 == true)
+        {
+
+            pergunta[4].SetActive(false);
+
+
+        }
+
         vida = cond * 25;
         if (vida >= vidaMinima && vida <= vidaMaxima)
         {
             healthBarFill.fillAmount = vida / 100;
+
+
+        }
+        if(clicou4 == true && cond >= 3)
+        {
+            venceu = true;
+
+
+        }
+        if (clicou4 == true && cond <= 2)
+        {
+            perdeu = true;
 
 
         }

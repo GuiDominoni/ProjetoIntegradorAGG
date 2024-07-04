@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -108,6 +109,7 @@ public class Timer : MonoBehaviour
 
         CancelInvoke("timerMenos");
     }
+   
     public void novaPos()
     {
         RectTransform rectTransform = inventario.GetComponent<RectTransform>();
@@ -130,6 +132,6 @@ public class Timer : MonoBehaviour
     void trib()
     {
 
-        SceneManager.LoadScene("Tribunal");
+        SceneManager.LoadScene("TribunalV");
     }
 }
