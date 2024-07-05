@@ -9,7 +9,7 @@ public class Timer : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto,  pause, opcoe, tribunal, aparecer;
+    public GameObject preto,  pause, opcoe, tribunal, aparecer, cinza;
     public Image inventario;
     public GameObject aviso;
     
@@ -51,10 +51,16 @@ public class Timer : MonoBehaviour
         timer = 60;  
 
     }
+    
 
     // Update is called once per frame
     void Update()
     {
+        if(cinza.activeSelf)
+        {
+            cancelInvoke();
+
+        }
         
         if(Input.GetKeyUp(KeyCode.Escape))
         {
@@ -65,7 +71,7 @@ public class Timer : MonoBehaviour
             
             
         }
-
+        
 
         texto.text = timer.ToString();
      
@@ -133,5 +139,10 @@ public class Timer : MonoBehaviour
     {
 
         SceneManager.LoadScene("TribunalV");
+    }
+    public void repetindo()
+    {
+        InvokeRepeating("timerMenos", 0, 1);
+
     }
 }
