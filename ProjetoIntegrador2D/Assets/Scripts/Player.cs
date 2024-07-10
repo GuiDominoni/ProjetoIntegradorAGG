@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public float velocidade;
     Rigidbody2D rb;
     public bool olhandoDireita;
-    public GameObject preto;
+    public GameObject preto, cinza;
 
 
 
@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (preto.activeSelf)
+        if (preto.activeSelf || cinza.activeSelf)
         {
             velocidade = 0;
 
