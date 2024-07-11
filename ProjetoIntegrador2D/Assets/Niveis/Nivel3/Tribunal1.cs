@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Tribunal : MonoBehaviour
+public class TribunalNv3 : MonoBehaviour
 {
     public GameObject[]  pergunta, item1, item2, item3, item4, item5, item6, item7;
     public bool venceu, perdeu, clicouI1, clicouI2, clicouI3, clicouI4, clicouI5, clicouI6, clicouI7, clicou1, clicou2, clicou3, clicou4;

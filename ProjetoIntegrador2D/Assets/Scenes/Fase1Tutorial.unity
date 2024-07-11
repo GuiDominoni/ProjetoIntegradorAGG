@@ -2989,9 +2989,6 @@ MonoBehaviour:
   texto: {fileID: 1323675922}
   preto: {fileID: 507265146}
   pause: {fileID: 491853860}
-  opcoe: {fileID: 0}
-  tribunal: {fileID: 404339563}
-  aparecer: {fileID: 507265146}
   cinza: {fileID: 1204661762}
   inventario: {fileID: 9114161312107528206}
   aviso: {fileID: 1431259435}
