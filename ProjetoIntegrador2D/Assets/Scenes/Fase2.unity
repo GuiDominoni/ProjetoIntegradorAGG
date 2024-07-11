@@ -18488,6 +18488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365542, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
+      propertyPath: cinza
+      value: 
+      objectReference: {fileID: 491853860}
+    - target: {fileID: 6093168387932365542, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
+        type: 3}
       propertyPath: preto
       value: 
       objectReference: {fileID: 1204661762}
