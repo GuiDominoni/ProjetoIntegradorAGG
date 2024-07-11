@@ -9,10 +9,10 @@ public class Tribunal : MonoBehaviour
 {
     public GameObject[]  pergunta, item1, item2, item3, item4, item5, item6, item7;
     public bool venceu, perdeu, clicouI1, clicouI2, clicouI3, clicouI4, clicouI5, clicouI6, clicouI7, clicou1, clicou2, clicou3, clicou4;
-    public GameObject menuVenceu, menuPerdeu, unfade, fade, aviso1, aviso2, proximoNivel;
+    public GameObject menuVenceu, menuPerdeu, unfade, fade;
     public int cond = 0;
-    public Image healthBarFill; // Referência ao Image de preenchimento
-    public float vida, vidaMaxima, vidaMinima, condVerdadeira;
+    public Image healthBarFill;
+    public float vida, vidaMaxima, vidaMinima;
 
     public void Verde()
     {
@@ -306,20 +306,6 @@ public class Tribunal : MonoBehaviour
         unfade.SetActive(true);
         Invoke("Recomec", 0.4f);
         
-
-    }
-    public void proxNv()
-    {
-        proximoNivel.SetActive(true);
-
-
-
-    }
-    public void Sair()
-    {
-        proximoNivel.SetActive(false);
-
-
 
     }
     public void Jogar()
