@@ -102,6 +102,8 @@ public class Timer : MonoBehaviour
     {
         preto.SetActive(true);
         Invoke("carregarNiveis", 0.4f);
+        pause.SetActive(false);
+
 
     }
     public void timerMenos()

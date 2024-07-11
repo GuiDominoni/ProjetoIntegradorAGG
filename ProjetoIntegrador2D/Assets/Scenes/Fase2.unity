@@ -474,8 +474,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
         m_MethodName: sair
         m_Mode: 1
         m_Arguments:
@@ -618,6 +618,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4776556351960585375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &240974914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4338582574167757969, guid: d01684bb579bacc4c912460d2e437f30,
+    type: 3}
+  m_PrefabInstance: {fileID: 4776556351960585375}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &291352847 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4776556352248128912, guid: d01684bb579bacc4c912460d2e437f30,
@@ -947,6 +959,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &353324070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1099,6 +1123,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &437089085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,6 +1173,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 437089082}
   m_CullTransparentMesh: 1
+--- !u!114 &469658599 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4776556351131919757, guid: d01684bb579bacc4c912460d2e437f30,
+    type: 3}
+  m_PrefabInstance: {fileID: 4776556351960585375}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &491853860
 GameObject:
   m_ObjectHideFlags: 0
@@ -34444,6 +34492,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &575425236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34587,6 +34647,18 @@ MonoBehaviour:
       - m_Target: {fileID: 800821866}
         m_TargetAssemblyTypeName: Item6, Assembly-CSharp
         m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -35214,6 +35286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 723480936}
   - component: {fileID: 723480935}
+  - component: {fileID: 723480937}
   m_Layer: 0
   m_Name: Colisores
   m_TagString: Untagged
@@ -35325,6 +35398,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &723480937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723480934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3ce397883130643bec66b2e6925a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 60
+  texto: {fileID: 469658599}
+  preto: {fileID: 507265146}
+  pause: {fileID: 491853860}
+  cinza: {fileID: 1204661762}
+  inventario: {fileID: 240974914}
+  aviso: {fileID: 1431259435}
 --- !u!1 &734873172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4776556351620010699, guid: d01684bb579bacc4c912460d2e437f30,
@@ -35842,8 +35934,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Timer, Assembly-CSharp
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
         m_MethodName: continuar
         m_Mode: 1
         m_Arguments:
@@ -35979,6 +36071,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1708490907}
         m_TargetAssemblyTypeName: Item1, Assembly-CSharp
         m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -36304,6 +36408,18 @@ MonoBehaviour:
       - m_Target: {fileID: 158233261}
         m_TargetAssemblyTypeName: Item4, Assembly-CSharp
         m_MethodName: pegar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37016,6 +37132,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1359123996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37601,6 +37729,18 @@ MonoBehaviour:
       - m_Target: {fileID: 800821866}
         m_TargetAssemblyTypeName: Item6, Assembly-CSharp
         m_MethodName: ignora
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38264,6 +38404,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1674630834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38572,6 +38724,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1807724057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38871,6 +39035,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1967037258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39081,6 +39257,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1982422314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39260,6 +39448,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2042471888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39394,6 +39594,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 723480937}
+        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
+        m_MethodName: repetindo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2053102580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39519,12 +39731,12 @@ PrefabInstance:
     - target: {fileID: 1013313471368518446, guid: cd650ec6ca23ba046b9d4795f833e95f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.7
+      value: 71.5
       objectReference: {fileID: 0}
     - target: {fileID: 1013313471368518446, guid: cd650ec6ca23ba046b9d4795f833e95f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.49
+      value: 15.4
       objectReference: {fileID: 0}
     - target: {fileID: 1013313471368518446, guid: cd650ec6ca23ba046b9d4795f833e95f,
         type: 3}
@@ -39593,12 +39805,12 @@ PrefabInstance:
     - target: {fileID: 1177196152855584139, guid: c2dfed0545b46a0448ce2ca2cdc09773,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.09
+      value: 75.64
       objectReference: {fileID: 0}
     - target: {fileID: 1177196152855584139, guid: c2dfed0545b46a0448ce2ca2cdc09773,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3903
+      value: -10.04
       objectReference: {fileID: 0}
     - target: {fileID: 1177196152855584139, guid: c2dfed0545b46a0448ce2ca2cdc09773,
         type: 3}
@@ -39762,12 +39974,12 @@ PrefabInstance:
     - target: {fileID: 2127358055689171143, guid: eb93145a3b2edd546ba9245a6e60de92,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.8
+      value: 108
       objectReference: {fileID: 0}
     - target: {fileID: 2127358055689171143, guid: eb93145a3b2edd546ba9245a6e60de92,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.4
+      value: -11.49
       objectReference: {fileID: 0}
     - target: {fileID: 2127358055689171143, guid: eb93145a3b2edd546ba9245a6e60de92,
         type: 3}
@@ -39841,12 +40053,12 @@ PrefabInstance:
     - target: {fileID: 4070739401364828804, guid: ea3f8d82cff87304ebb42cad920b8744,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.31
+      value: 62.11
       objectReference: {fileID: 0}
     - target: {fileID: 4070739401364828804, guid: ea3f8d82cff87304ebb42cad920b8744,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.62
+      value: -9.19
       objectReference: {fileID: 0}
     - target: {fileID: 4070739401364828804, guid: ea3f8d82cff87304ebb42cad920b8744,
         type: 3}
@@ -40139,12 +40351,12 @@ PrefabInstance:
     - target: {fileID: 5946597288488863114, guid: bbb5a4589e638ab4493d1b2a2dac1c69,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.33
+      value: 85.53
       objectReference: {fileID: 0}
     - target: {fileID: 5946597288488863114, guid: bbb5a4589e638ab4493d1b2a2dac1c69,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.54
+      value: 17.45
       objectReference: {fileID: 0}
     - target: {fileID: 5946597288488863114, guid: bbb5a4589e638ab4493d1b2a2dac1c69,
         type: 3}
@@ -40441,12 +40653,12 @@ PrefabInstance:
     - target: {fileID: 8200120880944931873, guid: 7b7f27074ccb52149b4688d76038ef6b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.44
+      value: 102.64
       objectReference: {fileID: 0}
     - target: {fileID: 8200120880944931873, guid: 7b7f27074ccb52149b4688d76038ef6b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.36
+      value: 3.2699997
       objectReference: {fileID: 0}
     - target: {fileID: 8200120880944931873, guid: 7b7f27074ccb52149b4688d76038ef6b,
         type: 3}
@@ -40586,12 +40798,12 @@ PrefabInstance:
     - target: {fileID: 8725140835870976663, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.81
+      value: 63.39
       objectReference: {fileID: 0}
     - target: {fileID: 8725140835870976663, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.42
+      value: 4.33
       objectReference: {fileID: 0}
     - target: {fileID: 8725140835870976663, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
         type: 3}
