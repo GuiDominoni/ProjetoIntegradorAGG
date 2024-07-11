@@ -9,7 +9,7 @@ public class TimerNv3 : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto, pause, tribunal, aparecer, cinza;
+    public GameObject preto, pause, cinza;
     public Image inventario;
     public GameObject aviso;
 
@@ -130,7 +130,7 @@ public class TimerNv3 : MonoBehaviour
     }
     public void irTrib()
     {
-        aparecer.SetActive(true);
+        preto.SetActive(true);
         Invoke("trib", 1);
 
 
