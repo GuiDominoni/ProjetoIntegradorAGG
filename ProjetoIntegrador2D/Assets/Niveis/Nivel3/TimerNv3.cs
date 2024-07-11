@@ -140,7 +140,7 @@ public class TimerNv3 : MonoBehaviour
     void trib()
     {
 
-        SceneManager.LoadScene("TribunalV");
+        SceneManager.LoadScene("TribunalNv3");
     }
     public void repetindo()
     {
