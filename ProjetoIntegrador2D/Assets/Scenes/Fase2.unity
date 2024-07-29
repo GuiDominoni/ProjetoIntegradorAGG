@@ -1342,18 +1342,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &353324070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1497,18 +1485,6 @@ MonoBehaviour:
       - m_Target: {fileID: 598715255}
         m_TargetAssemblyTypeName: Item7, Assembly-CSharp
         m_MethodName: ignora
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37389,18 +37365,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &575425236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37544,18 +37508,6 @@ MonoBehaviour:
       - m_Target: {fileID: 800821866}
         m_TargetAssemblyTypeName: Item6, Assembly-CSharp
         m_MethodName: pegar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38402,10 +38354,38 @@ MonoBehaviour:
   timer: 60
   texto: {fileID: 469658599}
   preto: {fileID: 507265146}
-  pause: {fileID: 491853860}
-  cinza: {fileID: 1204661762}
   inventario: {fileID: 240974914}
   aviso: {fileID: 1431259435}
+  OnPause:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 491853860}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnUnPause:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 491853860}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &734873172 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4776556351620010699, guid: d01684bb579bacc4c912460d2e437f30,
@@ -39069,18 +39049,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &848889713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39693,18 +39661,6 @@ MonoBehaviour:
       - m_Target: {fileID: 158233261}
         m_TargetAssemblyTypeName: Item4, Assembly-CSharp
         m_MethodName: pegar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -40624,18 +40580,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1359123996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41297,18 +41241,6 @@ MonoBehaviour:
       - m_Target: {fileID: 800821866}
         m_TargetAssemblyTypeName: Item6, Assembly-CSharp
         m_MethodName: ignora
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42056,18 +41988,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1674630834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42367,18 +42287,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1366914629}
         m_TargetAssemblyTypeName: Item2, Assembly-CSharp
         m_MethodName: pegar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42808,18 +42716,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1967037258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43030,18 +42926,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1982422314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43221,18 +43105,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &2042471888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43358,18 +43230,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1542161977}
         m_TargetAssemblyTypeName: Item3, Assembly-CSharp
         m_MethodName: ignora
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 723480937}
-        m_TargetAssemblyTypeName: TimerNv2, Assembly-CSharp
-        m_MethodName: repetindo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -44144,7 +44004,7 @@ PrefabInstance:
     - target: {fileID: 4776556351976408297, guid: d01684bb579bacc4c912460d2e437f30,
         type: 3}
       propertyPath: m_Name
-      value: Tutorial
+      value: Canva
       objectReference: {fileID: 0}
     - target: {fileID: 4776556352237270120, guid: d01684bb579bacc4c912460d2e437f30,
         type: 3}

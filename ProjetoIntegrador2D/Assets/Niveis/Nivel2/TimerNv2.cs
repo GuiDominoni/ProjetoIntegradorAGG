@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -9,9 +10,10 @@ public class TimerNv2 : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto, pause, cinza;
+    public GameObject preto;
     public Image inventario;
     public GameObject aviso;
+    public UnityEvent OnPause, OnUnPause;
 
 
 
@@ -57,18 +59,22 @@ public class TimerNv2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cinza.activeSelf)
-        {
-            cancelInvoke();
+        
 
-        }
-
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
 
-            pause.SetActive(true);
-            cancelInvoke();
+            if (Time.timeScale == 1)
+            {
+                OnPause.Invoke();
+                Time.timeScale = 0;
 
+            }
+            else
+            {
+                OnUnPause.Invoke();
+                Time.timeScale = 1;
+            }
 
 
         }
@@ -94,7 +100,7 @@ public class TimerNv2 : MonoBehaviour
     }
     public void continuar()
     {
-        pause.SetActive(false);
+        OnUnPause.Invoke();
         InvokeRepeating("timerMenos", 0, 1);
 
 
@@ -103,7 +109,7 @@ public class TimerNv2 : MonoBehaviour
     {
         preto.SetActive(true);
         Invoke("carregarNiveis", 0.4f);
-        pause.SetActive(false);
+        OnUnPause.Invoke();
 
     }
     public void timerMenos()

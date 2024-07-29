@@ -42,7 +42,7 @@ public class Item1 : MonoBehaviour
         item.SetActive(true);
         pega.SetActive(true);
         ignorar.SetActive(true);
-        
+        Time.timeScale = 0;
     }
     public void ignora()
     {
@@ -50,7 +50,7 @@ public class Item1 : MonoBehaviour
         item.SetActive(false);
         pega.SetActive(false);
         ignorar.SetActive(false);
-
+        Time.timeScale = 1;
 
     }
     public void pegar()
@@ -84,7 +84,7 @@ public class Item1 : MonoBehaviour
             Destroy(gameObject);
         }
         ignora();
-
+        
     }
 }
 
