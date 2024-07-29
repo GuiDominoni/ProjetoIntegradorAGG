@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -10,6 +11,7 @@ public class PauseNv2 : MonoBehaviour
     public Text texto;
     public GameObject preto, pause, aviso;
     public Image inventario;
+    public UnityEvent OnPause, OnUnPause;
     
 
     // Start is called before the first frame update
@@ -53,11 +55,21 @@ public class PauseNv2 : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetButtonDown("Cancel"))
         {
 
-            pause.SetActive(true);
-            cancelInvoke();
+            if(Time.timeScale == 1)
+            {
+                OnPause.Invoke();
+                Time.timeScale = 0;
+
+            }
+            else
+            {
+                OnUnPause.Invoke();
+                Time.timeScale = 1;
+            }
+            
             
         }
 
