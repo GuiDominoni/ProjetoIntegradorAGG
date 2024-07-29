@@ -19,6 +19,7 @@ public class TimerNv2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Interações.TenhoCartaoFase2 = false;
         inv.i11 = false;
         inv.i12 = false;
         inv.i13 = false;

@@ -7,8 +7,7 @@ public class Player : MonoBehaviour
 {
 
 
-    public float horizontal, vertical, a;
-    public float velocidade;
+    public float horizontal, vertical, velocidade;
     Rigidbody2D rb;
     public bool olhandoDireita;
     public GameObject preto, cinza;
@@ -55,6 +54,7 @@ public class Player : MonoBehaviour
 
             
             rb.velocity = movimento * velocidade;
+         
         }
     
 
@@ -73,3 +73,12 @@ public class Player : MonoBehaviour
 
     
 }
+public static class Interações
+{
+    public static bool TenhoCartaoFase2; 
+
+
+}
+
+
+
