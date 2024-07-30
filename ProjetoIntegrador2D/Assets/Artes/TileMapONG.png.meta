@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f76f05385b2386644ac93074236a4033
-      internalID: 2132633360
+      spriteID: 8ca60324501f2654aae75f179fdf8c9a
+      internalID: 905072766
       vertices: []
       indices: 
       edges: []
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8112f510f28cd3649b4d710db77c5776
-      internalID: 1687195537
+      spriteID: b05a40fa6087ecb438efc7aaf98533fb
+      internalID: 1360931681
       vertices: []
       indices: 
       edges: []
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c19235785cb08694fa59d7fdf4a98331
-      internalID: -2092369347
+      spriteID: 6ae473e7ce32fcf43bc001a1a0830985
+      internalID: -1260358497
       vertices: []
       indices: 
       edges: []
@@ -182,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb9efac9280df04bb424352c4fcf337
-      internalID: 403401008
+      spriteID: dcb20636b89a21841b7e2e5dea94a260
+      internalID: -772985119
       vertices: []
       indices: 
       edges: []
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35b159159c43dce4394f4d1bcbc65bb9
-      internalID: 707487053
+      spriteID: 0f7adcd889442904c816748733f65c81
+      internalID: 273145607
       vertices: []
       indices: 
       edges: []
@@ -224,8 +224,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a8d7414c9b01e347ad12274ab6a98a3
-      internalID: -543583467
+      spriteID: 1c2e3630217fd9e48ad7654e40d64b13
+      internalID: 1640441915
       vertices: []
       indices: 
       edges: []
@@ -245,8 +245,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c3fd5a102acdf34b88ec2eb627a9d8e
-      internalID: 890258465
+      spriteID: 7810e7eec272fda4495a4abc447ba82e
+      internalID: -850559145
       vertices: []
       indices: 
       edges: []
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a35e6911c0a40f40a379bfdc1211803
-      internalID: 1186870113
+      spriteID: 56ea9aef4c850584bb8aae5809e8888d
+      internalID: 375703746
       vertices: []
       indices: 
       edges: []
@@ -287,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33eed35a2169e704badb10cce43c6570
-      internalID: -1048188884
+      spriteID: 8109d7430dedcaa4090da96d337cbcb1
+      internalID: -63254197
       vertices: []
       indices: 
       edges: []
@@ -308,8 +308,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 358d486eacdc1974685417daad8e5fae
-      internalID: -1872087415
+      spriteID: d93b29d8195ca944195dd879d995c923
+      internalID: -868326248
       vertices: []
       indices: 
       edges: []
@@ -329,8 +329,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 937e8c88e629aa84f9c1ec36a65605e1
-      internalID: -369550278
+      spriteID: 88253e4e055cad24d8c022258bed86e4
+      internalID: -1640997143
       vertices: []
       indices: 
       edges: []
@@ -350,8 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc923096100a46044affeba0c9878640
-      internalID: -335317958
+      spriteID: c9bd452edf48a0f49b4bbd42c233eb20
+      internalID: -1433587528
       vertices: []
       indices: 
       edges: []
@@ -371,8 +371,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7d9dc610eb38e540965812028e801b9
-      internalID: -1207058576
+      spriteID: 51afb4621b823c54581f6c2e3d303d4b
+      internalID: 517546162
       vertices: []
       indices: 
       edges: []
@@ -392,8 +392,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 072a460c373170e4d8ed70114510e8f8
-      internalID: -1618655306
+      spriteID: 81adfe60f42ad7f4abfdfb09a49b540e
+      internalID: 311939255
       vertices: []
       indices: 
       edges: []
@@ -413,8 +413,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbde19afc150f0f4594ef4f910080fdc
-      internalID: 1198697541
+      spriteID: 6c1c8dc6a0e6166429db25b737b1a07f
+      internalID: 881898781
       vertices: []
       indices: 
       edges: []
@@ -434,8 +434,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 168ada60b3a1b1f429ecfe0d1ab1051f
-      internalID: -1279140611
+      spriteID: 8823e451761d4b648bcf2478a186d360
+      internalID: 1238341797
       vertices: []
       indices: 
       edges: []
@@ -455,8 +455,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef3a25d651c2561479af47ce64110e7b
-      internalID: -641296378
+      spriteID: 32d188e5ba4a96a4989c8560f67343f3
+      internalID: -1716858594
       vertices: []
       indices: 
       edges: []
@@ -476,8 +476,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adf3d041aa071b64fb36b5e6ab984c6f
-      internalID: -1716492671
+      spriteID: 0229ac4d5fc042645821db3f8647c65a
+      internalID: 308509228
       vertices: []
       indices: 
       edges: []
@@ -497,8 +497,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97769923c420b1b43aeb1bfadd9d4281
-      internalID: -1078424157
+      spriteID: 64c49891efa3ee34db68947b965a5712
+      internalID: -2071890880
       vertices: []
       indices: 
       edges: []
@@ -518,8 +518,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b553913a53172e545bd1e040ce08bcd4
-      internalID: -1470271545
+      spriteID: 90bc08854f979184f81f21a3e74af842
+      internalID: 1986977380
       vertices: []
       indices: 
       edges: []
@@ -539,8 +539,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49ba5389c40d8d2439c9601736d954b2
-      internalID: -1224424804
+      spriteID: b2fabca9396dfe54d978bc2b737d750c
+      internalID: -382459670
       vertices: []
       indices: 
       edges: []
@@ -560,8 +560,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f41609b3a1c1de4b9c248b0038bb6cd
-      internalID: 1115419206
+      spriteID: effa4dd2225acc043a009912e9a33f11
+      internalID: -197025675
       vertices: []
       indices: 
       edges: []
@@ -581,8 +581,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c6088e1ca77f4341889efec199c6384
-      internalID: 852031717
+      spriteID: 6509b9950e45d2f4ba3b5d912beffb23
+      internalID: 191392411
       vertices: []
       indices: 
       edges: []
@@ -602,8 +602,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79b1708f4d6d99c478fcc70fe1264e6f
-      internalID: -1056410246
+      spriteID: e75d3007b432b3945838ca870046b097
+      internalID: 880838876
       vertices: []
       indices: 
       edges: []
@@ -623,8 +623,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b1928f569c3e04fb3c54694e379cf7
-      internalID: 1162376255
+      spriteID: 8cf1f141a4b31bf40a2dc1208a57d08e
+      internalID: 1689343802
       vertices: []
       indices: 
       edges: []
@@ -644,8 +644,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba3fd9d8e8eff144d8152eb13525031d
-      internalID: -1452557
+      spriteID: 4c2d81a45fee03d47b10e8a5f8ac9da3
+      internalID: 186714237
       vertices: []
       indices: 
       edges: []
@@ -665,8 +665,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 008986bc1ab0da640a92b8e05682f60f
-      internalID: -1641623220
+      spriteID: e541eb960d5441b4f89c10fb23f3e90f
+      internalID: 1679532271
       vertices: []
       indices: 
       edges: []
@@ -686,8 +686,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b00a7c4adcab624881bf141b2319d11
-      internalID: -189099449
+      spriteID: 0812e67d50a634f449041bdff3fe56d3
+      internalID: 1261104750
       vertices: []
       indices: 
       edges: []
@@ -707,8 +707,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40841fdb86518ee4a8740317a11fa877
-      internalID: 145591796
+      spriteID: ad6a3ccd4c8b4a745959d5975775397a
+      internalID: 489792826
       vertices: []
       indices: 
       edges: []
@@ -728,8 +728,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ebd0c265f522874da0e5910c0f9fb2a
-      internalID: -1764408166
+      spriteID: 9db55135f24b3f241a60fabcb7924b71
+      internalID: -1713435172
       vertices: []
       indices: 
       edges: []
@@ -749,8 +749,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890e66b41c3b0734aa4798b057d47163
-      internalID: -1749426378
+      spriteID: 2970debf703e42242beac95c2294e2a4
+      internalID: 496773085
       vertices: []
       indices: 
       edges: []
@@ -770,8 +770,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7001994f0fb60a42aebc2b7bb8ed655
-      internalID: -201921545
+      spriteID: 8fee2b9d1ef0dbb479a86aaa7943d3a6
+      internalID: -1854768355
       vertices: []
       indices: 
       edges: []
@@ -791,8 +791,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c069a1ad66205b4c9ca3f0a868bfd3f
-      internalID: 567214948
+      spriteID: d81bfb61e563f9f459895eab3c3e36f0
+      internalID: 649738949
       vertices: []
       indices: 
       edges: []
@@ -812,119 +812,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 070d7ba489e688441b7de549dc0dfb46
-      internalID: 2092566568
+      spriteID: 180f01809d6bd094b8b420e1f851c335
+      internalID: -2117927412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
       name: TileMapONG_34
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 84
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eb8d4b4b2de2eb848a585ca9e9e2bca1
-      internalID: -782054078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_35
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 84
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5b7025acefae8e45be6c0091a9f6479
-      internalID: -2007790737
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_36
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 84
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ca989ff4fe95844cbbeb8a69e95b9f6
-      internalID: -1243047212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_37
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 84
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dfc35742353ba7f43ad47711165d9bb2
-      internalID: 280959820
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_38
-      rect:
-        serializedVersion: 2
-        x: 588
-        y: 84
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a91a8f677fc2a3488fa44040a2a3ddd
-      internalID: -1732617948
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_39
       rect:
         serializedVersion: 2
         x: 672
@@ -938,14 +833,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ee56b02793034a4fb2074df77e34ca6
-      internalID: 1261429387
+      spriteID: cb3e02432980e3547aea269c1f6750d2
+      internalID: -978798628
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_40
+      name: TileMapONG_35
       rect:
         serializedVersion: 2
         x: 756
@@ -959,14 +854,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 023c80f41fad35843bd052684e3a7a23
-      internalID: -1551107406
+      spriteID: 2ff9096278fe40446b9b5ee4b7079947
+      internalID: 954121768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_41
+      name: TileMapONG_36
       rect:
         serializedVersion: 2
         x: 840
@@ -980,14 +875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4098d2fa8cf8d9458c97dcda2b2049a
-      internalID: -1928023142
+      spriteID: 19b64689ee8e2ed4e9634784faa9d86d
+      internalID: 1875524314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_42
+      name: TileMapONG_37
       rect:
         serializedVersion: 2
         x: 924
@@ -1001,35 +896,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 750eacbe606de8842a6b60a31df1e4a9
-      internalID: 987302014
+      spriteID: 7654a0bc75f12bf4984dd39f3de723ab
+      internalID: -139204702
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_43
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 84
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71f42208d1e10de42875ca2fe3dfca88
-      internalID: 1835825586
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_44
+      name: TileMapONG_38
       rect:
         serializedVersion: 2
         x: 0
@@ -1043,14 +917,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7b6850a020ca4c48953dcceb92f6fc8
-      internalID: 1875178114
+      spriteID: 897a86ecebafe8249a266bbc8e0175ee
+      internalID: 2116026835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_45
+      name: TileMapONG_39
       rect:
         serializedVersion: 2
         x: 84
@@ -1064,14 +938,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a743f337e89f36240a5c057e8737f44f
-      internalID: -1552500412
+      spriteID: 964cbcc7ad9bb704dbf0d11e697464c4
+      internalID: 1613512048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_46
+      name: TileMapONG_40
       rect:
         serializedVersion: 2
         x: 168
@@ -1085,119 +959,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d7868dce0002f48b0a1c021bf32f5f
-      internalID: 1700780442
+      spriteID: 2f82d08d28aada546becb5c21db103c5
+      internalID: 1705849303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_47
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 0
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2e64e240fbca3647b9a40d51b1ece05
-      internalID: -982106658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_48
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 0
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20644b68ad4866b4f93aa43045c988de
-      internalID: -1208957945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_49
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 0
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1536c61931f62d547a8a705f9ddad8c7
-      internalID: -912340476
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_50
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 0
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67eb989fd12128b49a570d245305301d
-      internalID: -1983642397
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_51
-      rect:
-        serializedVersion: 2
-        x: 588
-        y: 0
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3f6e9d0e1ff047342bce886f81108d33
-      internalID: -99560268
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_52
+      name: TileMapONG_41
       rect:
         serializedVersion: 2
         x: 672
@@ -1211,14 +980,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00b710ff96220484ebd639e3c70d9466
-      internalID: -1756466285
+      spriteID: 9aa7edf655a7d0d47bb9933ec3bf5337
+      internalID: 319002167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_53
+      name: TileMapONG_42
       rect:
         serializedVersion: 2
         x: 756
@@ -1232,14 +1001,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f9e0fb05a873814b87d5d28bbbc4b9d
-      internalID: -274110932
+      spriteID: 9c4b78972def21c41990af38f32914ef
+      internalID: 96347165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_54
+      name: TileMapONG_43
       rect:
         serializedVersion: 2
         x: 840
@@ -1253,14 +1022,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e7c4b87ff0e5f942b6632e004fab51a
-      internalID: 1238611065
+      spriteID: 3845f79194d83d24ea65a2771c293bcd
+      internalID: -946154983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMapONG_55
+      name: TileMapONG_44
       rect:
         serializedVersion: 2
         x: 924
@@ -1274,29 +1043,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42bf22c681ccbdf4caad832d73dc7b18
-      internalID: 837391623
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMapONG_56
-      rect:
-        serializedVersion: 2
-        x: 1008
-        y: 0
-        width: 84
-        height: 84
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 745c106336dc5554c8dfd7e3cd775f72
-      internalID: 1873751384
+      spriteID: a600a2ba36d391549bab2a7ea191e6df
+      internalID: 1603470782
       vertices: []
       indices: 
       edges: []
@@ -1312,63 +1060,51 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TileMapONG_40: -1551107406
-      TileMapONG_54: 1238611065
-      TileMapONG_17: -1716492671
-      TileMapONG_35: -2007790737
-      TileMapONG_50: -1983642397
-      TileMapONG_1: 1687195537
-      TileMapONG_55: 837391623
-      TileMapONG_42: 987302014
-      TileMapONG_46: 1700780442
-      TileMapONG_11: -335317958
-      TileMapONG_18: -1078424157
-      TileMapONG_20: -1224424804
-      TileMapONG_34: -782054078
-      TileMapONG_5: -543583467
-      TileMapONG_21: 1115419206
-      TileMapONG_44: 1875178114
-      TileMapONG_26: -1641623220
-      TileMapONG_38: -1732617948
-      TileMapONG_7: 1186870113
-      TileMapONG_3: 403401008
-      TileMapONG_16: -641296378
-      TileMapONG_37: 280959820
-      TileMapONG_9: -1872087415
-      TileMapONG_2: -2092369347
-      TileMapONG_53: -274110932
-      TileMapONG_49: -912340476
-      TileMapONG_4: 707487053
-      TileMapONG_33: 2092566568
-      TileMapONG_43: 1835825586
-      TileMapONG_14: 1198697541
-      TileMapONG_31: -201921545
-      TileMapONG_32: 567214948
-      TileMapONG_6: 890258465
-      TileMapONG_41: -1928023142
-      TileMapONG_45: -1552500412
-      TileMapONG_13: -1618655306
-      TileMapONG_39: 1261429387
-      TileMapONG_56: 1873751384
-      TileMapONG_15: -1279140611
-      TileMapONG_22: 852031717
-      TileMapONG_24: 1162376255
-      TileMapONG_52: -1756466285
-      TileMapONG_25: -1452557
-      TileMapONG_0: 2132633360
-      TileMapONG_8: -1048188884
-      TileMapONG_51: -99560268
-      TileMapONG_12: -1207058576
-      TileMapONG_48: -1208957945
-      TileMapONG_19: -1470271545
-      TileMapONG_23: -1056410246
-      TileMapONG_36: -1243047212
-      TileMapONG_47: -982106658
-      TileMapONG_10: -369550278
-      TileMapONG_29: -1764408166
-      TileMapONG_30: -1749426378
-      TileMapONG_28: 145591796
-      TileMapONG_27: -189099449
+      TileMapONG_40: 1705849303
+      TileMapONG_17: 308509228
+      TileMapONG_35: 954121768
+      TileMapONG_1: 1360931681
+      TileMapONG_42: 96347165
+      TileMapONG_11: -1433587528
+      TileMapONG_18: -2071890880
+      TileMapONG_20: -382459670
+      TileMapONG_34: -978798628
+      TileMapONG_5: 1640441915
+      TileMapONG_21: -197025675
+      TileMapONG_44: 1603470782
+      TileMapONG_26: 1679532271
+      TileMapONG_38: 2116026835
+      TileMapONG_7: 375703746
+      TileMapONG_3: -772985119
+      TileMapONG_16: -1716858594
+      TileMapONG_37: -139204702
+      TileMapONG_9: -868326248
+      TileMapONG_2: -1260358497
+      TileMapONG_4: 273145607
+      TileMapONG_33: -2117927412
+      TileMapONG_43: -946154983
+      TileMapONG_14: 881898781
+      TileMapONG_31: -1854768355
+      TileMapONG_32: 649738949
+      TileMapONG_6: -850559145
+      TileMapONG_41: 319002167
+      TileMapONG_13: 311939255
+      TileMapONG_39: 1613512048
+      TileMapONG_15: 1238341797
+      TileMapONG_22: 191392411
+      TileMapONG_24: 1689343802
+      TileMapONG_25: 186714237
+      TileMapONG_0: 905072766
+      TileMapONG_8: -63254197
+      TileMapONG_12: 517546162
+      TileMapONG_19: 1986977380
+      TileMapONG_23: 880838876
+      TileMapONG_36: 1875524314
+      TileMapONG_10: -1640997143
+      TileMapONG_29: -1713435172
+      TileMapONG_30: 496773085
+      TileMapONG_28: 489792826
+      TileMapONG_27: 1261104750
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
