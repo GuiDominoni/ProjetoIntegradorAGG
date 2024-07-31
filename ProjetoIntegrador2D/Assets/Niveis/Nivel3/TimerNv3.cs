@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -9,9 +10,10 @@ public class TimerNv3 : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto, pause, cinza;
+    public GameObject preto;
     public Image inventario;
     public GameObject aviso;
+    public UnityEvent OnPause, OnUnPause;
 
 
 
@@ -19,6 +21,7 @@ public class TimerNv3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         inv.i11 = false;
         inv.i12 = false;
         inv.i13 = false;
@@ -47,7 +50,6 @@ public class TimerNv3 : MonoBehaviour
         inv.i72 = false;
         inv.i73 = false;
         inv.i74 = false;
-        InvokeRepeating("timerMenos", 1, 1);
         timer = 60;
 
     }
@@ -56,24 +58,31 @@ public class TimerNv3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cinza.activeSelf)
+        int TimerVerdadeiro;
+        TimerVerdadeiro = Mathf.RoundToInt(timer);
+        texto.text = TimerVerdadeiro.ToString();
+        Invoke("timerMenos", 0);
+
+        if (Input.GetButtonDown("Cancel"))
         {
-            cancelInvoke();
+
+            if (Time.timeScale == 1)
+            {
+                OnPause.Invoke();
+                Time.timeScale = 0;
+
+            }
+            else
+            {
+                OnUnPause.Invoke();
+                Time.timeScale = 1;
+            }
+
 
         }
 
-        if (Input.GetKeyUp(KeyCode.Escape))
-        {
-
-            pause.SetActive(true);
-            cancelInvoke();
 
 
-
-        }
-
-
-        texto.text = timer.ToString();
 
         if (inv.lugar == 5)
         {
@@ -93,8 +102,8 @@ public class TimerNv3 : MonoBehaviour
     }
     public void continuar()
     {
-        pause.SetActive(false);
-        InvokeRepeating("timerMenos", 0, 1);
+        OnUnPause.Invoke();
+        Time.timeScale = 1;
 
 
     }
@@ -102,13 +111,12 @@ public class TimerNv3 : MonoBehaviour
     {
         preto.SetActive(true);
         Invoke("carregarNiveis", 0.4f);
-        pause.SetActive(false);
-
+        OnUnPause.Invoke();
 
     }
     public void timerMenos()
     {
-        timer -= 1;
+        timer -= Time.deltaTime;
 
 
     }
@@ -140,11 +148,8 @@ public class TimerNv3 : MonoBehaviour
     void trib()
     {
 
-        SceneManager.LoadScene("TribunalNv3");
+        SceneManager.LoadScene("TribunalNv2");
+        Debug.Log("AINDA NAO FIZ ME AVISA SE LER ISSO");
     }
-    public void repetindo()
-    {
-        InvokeRepeating("timerMenos", 0, 1);
 
-    }
 }

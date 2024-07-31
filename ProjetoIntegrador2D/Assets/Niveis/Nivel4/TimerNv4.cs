@@ -21,7 +21,7 @@ public class TimerNv4 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Interações.TenhoCartaoFase2 = false;
+       
         inv.i11 = false;
         inv.i12 = false;
         inv.i13 = false;
@@ -50,7 +50,6 @@ public class TimerNv4 : MonoBehaviour
         inv.i72 = false;
         inv.i73 = false;
         inv.i74 = false;
-        InvokeRepeating("timerMenos", 1, 1);
         timer = 60;
 
     }
@@ -59,7 +58,10 @@ public class TimerNv4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        int TimerVerdadeiro;
+        TimerVerdadeiro = Mathf.RoundToInt(timer);
+        texto.text = TimerVerdadeiro.ToString();
+        Invoke("timerMenos", 0);
 
         if (Input.GetButtonDown("Cancel"))
         {
@@ -80,7 +82,7 @@ public class TimerNv4 : MonoBehaviour
         }
 
 
-        texto.text = timer.ToString();
+       
 
         if (inv.lugar == 5)
         {
@@ -101,7 +103,7 @@ public class TimerNv4 : MonoBehaviour
     public void continuar()
     {
         OnUnPause.Invoke();
-        InvokeRepeating("timerMenos", 0, 1);
+        Time.timeScale = 1;
 
 
     }
@@ -114,7 +116,7 @@ public class TimerNv4 : MonoBehaviour
     }
     public void timerMenos()
     {
-        timer -= 1;
+        timer -= Time.deltaTime;
 
 
     }
@@ -147,10 +149,7 @@ public class TimerNv4 : MonoBehaviour
     {
 
         SceneManager.LoadScene("TribunalNv2");
+        Debug.Log("AINDA NAO FIZ ME AVISA SE LER ISSO");
     }
-    public void repetindo()
-    {
-        InvokeRepeating("timerMenos", 0, 1);
-
-    }
+    
 }
