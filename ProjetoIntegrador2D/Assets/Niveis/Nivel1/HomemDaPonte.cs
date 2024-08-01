@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class HomemDaPonte : MonoBehaviour
 {
     public GameObject[] item5;
-    public GameObject interactionPrompt, item, colisor, inventario;
+    public GameObject interactionPrompt, item, colisor, Inventario;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
@@ -27,7 +27,13 @@ public class HomemDaPonte : MonoBehaviour
        
         if (Ordem <= 2) { texto1.text = "Eu ainda preciso de " + madeirasQFalta.ToString() + " madeiras para poder construir a ponte"; }
         if (Ordem >= 3) { texto1.text = "Valeu cara"; }
-        
+        if (MadeirasQueEuTenho.possoPegar == true)
+        {
+            Inventario.SetActive(true);
+
+
+        }
+        if (!MadeirasQueEuTenho.possoPegar) { Inventario.SetActive(false); }
 
         float distance = Vector2.Distance(transform.position, player.position);
 

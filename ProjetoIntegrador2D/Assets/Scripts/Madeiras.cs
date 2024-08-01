@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Madeiras : MonoBehaviour
 {
-    public GameObject interactionPrompt, item, Inventario;
+    public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
@@ -22,12 +22,7 @@ public class Madeiras : MonoBehaviour
     {
 
 
-        if(MadeirasQueEuTenho.possoPegar == true)
-        {
-            Inventario.SetActive(true);
-
-
-        }
+       
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= interactionRange && MadeirasQueEuTenho.possoPegar == true)
@@ -50,12 +45,7 @@ public class Madeiras : MonoBehaviour
     {
         MadeirasQueEuTenho.Madeiras++;
         Destroy(gameObject);
-        if(fred == 0)
-        {
-            Inventario.SetActive(true);
-            fred++;
-        }
-
+       
     }
    
 
