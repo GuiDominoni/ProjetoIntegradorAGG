@@ -459,25 +459,25 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Jogo criado por:
 
-    
+
 
     Principal Progamador:
 
-    Gustavo Serafim
-    Manzoni
+    Gustavo Serafim Manzoni
 
-    
 
-    Principais Designers:
+
+    Principais
+    Designers:
 
     Guilherme Dominoni Goncalves
 
-    Andriel
-    Alessi Viega
+    Andriel Alessi Viega
 
-    
 
-    Obrigado por jogar!
+
+    Obrigado
+    por jogar!
 
 
 '
@@ -707,7 +707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 367.7, y: 12.3}
+  m_AnchoredPosition: {x: 365.8, y: -165.7}
   m_SizeDelta: {x: 302.6135, y: 169.6823}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1893233382
