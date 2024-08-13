@@ -45,6 +45,7 @@ public class Andares : MonoBehaviour
     }
     public void Interact()
     {
+               
         if(Interações.EmQualAndarEstouFase3 == 1)
         {
             
