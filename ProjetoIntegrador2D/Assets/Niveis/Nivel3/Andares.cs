@@ -8,18 +8,16 @@ using static UnityEditor.Progress;
 public class Andares : MonoBehaviour
 {
     public UnityEvent ToNo1, ToNo2, ToNo3, ToNo4, Sair;
-    public int EstouEmQualAndar;
-    public GameObject interactionPrompt, item;
+   public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
-    public GameObject preto, pega, ignorar;
     public Transform[] Andar;
     
     // Start is called before the first frame update
     void Start()
     {
-        EstouEmQualAndar = 1;
+        Interações.EmQualAndarEstouFase3 = 1;
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
@@ -47,25 +45,25 @@ public class Andares : MonoBehaviour
     }
     public void Interact()
     {
-        if(EstouEmQualAndar == 1)
+        if(Interações.EmQualAndarEstouFase3 == 1)
         {
-
+            
             ToNo1.Invoke();
 
         }
-        if (EstouEmQualAndar == 2)
+        if (Interações.EmQualAndarEstouFase3 == 2)
         {
 
             ToNo2.Invoke();
 
         }
-        if (EstouEmQualAndar == 3)
+        if (Interações.EmQualAndarEstouFase3 == 3)
         {
 
             ToNo3.Invoke();
 
         }
-        if (EstouEmQualAndar == 4)
+        if (Interações.EmQualAndarEstouFase3 == 4)
         {
 
             ToNo4.Invoke();
@@ -76,31 +74,33 @@ public class Andares : MonoBehaviour
     public void IrPara1()
     {
         player.transform.position = Andar[0].transform.position;
-
-
+        Time.timeScale = 1.0f;
+        Interações.EmQualAndarEstouFase3 = 1;
     }
     public void IrPara2()
     {
         player.transform.position = Andar[1].transform.position;
-
-
+        Time.timeScale = 1.0f;
+        Interações.EmQualAndarEstouFase3 = 2;
     }
     public void IrPara3()
     {
 
-        player.transform.position = Andar[1].transform.position;
-
+        player.transform.position = Andar[2].transform.position;
+        Time.timeScale = 1.0f;
+        Interações.EmQualAndarEstouFase3 = 3;
     }
     public void IrPara4()
     {
 
-
-        player.transform.position = Andar[1].transform.position;
+        player.transform.position = Andar[3].transform.position;
+        Time.timeScale = 1.0f;
+        Interações.EmQualAndarEstouFase3 = 4;
     }
     public void sair()
     {
        Sair.Invoke();
-        Time.timeScale = 0.0f;
+        Time.timeScale = 1.0f;
 
     }
 }

@@ -75,7 +75,8 @@ public class Player : MonoBehaviour
 }
 public static class Interações
 {
-    public static bool TenhoCartaoFase2; 
+    public static bool TenhoCartaoFase2;
+    public static int EmQualAndarEstouFase3;
 
 
 }
