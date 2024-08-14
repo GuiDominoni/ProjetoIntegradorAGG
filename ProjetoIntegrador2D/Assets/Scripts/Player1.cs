@@ -31,36 +31,7 @@ public class Player1 : MonoBehaviour
         
         movimento();
       
-        if( vertical < 0)
-        {
-            anim.SetInteger("Transicao", 1);
-
-
-        }
-        if (vertical > 0)
-        {
-            anim.SetInteger("Transicao", 2);
-
-
-        }
-        if (horizontal < 0)
-        {
-            anim.SetInteger("Transicao", 4);
-
-
-        }
-        if (horizontal == 0 && vertical == 0 )
-        {
-
-            anim.SetInteger("Transicao", 0);
-
-        }
-        if (horizontal > 0)
-        {
-            anim.SetInteger("Transicao", 3);
-
-
-        }
+       
 
 
     }
@@ -70,7 +41,7 @@ public class Player1 : MonoBehaviour
         {
             horizontal = Input.GetAxisRaw("Horizontal");
             vertical = Input.GetAxisRaw("Vertical");
-
+           
            
             Vector2 movimento = new Vector2(horizontal, vertical).normalized;
 
