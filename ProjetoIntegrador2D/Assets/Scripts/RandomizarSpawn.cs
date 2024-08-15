@@ -18,9 +18,9 @@ public class RandomizarSpawn : MonoBehaviour
             
             if(spawn[RandomNumero1] = null)
             {
-                while (spawn[RandomNumero1] != null)
+                while (spawn[RandomNumero1] == null)
                 {
-                    RandomNumero1 = Random.Range(0, 15);
+                    RandomNumero1 = Random.Range(0, spawn.Length);
                     itens[QualVaiSer].transform.position = spawn[RandomNumero1].transform.position;
 
 

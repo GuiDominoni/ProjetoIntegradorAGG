@@ -161,7 +161,7 @@ public class Timer : MonoBehaviour
     void trib()
     {
 
-        SceneManager.LoadScene("TribunalNv2");
+        SceneManager.LoadScene("TribunalV");
         Debug.Log("AINDA NAO FIZ ME AVISA SE LER ISSO");
     }
 
