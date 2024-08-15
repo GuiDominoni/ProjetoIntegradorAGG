@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -48,8 +49,20 @@ public class Timer : MonoBehaviour
         inv.i64 = false;
         inv.i71 = false;
         inv.i72 = false;
-        inv.i73 = false;
+        inv.i73 = false;    
         inv.i74 = false;
+        inv.i81 = false;
+        inv.i82 = false;
+        inv.i83 = false;
+        inv.i84 = false;
+        inv.i91 = false;
+        inv.i92 = false;
+        inv.i93 = false;
+        inv.i94 = false;
+        inv.i101 = false;
+        inv.i102 = false;
+        inv.i103 = false;
+        inv.i104 = false;
         timer = 60;
 
     }

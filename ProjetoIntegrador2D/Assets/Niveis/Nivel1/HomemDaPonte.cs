@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -14,7 +15,9 @@ public class HomemDaPonte : MonoBehaviour
     public int Ordem, OP, madeirasQFalta, a;
     public string aviso1, aviso2;
     public UnityEvent Fala1, Fala2, Fala3, desativ1, desativ2, ativarPonte;
-    public Text texto1;
+    public Text texto1, texto11;
+    public Text texto2;
+   
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -24,9 +27,9 @@ public class HomemDaPonte : MonoBehaviour
 
     void Update()
     {
-       
-        if (Ordem <= 2) { texto1.text = "Eu ainda preciso de " + madeirasQFalta.ToString() + " madeiras para poder construir a ponte"; }
-        if (Ordem >= 3) { texto1.text = "Valeu cara"; }
+        texto2.text = MadeirasQueEuTenho.Madeiras.ToString() + "x";
+        if (Ordem <= 2 && Ordem != 0) { texto11.text = "Eu ainda preciso de " + madeirasQFalta.ToString() + " madeiras para poder construir a ponte"; }
+        if (Ordem >= 3) { texto11.text = "Valeu cara"; }
         if (MadeirasQueEuTenho.possoPegar == true)
         {
             Inventario.SetActive(true);

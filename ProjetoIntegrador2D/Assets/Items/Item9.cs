@@ -84,7 +84,7 @@ public class Item9 : MonoBehaviour
             Destroy(gameObject);
         }
         ignora();
-        Destroy(gameObject);
+    
 
     }
 }
