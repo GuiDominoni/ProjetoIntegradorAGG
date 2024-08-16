@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class Tribunal : MonoBehaviour
 {
-    public GameObject[]  pergunta, item1, item2, item3, item4, item5, item6, item7;
+    public GameObject[]  pergunta, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10;
     public bool venceu, perdeu, clicouI1, clicouI2, clicouI3, clicouI4, clicouI5, clicouI6, clicouI7, clicou1, clicou2, clicou3, clicou4;
     public GameObject menuVenceu, menuPerdeu, unfade, fade;
     public int cond = 0;
@@ -286,6 +286,128 @@ public class Tribunal : MonoBehaviour
 
             clicou2 = true;
             cond++;
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
+
+
+    }
+    public void Item8()
+    {
+        item8[1].SetActive(false);
+        item8[2].SetActive(false);
+        item8[3].SetActive(false);
+        item8[4].SetActive(false);
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+           
+
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
+
+
+    }
+    public void Item9()
+    {
+        item9[1].SetActive(false);
+        item9[2].SetActive(false);
+        item9[3].SetActive(false);
+        item9[4].SetActive(false);
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+        
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
+
+
+    }
+    public void ITem10()
+    {
+        item10[1].SetActive(false);
+        item10[2].SetActive(false);
+        item10[3].SetActive(false);
+        item10[4].SetActive(false);
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+            
 
         }
 
