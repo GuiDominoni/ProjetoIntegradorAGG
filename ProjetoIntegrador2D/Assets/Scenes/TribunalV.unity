@@ -3866,7 +3866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 404.34103, y: 403.65723}
+  m_AnchoredPosition: {x: 434, y: 425}
   m_SizeDelta: {x: 448.8759, y: 167.1421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384335089
@@ -3890,7 +3890,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 111060c55d083ba41b9ed1829c74fa95, type: 3}
     m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
@@ -4566,7 +4566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 404.34103, y: 403.65723}
+  m_AnchoredPosition: {x: 427, y: 422}
   m_SizeDelta: {x: 448.8759, y: 167.1421}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &664902999
@@ -4590,7 +4590,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 111060c55d083ba41b9ed1829c74fa95, type: 3}
     m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
@@ -4646,7 +4646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 404.99945, y: 402.9989}
+  m_AnchoredPosition: {x: 421, y: 424}
   m_SizeDelta: {x: 449.4, y: 172.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683152860
@@ -4670,7 +4670,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 111060c55d083ba41b9ed1829c74fa95, type: 3}
     m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
@@ -4682,7 +4682,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Onde Roberto estava no momento do furto?
+  m_Text: O que pode apontar em qual lugar Roberto estava no momento do furto?
 --- !u!222 &683152861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4837,7 +4837,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 111060c55d083ba41b9ed1829c74fa95, type: 3}
     m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
@@ -5856,7 +5856,7 @@ GameObject:
   - component: {fileID: 1308794710}
   - component: {fileID: 1308794709}
   m_Layer: 5
-  m_Name: Image
+  m_Name: "Bal\xE3o Fala"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5871,16 +5871,16 @@ RectTransform:
   m_GameObject: {fileID: 1308794707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.26268, y: 0.26268, z: 0.26268}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 10921394}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 405, y: 403}
-  m_SizeDelta: {x: 449.4033, y: 172.9766}
+  m_AnchoredPosition: {x: 405, y: 385}
+  m_SizeDelta: {x: 2483.0623, y: 1203.1702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1308794709
 MonoBehaviour:
@@ -5902,7 +5902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9b337a360b84fa9428fe7dbe7774012f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

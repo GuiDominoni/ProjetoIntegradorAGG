@@ -38,7 +38,7 @@ public class RandomizarSpawn : MonoBehaviour
                     else
                     {
 
-                        itens[QualVaiSer].transform.position = spawn[RandomNumero1].transform.position;
+                        itens[QualVaiSer].transform.position = spawn[RandomNumero1].transform.position; 
                     }
 
                 }
