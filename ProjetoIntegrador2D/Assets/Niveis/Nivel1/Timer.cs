@@ -63,8 +63,7 @@ public class Timer : MonoBehaviour
         inv.i102 = false;
         inv.i103 = false;
         inv.i104 = false;
-        timer = 60;
-
+      
     }
 
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class RandomizarSpawn : MonoBehaviour
@@ -14,18 +15,34 @@ public class RandomizarSpawn : MonoBehaviour
             int RandomNumero1 = Random.Range(0, spawn.Length);
 
 
-            if (itens[QualVaiSer] != null && spawn[RandomNumero1] != null) { itens[QualVaiSer].transform.position = spawn[RandomNumero1].transform.position; }
-            
-            if(spawn[RandomNumero1] = null)
+            if (itens[QualVaiSer] != null && spawn[RandomNumero1] != null) 
             {
-                while (spawn[RandomNumero1] == null)
+                itens[QualVaiSer].transform.position = spawn[RandomNumero1].transform.position;
+                spawn[RandomNumero1] = null;
+            }
+            
+            if(spawn[RandomNumero1] == null)
+            {
+
+                comeco:
+                if (spawn[RandomNumero1] == null)
                 {
                     RandomNumero1 = Random.Range(0, spawn.Length);
-                    itens[QualVaiSer].transform.position = spawn[RandomNumero1].transform.position;
+                    
 
+                    if (spawn[RandomNumero1] == null) 
+                    {
+                        
+                        goto comeco;
+                    }
+                    else
+                    {
+
+                        itens[QualVaiSer].transform.position = spawn[RandomNumero1].transform.position;
+                    }
 
                 }
-
+                spawn[RandomNumero1] = null;
 
 
             }
