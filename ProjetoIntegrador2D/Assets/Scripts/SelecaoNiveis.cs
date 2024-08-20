@@ -45,12 +45,7 @@ public class SelecaoNiveis : MonoBehaviour
         inv.i72 = false;
         inv.i73 = false;
         inv.i74 = false;
-        if (GlobalVariaveis.tuto == 0)
-        {
-            tuto.SetActive(true);
-            
-
-        }
+        
 
 
 
@@ -63,12 +58,7 @@ public class SelecaoNiveis : MonoBehaviour
 
 
     }
-    public void fecharTuto()
-    {
-
-        tuto.SetActive(false);
-        GlobalVariaveis.tuto++;
-    }
+    
     public void n1()
     {
         ImagemNv[0].SetActive(true);

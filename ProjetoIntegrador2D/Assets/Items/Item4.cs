@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Item4 : MonoBehaviour
 {
-    public GameObject[] item4;
+    public GameObject[] item4, verdes;
     public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
@@ -32,6 +32,7 @@ public class Item4 : MonoBehaviour
         {
             interactionPrompt.SetActive(false);
         }
+        
     }
     public void ignora()
     {

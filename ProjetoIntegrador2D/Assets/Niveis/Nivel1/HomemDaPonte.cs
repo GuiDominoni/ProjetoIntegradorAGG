@@ -43,7 +43,7 @@ public class HomemDaPonte : MonoBehaviour
         if (distance <= interactionRange && Ordem != 3 && a == 0)
         {
             interactionPrompt.SetActive(true);
-            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
+            interactionPrompt.transform.position = transform.position + new Vector3(0, 2.6f, 0); // Posiciona o texto acima do objeto
 
             if (Input.GetKeyDown(interactionKey))
             {

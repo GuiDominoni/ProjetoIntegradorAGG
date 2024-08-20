@@ -11,10 +11,11 @@ public class Timer : MonoBehaviour
 {
     public float timer = 60;
     public Text texto;
-    public GameObject preto;
+    public GameObject preto, avisoTuto,botaoProximo, tutoQueNojo;
     public Image inventario;
     public GameObject aviso;
     public UnityEvent OnPause, OnUnPause;
+    public GameObject[] verdes;
 
 
 
@@ -22,55 +23,17 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 0;
+        zerarStatico();
 
-        inv.i11 = false;
-        inv.i12 = false;
-        inv.i13 = false;
-        inv.i14 = false;
-        inv.i21 = false;
-        inv.i22 = false;
-        inv.i23 = false;
-        inv.i24 = false;
-        inv.i31 = false;
-        inv.i32 = false;
-        inv.i33 = false;
-        inv.i34 = false;
-        inv.i41 = false;
-        inv.i42 = false;
-        inv.i43 = false;
-        inv.i44 = false;
-        inv.i51 = false;
-        inv.i52 = false;
-        inv.i53 = false;
-        inv.i54 = false;
-        inv.i61 = false;
-        inv.i62 = false;
-        inv.i63 = false;
-        inv.i64 = false;
-        inv.i71 = false;
-        inv.i72 = false;
-        inv.i73 = false;    
-        inv.i74 = false;
-        inv.i81 = false;
-        inv.i82 = false;
-        inv.i83 = false;
-        inv.i84 = false;
-        inv.i91 = false;
-        inv.i92 = false;
-        inv.i93 = false;
-        inv.i94 = false;
-        inv.i101 = false;
-        inv.i102 = false;
-        inv.i103 = false;
-        inv.i104 = false;
-      
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
-       
+        QueRaiva();
             int TimerVerdadeiro;
             TimerVerdadeiro = Mathf.RoundToInt(timer);
 
@@ -102,11 +65,11 @@ public class Timer : MonoBehaviour
 
         if (inv.lugar == 5)
         {
-            aviso.SetActive(true);
-            Invoke("irTrib", 4f);
             cancelInvoke();
             novaPos();
-
+            Interações.MudouDePosição = true;
+            avisoTuto.SetActive(true);
+            botaoProximo.SetActive(true);
         }
         if (timer <= 0)
         {
@@ -114,6 +77,13 @@ public class Timer : MonoBehaviour
 
 
         }
+
+    }
+   
+    public void jogar()
+    {
+        tutoQueNojo.SetActive(false);
+        Time.timeScale = 1;
 
     }
     public void continuar()
@@ -161,11 +131,159 @@ public class Timer : MonoBehaviour
 
 
     }
-    void trib()
+    public void trib()
     {
 
         SceneManager.LoadScene("TribunalV");
         Debug.Log("AINDA NAO FIZ ME AVISA SE LER ISSO");
     }
+    void QueRaiva()
+    {
+        if (Interações.MudouDePosição)
+        {
+            if (inv.i11)
+            {
+                verdes[1].SetActive(true);
 
+
+            }
+            if (inv.i12)
+            {
+                verdes[2].SetActive(true);
+
+
+            }
+            if (inv.i13)
+            {
+                verdes[3].SetActive(true);
+
+
+            }
+            if (inv.i14)
+            {
+
+                verdes[4].SetActive(true);
+
+            }
+            if (inv.i71)
+            {
+                verdes[1].SetActive(true);
+
+
+            }
+            if (inv.i72)
+            {
+                verdes[2].SetActive(true);
+
+
+            }
+            if (inv.i73)
+            {
+                verdes[3].SetActive(true);
+
+
+            }
+            if (inv.i74)
+            {
+
+                verdes[4].SetActive(true);
+
+            }
+            if (inv.i61)
+            {
+                verdes[1].SetActive(true);
+
+
+            }
+            if (inv.i62)
+            {
+                verdes[2].SetActive(true);
+
+
+            }
+            if (inv.i63)
+            {
+                verdes[3].SetActive(true);
+
+
+            }
+            if (inv.i64)
+            {
+
+                verdes[4].SetActive(true);
+
+            }
+            if (inv.i41)
+            {
+                verdes[1].SetActive(true);
+
+
+            }
+            if (inv.i42)
+            {
+                verdes[2].SetActive(true);
+
+
+            }
+            if (inv.i43)
+            {
+                verdes[3].SetActive(true);
+
+
+            }
+            if (inv.i44)
+            {
+
+                verdes[4].SetActive(true);
+
+            }
+        }
+
+    }
+    void zerarStatico()
+    {
+
+        inv.i11 = false;
+        inv.i12 = false;
+        inv.i13 = false;
+        inv.i14 = false;
+        inv.i21 = false;
+        inv.i22 = false;
+        inv.i23 = false;
+        inv.i24 = false;
+        inv.i31 = false;
+        inv.i32 = false;
+        inv.i33 = false;
+        inv.i34 = false;
+        inv.i41 = false;
+        inv.i42 = false;
+        inv.i43 = false;
+        inv.i44 = false;
+        inv.i51 = false;
+        inv.i52 = false;
+        inv.i53 = false;
+        inv.i54 = false;
+        inv.i61 = false;
+        inv.i62 = false;
+        inv.i63 = false;
+        inv.i64 = false;
+        inv.i71 = false;
+        inv.i72 = false;
+        inv.i73 = false;
+        inv.i74 = false;
+        inv.i81 = false;
+        inv.i82 = false;
+        inv.i83 = false;
+        inv.i84 = false;
+        inv.i91 = false;
+        inv.i92 = false;
+        inv.i93 = false;
+        inv.i94 = false;
+        inv.i101 = false;
+        inv.i102 = false;
+        inv.i103 = false;
+        inv.i104 = false;
+        inv.i104 = false;
+
+    }
 }

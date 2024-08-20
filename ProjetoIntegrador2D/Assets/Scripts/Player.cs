@@ -11,20 +11,28 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     public bool olhandoDireita;
     public GameObject preto, cinza;
-
+    public Animator anim;
+    
 
 
     // Start is called before the first frame update
     void Start()
-    {
-        olhandoDireita = true;  
+    {   
+        anim = GetComponent<Animator>();    
+        olhandoDireita = false;  
         rb = GetComponent<Rigidbody2D>();
-        velocidade = 5; 
+        velocidade = 5;
+        Interações.TenhoCartaoFase2 = false;
+        Interações.MudouDePosição = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+
+        anim.SetFloat("MovX", rb.velocity.x);
+        anim.SetFloat("MovY", rb.velocity.y);
         if (preto.activeSelf || cinza.activeSelf)
         {
             velocidade = 0;
@@ -78,7 +86,7 @@ public static class Interações
     public static bool isFreezing;
     public static bool TenhoCartaoFase2;
     public static int EmQualAndarEstouFase3;
-
+    public static bool MudouDePosição;
 
 }
 

@@ -8,9 +8,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 7
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 2
+  - m_ConditionMode: 4
+    m_ConditionEvent: MovY
+    m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4717282495238066606}
   m_Solo: 0
@@ -49,7 +49,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9619d66b3490ccf4c940ef58bb945403, type: 2}
+  m_Motion: {fileID: 7400000, guid: 94232daf7d60c0644bee7b3bb3840fdc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -76,7 +76,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9619d66b3490ccf4c940ef58bb945403, type: 2}
+  m_Motion: {fileID: 7400000, guid: d6da79f499a178a43bb00da5dd1c42f6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -103,7 +103,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: c89958efece725748a0699900c14ea9c, type: 2}
+  m_Motion: {fileID: 7400000, guid: e6ffb324fb9caf94bb75d249df3bf83b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -117,9 +117,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 3
+  - m_ConditionMode: 3
+    m_ConditionEvent: MovX
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3326395641012444296}
   m_Solo: 0
@@ -148,10 +148,10 @@ AnimatorStateMachine:
     m_Position: {x: 390, y: 310, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1146642647121288518}
-    m_Position: {x: 390, y: 460, z: 0}
+    m_Position: {x: 390, y: 400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2813396643192905783}
-    m_Position: {x: 390, y: 130, z: 0}
+    m_Position: {x: 390, y: 210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3326395641012444296}
     m_Position: {x: 690, y: 310, z: 0}
@@ -189,7 +189,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 632cea7026404c94f8e14344d371c1a7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 5ee7a6d14c4c4964a83ae2e5e669df1b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -203,9 +203,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 7
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 1
+  - m_ConditionMode: 3
+    m_ConditionEvent: MovY
+    m_EventTreshold: -0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4717282495238066606}
   m_Solo: 0
@@ -229,12 +229,18 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Transicao
-    m_Type: 3
+  - m_Name: MovX
+    m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
+  - m_Name: MovY
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -256,9 +262,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 7
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 4
+  - m_ConditionMode: 3
+    m_ConditionEvent: MovX
+    m_EventTreshold: -0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4717282495238066606}
   m_Solo: 0
@@ -281,9 +287,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 7
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 3
+  - m_ConditionMode: 4
+    m_ConditionEvent: MovX
+    m_EventTreshold: 0.5
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4717282495238066606}
   m_Solo: 0
@@ -306,9 +312,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 2
+  - m_ConditionMode: 3
+    m_ConditionEvent: MovY
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2813396643192905783}
   m_Solo: 0
@@ -344,7 +350,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e2ce15024674a6340aa708bb6c5a61b0, type: 2}
+  m_Motion: {fileID: 7400000, guid: d6da79f499a178a43bb00da5dd1c42f6, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -358,9 +364,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 4
+  - m_ConditionMode: 4
+    m_ConditionEvent: MovX
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4927674461266321594}
   m_Solo: 0
@@ -383,9 +389,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 6
-    m_ConditionEvent: Transicao
-    m_EventTreshold: 1
+  - m_ConditionMode: 4
+    m_ConditionEvent: MovY
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1146642647121288518}
   m_Solo: 0

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Item1 : MonoBehaviour
 {
-    public GameObject[] item1;
+    public GameObject[] item1, verdes;
     public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
@@ -34,6 +34,7 @@ public class Item1 : MonoBehaviour
         {
             interactionPrompt.SetActive(false);
         }
+       
     }
 
     public void Interact()
