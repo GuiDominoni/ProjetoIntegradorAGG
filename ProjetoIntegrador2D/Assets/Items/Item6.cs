@@ -40,7 +40,7 @@ public class Item6 : MonoBehaviour
         item.SetActive(false);
         pega.SetActive(false);
         ignorar.SetActive(false);
-
+        Time.timeScale = 1;
 
     }
 
@@ -50,6 +50,7 @@ public class Item6 : MonoBehaviour
         item.SetActive(true);
         pega.SetActive(true);
         ignorar.SetActive(true);
+        Time.timeScale = 0;
     }
     public void pegar()
     {

@@ -38,7 +38,7 @@ public class Item3 : MonoBehaviour
         item.SetActive(false);
         pega.SetActive(false);
         ignorar.SetActive(false);
-
+        Time.timeScale = 1;
 
     }
 
@@ -48,10 +48,11 @@ public class Item3 : MonoBehaviour
         item.SetActive(true);
         pega.SetActive(true);
         ignorar.SetActive(true);
+        Time.timeScale = 0;
     }
     public void pegar()
     {
-
+    
         if (inv.lugar == 4)
         {
             item3[3].SetActive(true);
