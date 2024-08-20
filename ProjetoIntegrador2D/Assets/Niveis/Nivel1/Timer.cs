@@ -70,10 +70,14 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int TimerVerdadeiro;
-        TimerVerdadeiro = Mathf.RoundToInt(timer);
-        texto.text = TimerVerdadeiro.ToString();
-        Invoke("timerMenos", 0);
+       
+            int TimerVerdadeiro;
+            TimerVerdadeiro = Mathf.RoundToInt(timer);
+
+            texto.text = TimerVerdadeiro.ToString();
+            Invoke("timerMenos", 0);
+        
+        
 
         if (Input.GetButtonDown("Cancel"))
         {

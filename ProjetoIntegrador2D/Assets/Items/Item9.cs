@@ -43,6 +43,7 @@ public class Item9 : MonoBehaviour
         pega.SetActive(true);
         ignorar.SetActive(true);
         Time.timeScale = 0;
+    
     }
     public void ignora()
     {
