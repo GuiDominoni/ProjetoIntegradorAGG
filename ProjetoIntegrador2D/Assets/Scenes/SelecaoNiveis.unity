@@ -2627,7 +2627,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Fase 1: O Passeio no Parque Cliente: Roberto, um frequentador do parque.'
+  m_Text: 'Fase 1: O Passeio no Parque | Cliente: Roberto, um frequentador do parque.'
 --- !u!222 &987521609
 CanvasRenderer:
   m_ObjectHideFlags: 0

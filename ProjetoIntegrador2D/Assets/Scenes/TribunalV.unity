@@ -1279,7 +1279,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bc523cd9d8d5d764d8316dfa5d81e119,
+      objectReference: {fileID: 21300000, guid: 33ff40867f85fd846be69fd5707b8e41,
         type: 3}
     - target: {fileID: 1583559830785435656, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -1363,6 +1363,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1583559830846041491, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 121.456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1583559830846041491, guid: 4f88e1d769fe6624298c6743d0e93c4e,
+        type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6665111
       objectReference: {fileID: 0}
@@ -1389,12 +1394,12 @@ PrefabInstance:
     - target: {fileID: 1583559830846041491, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 839.1
+      value: 839.8
       objectReference: {fileID: 0}
     - target: {fileID: 1583559830846041491, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 51
+      value: 53
       objectReference: {fileID: 0}
     - target: {fileID: 1583559830846041491, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -1405,7 +1410,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bc523cd9d8d5d764d8316dfa5d81e119,
+      objectReference: {fileID: 21300000, guid: 33ff40867f85fd846be69fd5707b8e41,
         type: 3}
     - target: {fileID: 1583559830846041492, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -1882,7 +1887,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bc523cd9d8d5d764d8316dfa5d81e119,
+      objectReference: {fileID: 21300000, guid: 33ff40867f85fd846be69fd5707b8e41,
         type: 3}
     - target: {fileID: 1583559831537224989, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -2034,7 +2039,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bc523cd9d8d5d764d8316dfa5d81e119,
+      objectReference: {fileID: 21300000, guid: 33ff40867f85fd846be69fd5707b8e41,
         type: 3}
     - target: {fileID: 1583559831564269971, guid: 4f88e1d769fe6624298c6743d0e93c4e,
         type: 3}
@@ -3999,8 +4004,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "H\xE1 algum ind\xEDcio f\xEDsico que sugira que outra pessoa estava na
-    cena do crime?"
+  m_Text: "Algu\xE9m viu onde Roberto estava quando a joia foi roubada?"
 --- !u!222 &384335090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4715,7 +4719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Existe alguma prova visual que mostre o paradeiro de Roberto no parque?
+  m_Text: "H\xE1 algo que sugira que outra pessoa planejou estar no parque?"
 --- !u!222 &664903000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4795,7 +4799,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: O que pode apontar em qual lugar Roberto estava no momento do furto?
+  m_Text: "As c\xE2meras do parque mostram Roberto no lugar do furto?"
 --- !u!222 &683152861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5100,7 +5104,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "H\xE1 relatos de outras pessoas suspeitas na \xE1rea do furto?"
+  m_Text: "Algu\xE9m viu outra pessoa suspeita no parque?"
 --- !u!222 &858005576
 CanvasRenderer:
   m_ObjectHideFlags: 0
