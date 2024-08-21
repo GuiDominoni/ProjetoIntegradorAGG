@@ -421,6 +421,41 @@ public class Tribunal : MonoBehaviour
 
 
     }
+    public void PularPergunta()
+    {
+
+        if (clicou1 == true && clicou2 == true && clicou3 == true && clicou4 == false)
+        {
+
+            clicou4 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == true && clicou3 == false)
+        {
+
+            clicou3 = true;
+
+
+
+        }
+        if (clicou1 == true && clicou2 == false)
+        {
+
+            clicou2 = true;
+           
+        }
+
+        if (clicou1 == false)
+        {
+            clicou1 = true;
+
+
+        }
+
+
+    }
 
 
     public void Recomeçar()
