@@ -84092,7 +84092,7 @@ EdgeCollider2D:
   - {x: 74.187706, y: 1.8983917}
   - {x: 82.43716, y: 1.8925629}
   - {x: 82.437645, y: 1.4849396}
-  - {x: 74.683464, y: 1.4095306}
+  - {x: 74.683464, y: 1.4544983}
   - {x: 74.6831, y: -13.471924}
   - {x: 93.182594, y: -13.456848}
   - {x: 93.19544, y: 1.3565521}
@@ -84105,16 +84105,16 @@ EdgeCollider2D:
   - {x: 107.67054, y: -5.0950317}
   - {x: 107.68124, y: -8.46788}
   - {x: 122.19718, y: -8.452774}
-  - {x: 122.1827, y: 5.3172684}
-  - {x: 107.67068, y: 5.3098373}
+  - {x: 122.1827, y: 5.424492}
+  - {x: 107.67068, y: 5.3711014}
   - {x: 107.67896, y: -3.0923767}
   - {x: 107.20306, y: -3.0906982}
   - {x: 107.2098, y: 13.904655}
   - {x: 107.6686, y: 13.899445}
   - {x: 107.673485, y: 5.905281}
   - {x: 122.22941, y: 5.8936234}
-  - {x: 122.21928, y: 20.694122}
-  - {x: 107.66462, y: 20.68193}
+  - {x: 122.21928, y: 20.383171}
+  - {x: 107.69424, y: 20.385788}
   - {x: 107.671486, y: 15.894127}
   - {x: 107.20927, y: 15.889999}
   - {x: 107.18897, y: 20.393639}
@@ -84123,8 +84123,30 @@ EdgeCollider2D:
   - {x: 85.433876, y: 10.412003}
   - {x: 85.434074, y: 10.898201}
   - {x: 93.19956, y: 10.896751}
-  - {x: 93.20132, y: 25.456299}
-  - {x: 93.15941, y: 25.822823}
+  - {x: 93.1943, y: 25.408737}
+  - {x: 74.68517, y: 25.384178}
+  - {x: 74.672325, y: 10.894997}
+  - {x: 82.42716, y: 10.899231}
+  - {x: 82.441475, y: 10.411644}
+  - {x: 74.2253, y: 10.415924}
+  - {x: 74.18958, y: 20.453148}
+  - {x: 57.434196, y: 20.521782}
+  - {x: 57.427834, y: 20.895271}
+  - {x: 74.191246, y: 20.892761}
+  - {x: 74.19271, y: 35.386414}
+  - {x: 37.685844, y: 35.62799}
+  - {x: 37.66475, y: 20.88926}
+  - {x: 54.448524, y: 20.8889}
+  - {x: 54.456825, y: 20.507973}
+  - {x: 34.67357, y: 20.519707}
+  - {x: 34.661995, y: 8.901863}
+  - {x: 34.19268, y: 8.890877}
+  - {x: 34.198486, y: 20.641869}
+  - {x: 14.433258, y: 20.643707}
+  - {x: 14.438988, y: 20.911789}
+  - {x: 31.211304, y: 20.901985}
+  - {x: 14.496704, y: 35.064873}
+  - {x: 9.102791, y: 12.610092}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -85660,32 +85682,32 @@ PrefabInstance:
     - target: {fileID: 6093168387932365541, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.2764799
+      value: 0.13750246
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365541, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.787766
+      value: 0.23592187
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365541, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.0030155703
+      value: -0.00045882165
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365541, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.006632328
+      value: -0.0056161806
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365541, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 0.84
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365541, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 0.84
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365542, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
@@ -85710,12 +85732,12 @@ PrefabInstance:
     - target: {fileID: 6093168387932365543, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.01125
+      value: 7.6223774
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365543, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.7375
+      value: 6.5026574
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365543, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
@@ -85725,12 +85747,12 @@ PrefabInstance:
     - target: {fileID: 6093168387932365543, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 168.7
+      value: 166.5743
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365543, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -118.3
+      value: -117.556
       objectReference: {fileID: 0}
     - target: {fileID: 6093168387932365543, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
@@ -85781,7 +85803,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -2064479363, guid: c6d49a1a33e63704895edf3066eae9dd,
+      objectReference: {fileID: -351225984, guid: e4840cfccadf778418dafcf83419c372,
         type: 3}
     - target: {fileID: 6093168387932365560, guid: e5d7c08a2f8c1cc44ae05e3982bafed1,
         type: 3}
