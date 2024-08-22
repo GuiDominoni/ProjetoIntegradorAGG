@@ -575,12 +575,28 @@ public class Tribunal : MonoBehaviour
 
         }
 
-        Debug.Log(cond);
+        
         if (venceu == true)
         {
             menuVenceu.SetActive(true);
             GlobalVariaveis.n2 = 1;
+            if (GlobalVariaveis.emQueNivelEstou == 1)
+            {
 
+                GlobalVariaveis.Venci1 = true;
+            }
+            if (GlobalVariaveis.emQueNivelEstou == 2)
+            {
+                GlobalVariaveis.Venci2 = true;
+            }
+            if (GlobalVariaveis.emQueNivelEstou == 3)
+            {
+                GlobalVariaveis.Venci3 = true;
+            }
+            if (GlobalVariaveis.emQueNivelEstou == 4)
+            {
+                GlobalVariaveis.venci4 = true;
+            }
 
         }
         if (perdeu == true)

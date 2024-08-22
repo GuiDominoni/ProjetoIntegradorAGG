@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class SelecaoNiveis : MonoBehaviour
 {
     public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto, tuto;
-    public GameObject[] ImagemNv;
+    public GameObject[] ImagemNv, checkList;
     public GameObject[] comecar;
 
     //os ARRAYS sao essas coisas com [] no final, e sao mais facil para a organização,
@@ -58,7 +58,30 @@ public class SelecaoNiveis : MonoBehaviour
         inv.i103 = false;
         inv.i104 = false;
         GlobalVariaveis.emQueNivelEstou = 0;
-        
+        if (GlobalVariaveis.Venci1)
+        {
+            checkList[0].SetActive(true);
+
+
+        }
+        if (GlobalVariaveis.Venci2)
+        {
+            checkList[1].SetActive(true);
+
+
+        }
+        if (GlobalVariaveis.Venci3)
+        {
+
+            checkList[2].SetActive(true);
+
+        }
+        if (GlobalVariaveis.venci4)
+        {
+
+            checkList[3].SetActive(true);
+
+        }
 
 
 

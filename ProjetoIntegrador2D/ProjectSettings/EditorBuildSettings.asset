@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Andriel.unity
     guid: 5f5a9ea23c7fec64eaa4b8e7ec150eb5
   - enabled: 1
-    path: Assets/Scenes/Fase2.unity
+    path: Assets/Scenes/Fase2Falsa.unity
     guid: c51139f62124029499945606b8732b79
   - enabled: 1
     path: Assets/Scenes/Fase3.unity

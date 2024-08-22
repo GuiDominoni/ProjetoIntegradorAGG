@@ -561,8 +561,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.535, y: -13.495}
-  m_SizeDelta: {x: 1243.318, y: 750.17}
+  m_AnchoredPosition: {x: 0.000044823, y: -0.000014782}
+  m_SizeDelta: {x: 944.6625, y: 750.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195802126
 MonoBehaviour:
@@ -584,7 +584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c9707d51c15623842a29db4419068863, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5197,7 +5197,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 38, y: 208.609}
+  m_AnchoredPosition: {x: 53, y: 120}
   m_SizeDelta: {x: 711.288, y: 118.783}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &925119716
@@ -5222,8 +5222,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: Voce Venceu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0990f86af16502045b155b50e902840c, type: 2}
+  m_sharedMaterial: {fileID: 3375415250710350820, guid: 0990f86af16502045b155b50e902840c,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6382,8 +6383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: -56}
-  m_SizeDelta: {x: 308.035, y: 187.317}
+  m_AnchoredPosition: {x: 0.000051498, y: -114}
+  m_SizeDelta: {x: 249.8065, y: 149.66}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1314803137
 MonoBehaviour:
