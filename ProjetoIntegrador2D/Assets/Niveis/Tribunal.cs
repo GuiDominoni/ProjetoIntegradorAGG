@@ -460,9 +460,24 @@ public class Tribunal : MonoBehaviour
 
     public void Recomeçar()
     {
-        unfade.SetActive(true);
-        Invoke("Recomec", 0.4f);
-        
+        if (GlobalVariaveis.emQueNivelEstou == 1) 
+        {
+        ;
+            SceneManager.LoadScene("Fase1Tutorial");
+        }
+        if (GlobalVariaveis.emQueNivelEstou == 2)
+        {
+            SceneManager.LoadScene("Fase2");
+        }
+        if (GlobalVariaveis.emQueNivelEstou == 3)
+        {
+            SceneManager.LoadScene("Fase3");
+        }
+        if (GlobalVariaveis.emQueNivelEstou == 4)
+        {
+            SceneManager.LoadScene("Fase4");
+        }
+
 
     }
     public void Jogar()
@@ -473,16 +488,12 @@ public class Tribunal : MonoBehaviour
 
 
     }
-    void Recomec()
-    {
-        SceneManager.LoadScene("Fase1Tutorial");
-
-    }
+    
     public void selecaoDeNiveis()
     {
         unfade .SetActive(true);
         Invoke("SelecNiveis", 0.4f);
-
+        
     }
     public void Mapa2()
     {
@@ -493,7 +504,7 @@ public class Tribunal : MonoBehaviour
     public void SelecNiveis()
     {
         SceneManager.LoadScene("SelecaoNiveis");
-
+        GlobalVariaveis.emQueNivelEstou = 0;
 
     }
     public void desatPreto()

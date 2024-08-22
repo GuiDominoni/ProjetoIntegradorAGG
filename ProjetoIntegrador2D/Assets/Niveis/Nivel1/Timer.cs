@@ -99,6 +99,7 @@ public class Timer : MonoBehaviour
         Invoke("carregarNiveis", 0.4f);
         OnUnPause.Invoke();
 
+
     }
     public void timerMenos()
     {

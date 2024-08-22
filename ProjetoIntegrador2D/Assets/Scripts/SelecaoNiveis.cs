@@ -45,6 +45,19 @@ public class SelecaoNiveis : MonoBehaviour
         inv.i72 = false;
         inv.i73 = false;
         inv.i74 = false;
+        inv.i81 = false;
+        inv.i82 = false;
+        inv.i83 = false;
+        inv.i84 = false;
+        inv.i91 = false;
+        inv.i92 = false;
+        inv.i93 = false;    
+        inv.i94 = false;
+        inv.i101 = false;
+        inv.i102 = false;   
+        inv.i103 = false;
+        inv.i104 = false;
+        GlobalVariaveis.emQueNivelEstou = 0;
         
 
 
@@ -334,17 +347,17 @@ public class SelecaoNiveis : MonoBehaviour
     public void comecarNv1()
     {
         SceneManager.LoadScene("Fase1Tutorial");
-
+        GlobalVariaveis.emQueNivelEstou = 1;
     }
     public void comecarNv2()
     {
         SceneManager.LoadScene("Mapa2");
-
+        GlobalVariaveis.emQueNivelEstou = 2;
     }
     public void comecarNv3() {
 
-        SceneManager.LoadScene("Mapa03");   
-
+        SceneManager.LoadScene("Mapa03");
+        GlobalVariaveis.emQueNivelEstou = 3;
     }
     void pretoDestivar()
     {
@@ -374,7 +387,7 @@ public static class GlobalVariaveis
     public static int n1, n2, n3, n4, n5, n6, n7, n8, n9,
         n10, n11, n12, n13, n14
         
-        ,n15, n16, n17, n18, n19, n20, tuto;
-
+        ,n15, n16, n17, n18, n19, n20, tuto, emQueNivelEstou;
+    public static bool Venci1, Venci2, Venci3, venci4;
 
 }
