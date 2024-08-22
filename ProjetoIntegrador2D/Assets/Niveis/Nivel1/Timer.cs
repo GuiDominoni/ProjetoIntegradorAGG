@@ -23,7 +23,13 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0;
+        if(GlobalVariaveis.emQueNivelEstou == 1)
+        {
+
+            Time.timeScale = 0;
+
+        }
+        
         zerarStatico();
 
 
@@ -96,10 +102,8 @@ public class Timer : MonoBehaviour
     public void sair()
     {
         preto.SetActive(true);
-        Invoke("carregarNiveis", 0.4f);
-        OnUnPause.Invoke();
-
-
+        SceneManager.LoadScene("SelecaoNiveis");
+        Time.timeScale = 1; 
     }
     public void timerMenos()
     {

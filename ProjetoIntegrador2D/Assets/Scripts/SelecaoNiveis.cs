@@ -104,14 +104,13 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void n2()
     {
-        if (GlobalVariaveis.n2 == 1)
-        {
+        
             ImagemNv[1].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
             comecar[1].SetActive
                 (true);
-        }
+        
     }
     public void n3()
     {
@@ -374,12 +373,12 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void comecarNv2()
     {
-        SceneManager.LoadScene("Mapa2");
+        SceneManager.LoadScene("Fase2");
         GlobalVariaveis.emQueNivelEstou = 2;
     }
     public void comecarNv3() {
 
-        SceneManager.LoadScene("Mapa03");
+        SceneManager.LoadScene("Fase3");
         GlobalVariaveis.emQueNivelEstou = 3;
     }
     void pretoDestivar()
