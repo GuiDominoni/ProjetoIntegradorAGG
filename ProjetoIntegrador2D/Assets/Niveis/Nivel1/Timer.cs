@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     public GameObject preto, avisoTuto,botaoProximo, tutoQueNojo;
     public Image inventario;
     public GameObject aviso;
-    public UnityEvent OnPause, OnUnPause;
+    public UnityEvent OnPause, OnUnPause, opcoes, sairOpcoes;
     public GameObject[] verdes;
 
 
@@ -85,7 +85,18 @@ public class Timer : MonoBehaviour
         }
 
     }
-   
+     public void opcoesEntrar()
+    {
+        opcoes.Invoke();
+
+
+    }
+    public void opcoesSair()
+    {
+
+        sairOpcoes.Invoke();
+
+    }
     public void jogar()
     {
         tutoQueNojo.SetActive(false);

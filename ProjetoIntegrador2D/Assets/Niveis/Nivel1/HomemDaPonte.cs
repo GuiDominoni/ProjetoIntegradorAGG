@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -17,7 +16,7 @@ public class HomemDaPonte : MonoBehaviour
     public UnityEvent Fala1, Fala2, Fala3, desativ1, desativ2, ativarPonte;
     public Text texto1, texto11;
     public Text texto2;
-   
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -54,9 +53,9 @@ public class HomemDaPonte : MonoBehaviour
         {
             interactionPrompt.SetActive(false);
         }
-        if(madeirasQFalta <= 0)
+        if (madeirasQFalta <= 0)
         {
-            
+
             ativarPonte.Invoke();
             Destroy(colisor);
             Ordem++;
@@ -64,20 +63,20 @@ public class HomemDaPonte : MonoBehaviour
             MadeirasQueEuTenho.possoPegar = false;
         }
     }
-    
-  
+
+
     public void Interact()
     {
-        if(Ordem == 0)
+        if (Ordem == 0)
         {
             Fala1.Invoke();
 
         }
-        else if(Ordem == 1) 
+        else if (Ordem == 1)
         {
             MadeirasQueEuTenho.possoPegar = true;
             Fala2.Invoke();
-            if(OP == 1)
+            if (OP == 1)
             {
                 madeirasQFalta -= MadeirasQueEuTenho.Madeiras;
                 MadeirasQueEuTenho.Madeiras = 0;
@@ -93,7 +92,7 @@ public class HomemDaPonte : MonoBehaviour
     {
         Ordem++;
         desativ1.Invoke();
-        OP =1;
+        OP = 1;
         MadeirasQueEuTenho.possoPegar = true;
 
     }
