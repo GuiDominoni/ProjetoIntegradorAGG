@@ -43,7 +43,7 @@ public class Item10 : MonoBehaviour
         pega.SetActive(true);
         ignorar.SetActive(true);
         Time.timeScale = 0;
-       
+        Cursor.visible = true;
     }
     public void ignora()
     {
@@ -52,6 +52,7 @@ public class Item10 : MonoBehaviour
         pega.SetActive(false);
         ignorar.SetActive(false);
         Time.timeScale = 1;
+        Cursor.visible = false; 
 
     }
     public void pegar()

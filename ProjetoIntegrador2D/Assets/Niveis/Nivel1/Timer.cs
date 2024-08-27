@@ -29,7 +29,7 @@ public class Timer : MonoBehaviour
             Time.timeScale = 0;
 
         }
-        
+        Cursor.visible = false;
         zerarStatico();
 
 
@@ -149,9 +149,19 @@ public class Timer : MonoBehaviour
     }
     public void trib()
     {
+        if(GlobalVariaveis.emQueNivelEstou == 1)
+        {
+            SceneManager.LoadScene("TribunalV");
+            
 
-        SceneManager.LoadScene("TribunalV");
-        Debug.Log("AINDA NAO FIZ ME AVISA SE LER ISSO");
+        }
+        if (GlobalVariaveis.emQueNivelEstou == 2)
+        {
+            SceneManager.LoadScene("TribunalV2");
+
+
+        }
+
     }
     void QueRaiva()
     {

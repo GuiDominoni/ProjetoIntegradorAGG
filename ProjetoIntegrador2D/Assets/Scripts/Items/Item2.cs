@@ -41,6 +41,7 @@ public class Item2 : MonoBehaviour
         ignorar.SetActive(false);
         Time.timeScale = 1;
 
+
     }
 
     public void Interact()
@@ -50,6 +51,7 @@ public class Item2 : MonoBehaviour
         pega.SetActive(true);
         ignorar.SetActive(true);
         Time.timeScale = 0;
+        Cursor.visible = true;
     }
     public void pegar()
     {
