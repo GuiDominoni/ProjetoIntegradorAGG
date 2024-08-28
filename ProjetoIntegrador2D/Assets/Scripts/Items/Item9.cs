@@ -53,6 +53,7 @@ public class Item9 : MonoBehaviour
         pega.SetActive(false);
         ignorar.SetActive(false);
         Time.timeScale = 1;
+        Cursor.visible = false;
 
     }
     public void pegar()
@@ -86,7 +87,8 @@ public class Item9 : MonoBehaviour
             Destroy(gameObject);
         }
         ignora();
-    
+        Cursor.visible = false;
+
 
     }
 }

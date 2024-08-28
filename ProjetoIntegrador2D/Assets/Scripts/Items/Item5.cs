@@ -39,7 +39,7 @@ public class Item5 : MonoBehaviour
         item.SetActive(false);
         pega.SetActive(false);
         ignorar.SetActive(false);
-
+        Cursor.visible = false;
         Time.timeScale = 1;
     }
     public void Interact()
@@ -83,6 +83,7 @@ public class Item5 : MonoBehaviour
             Destroy(gameObject);
         }
         ignora();
+        Cursor.visible = false;
 
     }
 }

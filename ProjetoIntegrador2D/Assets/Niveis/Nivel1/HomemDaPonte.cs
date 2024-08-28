@@ -19,6 +19,7 @@ public class HomemDaPonte : MonoBehaviour
 
     private void Start()
     {
+        GlobalVariaveis.emQueNivelEstou = 1;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
         madeirasQFalta = 4;

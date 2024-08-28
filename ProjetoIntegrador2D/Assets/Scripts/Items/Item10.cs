@@ -86,7 +86,7 @@ public class Item10 : MonoBehaviour
             Destroy(gameObject);
         }
         ignora();
-
+        Cursor.visible = false;
     }
 }
 

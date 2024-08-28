@@ -12,8 +12,7 @@ public class SelecaoNiveis : MonoBehaviour
     public GameObject[] ImagemNv, checkList;
     public GameObject[] comecar;
 
-    //os ARRAYS sao essas coisas com [] no final, e sao mais facil para a organização,
-    //ficou mais organizado no inspector fazendo assim, entao a imagemNv[i] o i vai ser igual ao número que está lá mais 1, ex: ImagemNv[1] é a imagem do nivel 2 
+    //Professor alexandre me desculpa, no inicio do ano eu fiz esse codigo, na segunda semana de pi e eu achava mais facil começar um array pelo indice 1 e nao 0, foi mau mas eu compreendo meu erro
     private void Start()
     {
         Invoke("pretoDestivar", 1f);

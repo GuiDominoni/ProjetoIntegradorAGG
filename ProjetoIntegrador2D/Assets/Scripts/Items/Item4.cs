@@ -9,6 +9,7 @@ public class Item4 : MonoBehaviour
     private Transform player;
     public GameObject preto, pega, ignorar;
     bool podePegar;
+    public bool vaiSerDestruido;
     private void Start()
     {
         podePegar = true;
@@ -43,7 +44,7 @@ public class Item4 : MonoBehaviour
         pega.SetActive(false);
         ignorar.SetActive(false);
         Time.timeScale = 1;
-
+        Cursor.visible = false;
     }
 
     public void Interact()
@@ -88,6 +89,7 @@ public class Item4 : MonoBehaviour
         }
          podePegar = false;
         ignora();
+        Cursor.visible = false;
 
     }
 }

@@ -29,7 +29,10 @@ public class Timer : MonoBehaviour
             Time.timeScale = 0;
 
         }
-        Cursor.visible = false;
+        if (GlobalVariaveis.emQueNivelEstou != 1)
+        {
+            Cursor.visible = false;
+        }
         zerarStatico();
 
 
@@ -55,12 +58,13 @@ public class Timer : MonoBehaviour
             {
                 OnPause.Invoke();
                 Time.timeScale = 0;
-
+                Cursor.visible = true;
             }
             else
             {
                 OnUnPause.Invoke();
                 Time.timeScale = 1;
+                Cursor.visible = false;
             }
 
 
@@ -74,7 +78,10 @@ public class Timer : MonoBehaviour
             cancelInvoke();
             novaPos();
             Interações.MudouDePosição = true;
-            avisoTuto.SetActive(true);
+            if (GlobalVariaveis.emQueNivelEstou == 1)
+            {
+                avisoTuto.SetActive(true);
+            }
             botaoProximo.SetActive(true);
         }
         if (timer <= 0)
@@ -101,13 +108,14 @@ public class Timer : MonoBehaviour
     {
         tutoQueNojo.SetActive(false);
         Time.timeScale = 1;
+        Cursor.visible = false; 
 
     }
     public void continuar()
     {
         OnUnPause.Invoke();
         Time.timeScale = 1;
-
+        Cursor.visible = false;
 
     }
     public void sair()

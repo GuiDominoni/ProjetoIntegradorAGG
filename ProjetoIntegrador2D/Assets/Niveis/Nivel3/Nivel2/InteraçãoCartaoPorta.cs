@@ -14,6 +14,7 @@ public class InteraçãoCartaoPorta : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
+        GlobalVariaveis.emQueNivelEstou = 2;
     }
 
     void Update()
