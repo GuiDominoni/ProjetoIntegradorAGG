@@ -300,7 +300,7 @@ public class SelecaoNiveis : MonoBehaviour
         comecar[1].SetActive(false);
         comecar[2].SetActive(false);
 
-        prox1.SetActive(true);
+        
         sairDaImagem1.SetActive(false);
 
     }
@@ -315,8 +315,7 @@ public class SelecaoNiveis : MonoBehaviour
         ImagemNv[14].SetActive(false);
         ImagemNv[15].SetActive(false);
         sairDaImagem2.SetActive(false);
-        prox2.SetActive(true);
-        ant1.SetActive(true);
+        
     }
     public void sair3()
     {

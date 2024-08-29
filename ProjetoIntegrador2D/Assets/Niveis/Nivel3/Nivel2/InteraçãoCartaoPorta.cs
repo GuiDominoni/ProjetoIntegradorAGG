@@ -9,7 +9,7 @@ public class InteraçãoCartaoPorta : MonoBehaviour
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
-    public GameObject preto, pretoQTem, pretoQvaiTer, porta;
+    public GameObject  porta;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -41,8 +41,7 @@ public class InteraçãoCartaoPorta : MonoBehaviour
     {
         if(Interações.TenhoCartaoFase2 == true)
         {
-            pretoQvaiTer.SetActive(true);
-            pretoQTem.SetActive(false);
+            
             porta.SetActive(false);
             Destroy(gameObject);
 

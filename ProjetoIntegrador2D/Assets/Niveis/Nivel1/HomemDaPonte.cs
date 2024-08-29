@@ -86,7 +86,7 @@ public class HomemDaPonte : MonoBehaviour
 
 
         }
-
+        Cursor.visible = true;
 
     }
     public void vouTeAjudar()
@@ -95,19 +95,19 @@ public class HomemDaPonte : MonoBehaviour
         desativ1.Invoke();
         OP = 1;
         MadeirasQueEuTenho.possoPegar = true;
-
+        Cursor.visible = false;
     }
     public void tchau1()
     {
         desativ1.Invoke();
-
+        Cursor.visible = false;
 
     }
     public void tchau2()
     {
         desativ2.Invoke();
 
-
+        Cursor.visible = false;
     }
 
 }
