@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timer = 60;
+    public float timer;
     public Text texto;
     public GameObject preto, avisoTuto,botaoProximo, tutoQueNojo;
     public Image inventario;
@@ -23,6 +23,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timer = 300;
         if(GlobalVariaveis.emQueNivelEstou == 1)
         {
 
