@@ -1060,7 +1060,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TileMapONG_30: 496773085
+      TileMapONG_40: 1705849303
       TileMapONG_17: 308509228
       TileMapONG_35: 954121768
       TileMapONG_1: 1360931681
@@ -1102,9 +1102,9 @@ TextureImporter:
       TileMapONG_36: 1875524314
       TileMapONG_10: -1640997143
       TileMapONG_29: -1713435172
-      TileMapONG_40: 1705849303
-      TileMapONG_27: 1261104750
+      TileMapONG_30: 496773085
       TileMapONG_28: 489792826
+      TileMapONG_27: 1261104750
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

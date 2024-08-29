@@ -87,9 +87,14 @@ public class Item7 : MonoBehaviour
         }
         if(GlobalVariaveis.emQueNivelEstou == 2)
         {
-            Destroy(gameObject);
+            
             podeInteragir = false;
 
+        }
+        if (GlobalVariaveis.emQueNivelEstou == 1)
+        {
+
+            Destroy(gameObject);
         }
         ignora();
         Cursor.visible = false;
