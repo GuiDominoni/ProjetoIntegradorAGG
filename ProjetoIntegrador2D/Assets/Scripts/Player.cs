@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
     public bool olhandoDireita;
     public GameObject preto, cinza;
-    public Animator anim;
+    Animator anim;
     
 
 

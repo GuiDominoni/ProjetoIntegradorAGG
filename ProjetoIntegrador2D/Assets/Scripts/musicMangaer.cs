@@ -18,6 +18,7 @@ public class musicMangaer : MonoBehaviour
 
     void Start()
     {
+        
         float masterVolume = PlayerPrefs.GetFloat(MasterVolumeKey, 0.5f);
         float musicVolume = PlayerPrefs.GetFloat(MusicVolumeKey, 0.5f);
         float sfxVolume = PlayerPrefs.GetFloat(SFXVolumeKey, 0.5f);

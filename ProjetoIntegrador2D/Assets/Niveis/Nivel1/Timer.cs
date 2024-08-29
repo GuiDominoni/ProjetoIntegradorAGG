@@ -83,6 +83,7 @@ public class Timer : MonoBehaviour
                 avisoTuto.SetActive(true);
             }
             botaoProximo.SetActive(true);
+            Cursor.visible = true;
         }
         if (timer <= 0)
         {
@@ -93,11 +94,11 @@ public class Timer : MonoBehaviour
 
     }
      public void opcoesEntrar()
-    {
+     {
         opcoes.Invoke();
 
 
-    }
+     }
     public void opcoesSair()
     {
 

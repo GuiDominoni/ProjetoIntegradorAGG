@@ -90,6 +90,12 @@ public class Item4 : MonoBehaviour
          podePegar = false;
         ignora();
         Cursor.visible = false;
+        if(GlobalVariaveis.emQueNivelEstou != 1)
+        {
+            Destroy(gameObject);
+
+
+        }
 
     }
 }
