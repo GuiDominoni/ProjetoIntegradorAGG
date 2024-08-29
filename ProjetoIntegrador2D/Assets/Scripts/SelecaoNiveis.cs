@@ -103,12 +103,14 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void n2()
     {
-        
+        if (GlobalVariaveis.Venci1)
+        {
             ImagemNv[1].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
             comecar[1].SetActive
                 (true);
+        }
         
     }
     public void n3()
