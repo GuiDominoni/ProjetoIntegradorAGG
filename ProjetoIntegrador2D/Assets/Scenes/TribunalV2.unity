@@ -4258,7 +4258,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Algu\xE9m viu onde Roberto estava quando a joia foi roubada?"
+  m_Text: "As c\xE2meras da galeria mostram o caminh\xE3o de entrega chegando?"
 --- !u!222 &384335090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4974,8 +4974,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Existe alguma prova de que a pe\xE7a foi roubada antes de chegar \xE0
-    galeria?"
+  m_Text: "Algu\xE9m pode confirmar a hist\xF3ria do motorista sobre o roubo?"
 --- !u!222 &664903000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5055,7 +5054,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Como pode provar que a escultura nunca chegou \xE0 galeria?"
+  m_Text: "Como voc\xEA pode provar que a escultura nunca chegou \xE0 galeria?"
 --- !u!222 &683152861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5436,7 +5435,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Algu\xE9m viu outra pessoa suspeita no parque?"
+  m_Text: "H\xE1 alguma prova de que algo aconteceu durante a entrega?\t"
 --- !u!222 &858005576
 CanvasRenderer:
   m_ObjectHideFlags: 0
