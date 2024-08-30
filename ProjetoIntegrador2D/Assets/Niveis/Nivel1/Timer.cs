@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
 {
     public float timer;
     public Text texto;
-    public GameObject preto, avisoTuto,botaoProximo, tutoQueNojo;
+    public GameObject preto, avisoTuto,botaoProximo, tutoQueNojo, PretoTelas;
     public Image inventario;
     public GameObject aviso;
     public UnityEvent OnPause, OnUnPause, opcoes, sairOpcoes;
@@ -52,7 +52,7 @@ public class Timer : MonoBehaviour
         
         
 
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") && !PretoTelas.activeSelf)
         {
 
             if (Time.timeScale == 1)
