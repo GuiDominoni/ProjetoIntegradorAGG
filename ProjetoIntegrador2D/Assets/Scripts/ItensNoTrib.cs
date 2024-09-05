@@ -7,7 +7,7 @@ using TMPro;
 public class ItensNoTrib : MonoBehaviour
 {
     public GameObject i11, i12, i13, i14, i21, i22, i23, i24, i31, i32, i33, i34, i41, i42, i43, i44, i51, i52, i53, i54, i61, i62, i63, i64, i71, i72, i73, i74, i81, i82, i83, i84, i91, i92, i93, i94, i101, i102, i103, i104;
-    public TMP_Text ItensCertos;
+    public TMP_Text ItensCertos, ItensCertos2;
 
 
     private void Start()
@@ -235,7 +235,7 @@ public class ItensNoTrib : MonoBehaviour
         }
 
         ItensCertos.text = itens.ToString();
-
+        ItensCertos2.text = ItensCertos.text;
     }
 
     

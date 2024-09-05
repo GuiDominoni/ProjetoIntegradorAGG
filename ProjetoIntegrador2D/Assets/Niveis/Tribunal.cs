@@ -15,7 +15,7 @@ public class Tribunal : MonoBehaviour
     public int cond = 0;
     public Image healthBarFill;
     public float vida, vidaMaxima, vidaMinima;
-    public TMP_Text  RespostasCertas;
+    public TMP_Text  RespostasCertas, RespostasCertas2;
 
     public void Verde()
     {
@@ -518,7 +518,9 @@ public class Tribunal : MonoBehaviour
     }
     private void Update()
     {
+
         RespostasCertas.text = cond.ToString();
+        RespostasCertas2 = RespostasCertas;
 
         if (pergunta[1].activeSelf && clicou1 == true)
         {
