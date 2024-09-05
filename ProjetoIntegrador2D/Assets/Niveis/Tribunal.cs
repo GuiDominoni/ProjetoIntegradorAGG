@@ -4,6 +4,8 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class Tribunal : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class Tribunal : MonoBehaviour
     public int cond = 0;
     public Image healthBarFill;
     public float vida, vidaMaxima, vidaMinima;
+    public TMP_Text  RespostasCertas;
 
     public void Verde()
     {
@@ -515,7 +518,7 @@ public class Tribunal : MonoBehaviour
     }
     private void Update()
     {
-
+        RespostasCertas.text = cond.ToString();
 
         if (pergunta[1].activeSelf && clicou1 == true)
         {

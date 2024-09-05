@@ -2,31 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
 public class ItensNoTrib : MonoBehaviour
 {
     public GameObject i11, i12, i13, i14, i21, i22, i23, i24, i31, i32, i33, i34, i41, i42, i43, i44, i51, i52, i53, i54, i61, i62, i63, i64, i71, i72, i73, i74, i81, i82, i83, i84, i91, i92, i93, i94, i101, i102, i103, i104;
+    public TMP_Text ItensCertos;
+
+
     private void Start()
     {
+        int itens = 0;
         if(inv.i11 == true)
         {
             i11.SetActive(true);
-
+            itens++;
         }
         if (inv.i12 == true)
         {
             i12.SetActive(true);
-
+            itens++;
         }
         if (inv.i13 == true)
         {
             i13.SetActive(true);
-
+            itens++;
         }
         if (inv.i14 == true)
         {
             i14.SetActive(true);
-
+            itens++;
         }
 
 
@@ -82,22 +87,22 @@ public class ItensNoTrib : MonoBehaviour
         if (inv.i41 == true)
         {
             i41.SetActive(true);
-
+            itens++;
         }
         if (inv.i42 == true)
         {
             i42.SetActive(true);
-
+            itens++;
         }
         if (inv.i43 == true)
         {
             i43.SetActive(true);
-
+            itens++;
         }
         if (inv.i44 == true)
         {
             i44.SetActive(true);
-
+            itens++;
         }
 
 
@@ -128,22 +133,22 @@ public class ItensNoTrib : MonoBehaviour
         if (inv.i61 == true)
         {
             i61.SetActive(true);
-
+            itens++;
         }
         if (inv.i62 == true)
         {
             i62.SetActive(true);
-
+            itens++;
         }
         if (inv.i63 == true)
         {
             i63.SetActive(true);
-
+            itens++;
         }
         if (inv.i64 == true)
         {
             i64.SetActive(true);
-
+            itens++;
         }
 
 
@@ -151,22 +156,22 @@ public class ItensNoTrib : MonoBehaviour
         if (inv.i71 == true)
         {
             i71.SetActive(true);
-
+            itens++;
         }
         if (inv.i72 == true)
         {
             i72.SetActive(true);
-
+            itens++;
         }
         if (inv.i73 == true)
         {
             i73.SetActive(true);
-
+            itens++;
         }
         if (inv.i74 == true)
         {
             i74.SetActive(true);
-
+            itens++;
         }
         if (inv.i81 == true)
         {
@@ -229,7 +234,7 @@ public class ItensNoTrib : MonoBehaviour
 
         }
 
-
+        ItensCertos.text = itens.ToString();
 
     }
 
