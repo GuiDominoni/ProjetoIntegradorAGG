@@ -9,10 +9,12 @@ public class LanternaFase3 : MonoBehaviour
     public float interactionRange = 2.0f;
     private Transform player;
     public GameObject luzLanterna, lantenaDesativar;
-   
+    public GameObject[] spawns;
 
     private void Start()
     {
+        int random = Random.Range(0, spawns.Length);
+        transform.position = spawns[random].transform.position;
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
     }

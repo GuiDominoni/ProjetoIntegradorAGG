@@ -9,11 +9,10 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timer;
+    float timer;
     public Text texto;
-    public GameObject preto, avisoTuto,botaoProximo, tutoQueNojo, PretoTelas;
+    public GameObject avisoTuto,botaoProximo, tutoQueNojo, PretoTelas;
     public Image inventario;
-    public GameObject aviso;
     public UnityEvent OnPause, OnUnPause, opcoes, sairOpcoes;
     public GameObject[] verdes;
 
@@ -122,7 +121,7 @@ public class Timer : MonoBehaviour
     }
     public void sair()
     {
-        preto.SetActive(true);
+       
         SceneManager.LoadScene("SelecaoNiveis");
         Time.timeScale = 1; 
     }
@@ -152,7 +151,7 @@ public class Timer : MonoBehaviour
     }
     public void irTrib()
     {
-        preto.SetActive(true);
+      
         Invoke("trib", 1);
 
 
@@ -168,6 +167,12 @@ public class Timer : MonoBehaviour
         if (GlobalVariaveis.emQueNivelEstou == 2)
         {
             SceneManager.LoadScene("TribunalV2");
+
+
+        }
+        if (GlobalVariaveis.emQueNivelEstou == 3)
+        {
+            SceneManager.LoadScene("TribunalV3");
 
 
         }

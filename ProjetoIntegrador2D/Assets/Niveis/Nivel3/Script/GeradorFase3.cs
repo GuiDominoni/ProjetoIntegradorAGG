@@ -14,6 +14,7 @@ public class GeradorFase3 : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
+        GlobalVariaveis.emQueNivelEstou = 3;
     }
 
     void Update()

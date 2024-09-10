@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
+using System.IO;
 
 public class Andares : MonoBehaviour
 {
     public UnityEvent ToNo1, ToNo2, ToNo3, ToNo4, Sair;
    public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
-    public float interactionRange = 2.0f;
+    public float interactionRange = 2.0f,timerContagem;
     private Transform player;
     public Transform[] Andar;
-    
+    bool ativei;
+    public GameObject[] luzes;
+    public int QualFala;
+    public TMP_Text falaTxT;
+    public GameObject TextoQueApareceNaTela;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +31,37 @@ public class Andares : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(QualFala == 1)
+        {
+           
+            falaTxT.text = "A luz caiu, eu preciso achar um jeito de sair dessa situação";
+           StartCoroutine(comecarFala());
+
+        }
+        else if(QualFala != 1) 
+        {
+            TextoQueApareceNaTela.SetActive(false);
+
+
+        }
+        if (Interações.EmQualAndarEstouFase3 == 3 && !ativei)
+        {
+            bool timer =false;
+            timerContagem = timerContagem + Time.deltaTime;
+
+            if (timerContagem > 10 && timer == false)
+            {
+                ativei = true;
+                timer = true;
+                for (int i = 0; i < luzes.Length; i++)
+                {
+                    luzes[i].SetActive(true);
+                    QualFala = 1;
+                }
+            }
+
+
+        }
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= interactionRange)
@@ -101,6 +138,19 @@ public class Andares : MonoBehaviour
     {
        Sair.Invoke();
         Time.timeScale = 1.0f;
+
+    }
+    public void sairDaFala()
+    {
+
+        QualFala = 0;   
+
+    }
+    IEnumerator comecarFala()
+    {
+        yield return new WaitForSeconds(3);
+        TextoQueApareceNaTela.SetActive(true);
+
 
     }
 }

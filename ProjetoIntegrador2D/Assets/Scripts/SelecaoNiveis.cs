@@ -60,10 +60,10 @@ public class SelecaoNiveis : MonoBehaviour
         if (GlobalVariaveis.Venci1)
         {
             checkList[0].SetActive(true);
-            for(int i = 0; i < pretos.LongLength; i++)
+            for(int i = 0; i < pretos.Length; i++)
             {
-                pretos[i].SetActive(true);
-
+                pretos[i].SetActive(false);
+                
 
 
             }
