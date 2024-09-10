@@ -8,8 +8,8 @@ using UnityEngine.UI;
 
 public class SelecaoNiveis : MonoBehaviour
 {
-    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto, tuto;
-    public GameObject[] ImagemNv, checkList;
+    public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto;
+    public GameObject[] ImagemNv, checkList, pretos;
     public GameObject[] comecar;
 
     //Professor alexandre me desculpa, no inicio do ano eu fiz esse codigo, na segunda semana de pi e eu achava mais facil começar um array pelo indice 1 e nao 0, foi mau mas eu compreendo meu erro
@@ -60,7 +60,13 @@ public class SelecaoNiveis : MonoBehaviour
         if (GlobalVariaveis.Venci1)
         {
             checkList[0].SetActive(true);
+            for(int i = 0; i < pretos.LongLength; i++)
+            {
+                pretos[i].SetActive(true);
 
+
+
+            }
 
         }
         if (GlobalVariaveis.Venci2)
