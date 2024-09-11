@@ -16,7 +16,6 @@ public class Andares : MonoBehaviour
     public Transform[] Andar;
     bool ativei;
     public GameObject[] luzes;
-    public int QualFala;
     public TMP_Text falaTxT;
     public GameObject TextoQueApareceNaTela;
     // Start is called before the first frame update
@@ -31,19 +30,8 @@ public class Andares : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(QualFala == 1)
-        {
-           
-            falaTxT.text = "A luz caiu, eu preciso achar um jeito de sair dessa situação";
-           StartCoroutine(comecarFala());
-
-        }
-        else if(QualFala != 1) 
-        {
-            TextoQueApareceNaTela.SetActive(false);
-
-
-        }
+        
+       
         if (Interações.EmQualAndarEstouFase3 == 3 && !ativei)
         {
             bool timer =false;
@@ -56,7 +44,7 @@ public class Andares : MonoBehaviour
                 for (int i = 0; i < luzes.Length; i++)
                 {
                     luzes[i].SetActive(true);
-                    QualFala = 1;
+                    StartCoroutine(comecarFala());
                 }
             }
 
@@ -78,6 +66,12 @@ public class Andares : MonoBehaviour
         {
             interactionPrompt.SetActive(false);
         }
+    }
+    public void desatFala()
+    {
+
+        TextoQueApareceNaTela.SetActive(false);
+
     }
     public void Interact()
     {
@@ -140,12 +134,7 @@ public class Andares : MonoBehaviour
         Time.timeScale = 1.0f;
 
     }
-    public void sairDaFala()
-    {
-
-        QualFala = 0;   
-
-    }
+   
     IEnumerator comecarFala()
     {
         yield return new WaitForSeconds(3);
