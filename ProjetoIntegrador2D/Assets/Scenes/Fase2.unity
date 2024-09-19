@@ -513,6 +513,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PuzzleCartaoFase2
       objectReference: {fileID: 0}
+    - target: {fileID: 1889338859639670995, guid: 216096c2a0dd03b4dbda4fb2de91d973,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1889338859639671007, guid: 216096c2a0dd03b4dbda4fb2de91d973,
         type: 3}
       propertyPath: m_Pivot.x
@@ -17428,6 +17433,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RastreamentoEntrega(Tablet)6
       objectReference: {fileID: 0}
+    - target: {fileID: 1013313471368518434, guid: cd650ec6ca23ba046b9d4795f833e95f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1013313471368518445, guid: cd650ec6ca23ba046b9d4795f833e95f,
         type: 3}
       propertyPath: item
@@ -17778,6 +17788,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Caminhoneiro7
       objectReference: {fileID: 0}
+    - target: {fileID: 1177196152855584151, guid: c2dfed0545b46a0448ce2ca2cdc09773,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2dfed0545b46a0448ce2ca2cdc09773, type: 3}
 --- !u!1001 &2003249617621425646
@@ -18122,6 +18137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RelatoVisitantes3
       objectReference: {fileID: 0}
+    - target: {fileID: 2127358055689171147, guid: eb93145a3b2edd546ba9245a6e60de92,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb93145a3b2edd546ba9245a6e60de92, type: 3}
 --- !u!1 &2127358056038544893 stripped
@@ -18291,6 +18311,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Telas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456213835766095, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3092456213862330232, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
@@ -18480,6 +18505,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PegadasDeBarro2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070739401364828808, guid: ea3f8d82cff87304ebb42cad920b8744,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4070739401364828809, guid: ea3f8d82cff87304ebb42cad920b8744,
         type: 3}
@@ -20088,6 +20118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4776556351976408297, guid: d01684bb579bacc4c912460d2e437f30,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4776556352048317240, guid: d01684bb579bacc4c912460d2e437f30,
         type: 3}
@@ -21980,6 +22015,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: "Fatura Finan\xE7a5"
       objectReference: {fileID: 0}
+    - target: {fileID: 8200120880944931877, guid: 7b7f27074ccb52149b4688d76038ef6b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8200120880944931886, guid: 7b7f27074ccb52149b4688d76038ef6b,
         type: 3}
       propertyPath: item
@@ -22151,6 +22191,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Luva10
       objectReference: {fileID: 0}
+    - target: {fileID: 7088798826889534875, guid: 8a988cba056f18043acc16f3a0a7bb89,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8229841579789426857, guid: 8a988cba056f18043acc16f3a0a7bb89,
         type: 3}
       propertyPath: m_SortingOrder
@@ -22240,6 +22285,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Caixa Onde a Escultura Deveria estar8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127205213778201669, guid: e31fb65d319a9954a904c178f50a7752,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7127205213778201688, guid: e31fb65d319a9954a904c178f50a7752,
         type: 3}
@@ -32529,6 +32579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: "ListaDeInvent\xE1rio1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725140835870976659, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8725140835870976660, guid: 408e5e11d2d05ac4b8c49c4048f0fe78,
         type: 3}

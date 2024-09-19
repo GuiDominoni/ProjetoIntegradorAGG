@@ -8,7 +8,7 @@ public class LanternaFase3 : MonoBehaviour
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
-    public GameObject luzLanterna, lantenaDesativar;
+    public GameObject luzLanterna, lantenaDesativar, luzGlobal;
     public GameObject[] spawns;
 
     private void Start()
@@ -23,7 +23,7 @@ public class LanternaFase3 : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= interactionRange)
+        if (distance <= interactionRange && luzGlobal.activeSelf    )
         {
             interactionPrompt.SetActive(true);
             interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
