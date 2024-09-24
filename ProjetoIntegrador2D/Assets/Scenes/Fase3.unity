@@ -134015,7 +134015,7 @@ PrefabInstance:
     - target: {fileID: 3092456213681469578, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3092456213681469588, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
@@ -134342,13 +134342,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214047002082, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 698.614
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214047002082, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1405
+      value: 1384
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214047002082, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -57.52997
+      value: -60
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214047002083, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_text
+      value: "            Luva de L\xE1tex\n\r\n   \"Uma luva de l\xE1tex descartada
+        na sala de armazenamento. Parece suspeito, mas n\xE3o h\xE1 nada que conecte
+        essa luva ao roubo da escultura.\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214047002083, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -2.0195622
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214047002083, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 2.6259174
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214049983877, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
@@ -134430,13 +134452,53 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351097, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 617.615
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351097, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 304.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351097, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1278
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351097, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -40
+      objectReference: {fileID: 0}
     - target: {fileID: 3092456214094351098, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
       propertyPath: m_text
-      value: "     Testemunhos de Alunos Insatisfeitos\n\n   \" Depoimentos de alunos
-        que discordam da forma como o professor conduziu suas aulas. Apesar da insatisfa\xE7\xE3o,
+      value: "Testemunhos de Alunos Insatisfeitos\n\n   \"Depoimentos de alunos que
+        discordam da forma como o professor conduziu suas aulas. Apesar da insatisfa\xE7\xE3o,
         essas reclama\xE7\xF5es n\xE3o t\xEAm nenhuma rela\xE7\xE3o com o caso de
         pl\xE1gio.\"\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351098, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 35.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351098, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -1.6108322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351098, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -1.7920513
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214094351098, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 35.3
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214101095555, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
@@ -134487,7 +134549,7 @@ PrefabInstance:
     - target: {fileID: 3092456214199698238, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214199698239, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
@@ -134725,8 +134787,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214743808150, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 688.305
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214743808150, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 357.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214743808150, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1330
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214743808150, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -5
+      value: -60.269
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214743808151, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
@@ -134737,10 +134814,45 @@ PrefabInstance:
         O colega tamb\xE9m afirma que o professor estava focado em outro projeto,
         o que dificultaria sua participa\xE7\xE3o no pl\xE1gio.\""
       objectReference: {fileID: 0}
+    - target: {fileID: 3092456214743808151, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 33.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214743808151, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_margin.w
+      value: 7.899933
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214743808151, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 33.06
+      objectReference: {fileID: 0}
     - target: {fileID: 3092456214766776371, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214766776380, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 663.269
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214766776380, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 312.383
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214766776380, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1292
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214766776380, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -37.529
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214766776381, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
@@ -134748,6 +134860,16 @@ PrefabInstance:
       value: "           E-mails An\xF4nimos \n\n \"Mensagens enviadas ao professor
         por remetentes desconhecidos. Embora possam parecer suspeitas, elas n\xE3o
         possuem liga\xE7\xE3o com a tese plagiada ou o caso em quest\xE3o.\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214766776381, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_margin.w
+      value: -14.360901
+      objectReference: {fileID: 0}
+    - target: {fileID: 3092456214766776381, guid: 92a9acfc3ed333a4da52c969cd22a253,
+        type: 3}
+      propertyPath: m_margin.z
+      value: 7.0438576
       objectReference: {fileID: 0}
     - target: {fileID: 3092456214826590272, guid: 92a9acfc3ed333a4da52c969cd22a253,
         type: 3}
