@@ -11,16 +11,19 @@ public class Andares : MonoBehaviour
     public UnityEvent ToNo1, ToNo2, ToNo3, ToNo4, Sair;
    public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
-    public float interactionRange = 2.0f,timerContagem;
+    public float interactionRange = 2.0f, timerContagem;
     private Transform player;
     public Transform[] Andar;
     bool ativei;
     public GameObject[] luzes;
     public TMP_Text falaTxT;
     public GameObject TextoQueApareceNaTela;
+    public Transform[] limites;
+    
     // Start is called before the first frame update
     void Start()
     {
+        GlobalVariaveis.emQueNivelEstou = 3;
         Interações.EmQualAndarEstouFase3 = 1;
 
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -50,9 +53,9 @@ public class Andares : MonoBehaviour
 
 
         }
-        float distance = Vector2.Distance(transform.position, player.position);
+       
 
-        if (distance <= interactionRange)
+        if (player.position.x < limites[0].position.x && player.position.y > limites[1].position.y && player.position.y < limites[2].position.y)
         {
             interactionPrompt.SetActive(true);
             interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
