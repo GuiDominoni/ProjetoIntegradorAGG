@@ -11,10 +11,10 @@ public class Andares : MonoBehaviour
     public UnityEvent ToNo1, ToNo2, ToNo3, ToNo4, Sair;
    public GameObject interactionPrompt, item;
     public KeyCode interactionKey = KeyCode.E;
-    public float interactionRange = 2.0f, timerContagem;
+    public float interactionRange = 2.0f;
     private Transform player;
     public Transform[] Andar;
-    bool ativei;
+    bool ativei, podeDesativarFala;
     public GameObject[] luzes;
     public TMP_Text falaTxT;
     public GameObject TextoQueApareceNaTela;
@@ -33,23 +33,22 @@ public class Andares : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(podeDesativarFala && Input.GetMouseButtonDown(0))
+        {
+            desatFala();
+            podeDesativarFala = false;
+            Cursor.visible = false  ;
+
+        }
        
         if (Interações.EmQualAndarEstouFase3 == 3 && !ativei)
         {
-            bool timer =false;
-            timerContagem = timerContagem + Time.deltaTime;
-
-            if (timerContagem > 10 && timer == false)
-            {
+           
+            
                 ativei = true;
-                timer = true;
-                for (int i = 0; i < luzes.Length; i++)
-                {
-                    luzes[i].SetActive(true);
-                    StartCoroutine(comecarFala());
-                }
-            }
+
+            StartCoroutine(Escurecer());
+            
 
 
         }
@@ -58,7 +57,7 @@ public class Andares : MonoBehaviour
         if (player.position.x < limites[0].position.x && player.position.y > limites[1].position.y && player.position.y < limites[2].position.y)
         {
             interactionPrompt.SetActive(true);
-            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
+            interactionPrompt.transform.position = transform.position + new Vector3(0, 0, 0); 
 
             if (Input.GetKeyDown(interactionKey))
             {
@@ -104,18 +103,21 @@ public class Andares : MonoBehaviour
 
         }
         Time.timeScale = 0.0f;
+        Cursor.visible = true;
     }
     public void IrPara1()
     {
         player.transform.position = Andar[0].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 1;
+        Cursor.visible = false;
     }
     public void IrPara2()
     {
         player.transform.position = Andar[1].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 2;
+        Cursor.visible = false;
     }
     public void IrPara3()
     {
@@ -123,6 +125,7 @@ public class Andares : MonoBehaviour
         player.transform.position = Andar[2].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 3;
+        Cursor.visible = false;
     }
     public void IrPara4()
     {
@@ -130,19 +133,29 @@ public class Andares : MonoBehaviour
         player.transform.position = Andar[3].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 4;
+        Cursor.visible = false;
     }
     public void sair()
     {
        Sair.Invoke();
         Time.timeScale = 1.0f;
-
+        Cursor.visible = false;
     }
-   
+   IEnumerator Escurecer()
+    {
+        yield return new WaitForSeconds(15);
+
+        for (int i = 0; i < luzes.Length; i++)
+        {
+            luzes[i].SetActive(true);
+            StartCoroutine(comecarFala());
+        }
+    }
     IEnumerator comecarFala()
     {
         yield return new WaitForSeconds(3);
         TextoQueApareceNaTela.SetActive(true);
-
-
+        Cursor.visible = true;
+        podeDesativarFala = true;
     }
 }
