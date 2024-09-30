@@ -11,11 +11,11 @@ public class Timer : MonoBehaviour
 {
     float timer;
     public Text texto;
-    public GameObject avisoTuto,botaoProximo, tutoQueNojo, PretoTelas;
+    public GameObject avisoTuto,botaoProximo, tutoQueNojo, PretoTelas, pretoAndares;
     public Image inventario;
     public UnityEvent OnPause, OnUnPause, opcoes, sairOpcoes;
     public GameObject[] verdes;
-
+ 
 
 
 
@@ -34,8 +34,7 @@ public class Timer : MonoBehaviour
             Cursor.visible = false;
         }
         zerarStatico();
-
-
+       
     }
 
 
@@ -48,27 +47,51 @@ public class Timer : MonoBehaviour
 
             texto.text = TimerVerdadeiro.ToString();
             Invoke("timerMenos", 0);
-        
-        
 
-        if (Input.GetButtonDown("Cancel") && !PretoTelas.activeSelf)
+
+        if (GlobalVariaveis.emQueNivelEstou != 3)
         {
-
-            if (Time.timeScale == 1)
+            if (Input.GetButtonDown("Cancel") && !PretoTelas.activeSelf)
             {
-                OnPause.Invoke();
-                Time.timeScale = 0;
-                Cursor.visible = true;
-            }
-            else
-            {
-                OnUnPause.Invoke();
-                Time.timeScale = 1;
-                Cursor.visible = false;
-            }
+
+                if (Time.timeScale == 1)
+                {
+                    OnPause.Invoke();
+                    Time.timeScale = 0;
+                    Cursor.visible = true;
+                }
+                else
+                {
+                    OnUnPause.Invoke();
+                    Time.timeScale = 1;
+                    Cursor.visible = false;
+                }
 
 
+            }
         }
+        else
+        {
+            if (Input.GetButtonDown("Cancel") && !PretoTelas.activeSelf && !pretoAndares.activeSelf )
+            {
+
+                if (Time.timeScale == 1)
+                {
+                    OnPause.Invoke();
+                    Time.timeScale = 0;
+                    Cursor.visible = true;
+                }
+                else
+                {
+                    OnUnPause.Invoke();
+                    Time.timeScale = 1;
+                    Cursor.visible = false;
+                }
+
+
+            }
+        }
+        
 
 
 
