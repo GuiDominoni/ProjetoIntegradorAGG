@@ -9,6 +9,8 @@ public class Eletricista : MonoBehaviour
     private Rigidbody2D rb;
     private int i = 0;
     bool jaParei, jaChameiACorroutina;
+    public bool podeSeMecher;
+    public GameObject[] luzes;
 
    
 
@@ -20,41 +22,50 @@ public class Eletricista : MonoBehaviour
 
     void Update()
     {
-       
-        transform.position = Vector2.MoveTowards(transform.position, pontos[i].position, 4f * Time.deltaTime);
-
-        print("Valor de I é " + i);
- 
-        if (Vector3.Distance(transform.position, pontos[i].position) < 0.4f)
+        if (podeSeMecher)
         {
-            if (!jaParei)
+            transform.position = Vector2.MoveTowards(transform.position, pontos[i].position, 4f * Time.deltaTime);
+
+            print("Valor de I é " + i);
+
+            if (Vector3.Distance(transform.position, pontos[i].position) < 0.4f)
             {
-                i++;
-            }
-            else
-            {
-                i--;
-                if(i == 0)
+                if (!jaParei)
                 {
-                    StartCoroutine(Sumir());
-
+                    i++;
                 }
+                else
+                {
+                    i--;
+                    if (i == 0)
+                    {
+                        StartCoroutine(Sumir());
+
+                    }
+                }
+
+
             }
-            
-           
-        }
-        if(i == pontos.Length && !jaChameiACorroutina)
-        {
-            StartCoroutine(ParadoNoGerador());
+            if (i == pontos.Length && !jaChameiACorroutina)
+            {
+                StartCoroutine(ParadoNoGerador());
 
 
+            }
         }
 
     }
     IEnumerator ParadoNoGerador()
     {
         jaChameiACorroutina = true;
-        yield return new WaitForSeconds(8);
+        yield return new WaitForSeconds(6);
+        for (int i = 0; i < luzes.Length; i++)
+        {
+
+            luzes[i].SetActive(false);
+
+        }
+        yield return new WaitForSeconds(2);
         i = pontos.Length;
         i--;
         jaParei = true;
