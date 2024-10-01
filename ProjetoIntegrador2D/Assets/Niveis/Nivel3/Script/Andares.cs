@@ -19,13 +19,14 @@ public class Andares : MonoBehaviour
     public TMP_Text falaTxT;
     public GameObject TextoQueApareceNaTela;
     public Transform[] limites;
+    TelefoneFase3 telef;
     
     // Start is called before the first frame update
     void Start()
     {
         GlobalVariaveis.emQueNivelEstou = 3;
         Interações.EmQualAndarEstouFase3 = 1;
-
+        telef = FindObjectOfType<TelefoneFase3>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
     }
@@ -141,7 +142,7 @@ public class Andares : MonoBehaviour
         Time.timeScale = 1.0f;
         Cursor.visible = false;
     }
-   IEnumerator Escurecer()
+    IEnumerator Escurecer()
     {
         yield return new WaitForSeconds(15);
 
@@ -150,6 +151,7 @@ public class Andares : MonoBehaviour
             luzes[i].SetActive(true);
             StartCoroutine(comecarFala());
         }
+        telef.podeLigar = true;
     }
     IEnumerator comecarFala()
     {
