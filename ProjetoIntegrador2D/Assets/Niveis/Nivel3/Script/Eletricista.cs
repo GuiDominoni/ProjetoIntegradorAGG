@@ -6,17 +6,18 @@ using UnityEngine;
 public class Eletricista : MonoBehaviour
 {
     public Transform[] pontos;
-    private Rigidbody2D rb;
     private int i = 0;
-    bool jaParei, jaChameiACorroutina;
+    bool jaParei, jaChameiACorroutina, comeceiAndar;
     public bool podeSeMecher;
     public GameObject[] luzes;
+    Animator anim;
 
    
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+
+        anim = GetComponent<Animator>();
         
     }
 
@@ -24,6 +25,11 @@ public class Eletricista : MonoBehaviour
     {
         if (podeSeMecher)
         {
+            if(!comeceiAndar) 
+            {
+                anim.SetBool("Andando", true);
+                comeceiAndar = true;
+            }
             transform.position = Vector2.MoveTowards(transform.position, pontos[i].position, 4f * Time.deltaTime);
 
             print("Valor de I é " + i);
@@ -58,6 +64,7 @@ public class Eletricista : MonoBehaviour
     IEnumerator ParadoNoGerador()
     {
         jaChameiACorroutina = true;
+        anim.SetBool("Andando", false);
         yield return new WaitForSeconds(6);
         for (int i = 0; i < luzes.Length; i++)
         {
