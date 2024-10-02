@@ -2,31 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class TelefoneFase3 : MonoBehaviour
 {
     public GameObject tudo, textoAviso, fundoFala, textoConversaGO, eletricista;
-    public TMP_Text textoTxt, textoConversa;
+    public TMP_Text textoTxt, textoConversa, textoCartaz;
     public int quantosTem;
     public string texto;
     public bool podeLigar, falaAtivada, podeclic = true;
     public int NumeroQueVaiSer, emQFalaEstou;
     PortaFase3 porta;
     bool chameiSegundaFala;
-    
+    CartazFase3 cartasFase3;
 
     // Start is called before the first frame update
     void Start()
     {
         texto = "";
         NumeroQueVaiSer = Random.Range(1000, 10000);
+        textoCartaz.text = NumeroQueVaiSer.ToString();
+        
         GlobalVariaveis.emQueNivelEstou = 3;
         porta = FindObjectOfType<PortaFase3>();
+        cartasFase3 = FindObjectOfType(typeof(CartazFase3)) as CartazFase3;
     }
 
     // Update is called once per frame
     void Update()
     {
+       
         textoTxt.text = texto;
         if (quantosTem == 4 && texto != NumeroQueVaiSer.ToString())
         {
@@ -43,9 +48,10 @@ public class TelefoneFase3 : MonoBehaviour
             StartCoroutine(limpar());
 
         }
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (Input.GetKeyDown(KeyCode.Space) && cartasFase3.podeInteragir == true) 
         {
             AtivarTudo();
+            
         
         }
         if (falaAtivada) { falas(); }
@@ -74,12 +80,14 @@ public class TelefoneFase3 : MonoBehaviour
             tudo.SetActive(true);
             Cursor.visible = true;
             texto = "";
+            cartasFase3.podeInteragir = false;
         }
         else
         {
             tudo.SetActive(false);
             Cursor.visible = false;
             texto = "";
+            cartasFase3.podeInteragir = true;
         }
         quantosTem = 0;
 

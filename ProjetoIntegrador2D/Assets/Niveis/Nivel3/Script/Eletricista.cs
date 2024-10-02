@@ -11,7 +11,7 @@ public class Eletricista : MonoBehaviour
     public bool podeSeMecher;
     public GameObject[] luzes;
     Animator anim;
-
+    bool invertiEscala;
    
 
     void Start()
@@ -23,6 +23,11 @@ public class Eletricista : MonoBehaviour
 
     void Update()
     {
+        if(i == pontos.Length &&  !invertiEscala) 
+        {
+            transform.localScale *= new Vector2(-1, 1);
+            invertiEscala = true;
+        }
         if (podeSeMecher)
         {
             if(!comeceiAndar) 
@@ -39,10 +44,12 @@ public class Eletricista : MonoBehaviour
                 if (!jaParei)
                 {
                     i++;
+
                 }
                 else
                 {
                     i--;
+                    anim.SetBool("Andando", true);
                     if (i == 0)
                     {
                         StartCoroutine(Sumir());
