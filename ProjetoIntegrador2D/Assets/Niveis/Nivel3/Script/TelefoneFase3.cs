@@ -15,6 +15,7 @@ public class TelefoneFase3 : MonoBehaviour
     PortaFase3 porta;
     bool chameiSegundaFala;
     CartazFase3 cartasFase3;
+    GameManagerFase3 gameManagerFase3;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class TelefoneFase3 : MonoBehaviour
         GlobalVariaveis.emQueNivelEstou = 3;
         porta = FindObjectOfType<PortaFase3>();
         cartasFase3 = FindObjectOfType(typeof(CartazFase3)) as CartazFase3;
+        gameManagerFase3 = FindObjectOfType<GameManagerFase3>();
     }
 
     // Update is called once per frame
@@ -48,7 +50,7 @@ public class TelefoneFase3 : MonoBehaviour
             StartCoroutine(limpar());
 
         }
-        if (Input.GetKeyDown(KeyCode.Space) && cartasFase3.podeInteragir == true) 
+        if (Input.GetKeyDown(KeyCode.Space) && gameManagerFase3.possoAbrirTelefone) 
         {
             AtivarTudo();
             
@@ -75,19 +77,21 @@ public class TelefoneFase3 : MonoBehaviour
 
     public void AtivarTudo()
     {
-        if (!tudo.activeSelf)
-        {
-            tudo.SetActive(true);
-            Cursor.visible = true;
-            texto = "";
-            cartasFase3.podeInteragir = false;
-        }
-        else
+        if (tudo.activeSelf)
         {
             tudo.SetActive(false);
             Cursor.visible = false;
             texto = "";
-            cartasFase3.podeInteragir = true;
+            gameManagerFase3.possoPegarItem = true;
+            gameManagerFase3.possoAbrirCartaz = true;
+        }
+        else
+        {
+            tudo.SetActive(true);
+            Cursor.visible = true;
+            texto = "";
+            gameManagerFase3.possoPegarItem = false;
+            gameManagerFase3.possoAbrirCartaz = false;
         }
         quantosTem = 0;
 

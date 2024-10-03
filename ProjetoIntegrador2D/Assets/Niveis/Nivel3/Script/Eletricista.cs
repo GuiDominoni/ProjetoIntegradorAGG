@@ -30,14 +30,14 @@ public class Eletricista : MonoBehaviour
         }
         if (podeSeMecher)
         {
-            if(!comeceiAndar) 
+            if(!comeceiAndar)  
             {
                 anim.SetBool("Andando", true);
                 comeceiAndar = true;
             }
             transform.position = Vector2.MoveTowards(transform.position, pontos[i].position, 4f * Time.deltaTime);
 
-            print("Valor de I é " + i);
+         
 
             if (Vector3.Distance(transform.position, pontos[i].position) < 0.4f)
             {
@@ -55,6 +55,7 @@ public class Eletricista : MonoBehaviour
                         StartCoroutine(Sumir());
 
                     }
+                    
                 }
 
 
@@ -89,8 +90,9 @@ public class Eletricista : MonoBehaviour
     }
     IEnumerator Sumir()
     {
-       
-        yield return new WaitForSeconds(9);
+        yield return new WaitForSeconds(6.5f);
+        anim.SetBool("Andando", false); 
+        yield return new WaitForSeconds(2.5f);
         gameObject.SetActive(false);
        
 

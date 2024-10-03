@@ -9,11 +9,13 @@ public class CartazFase3 : MonoBehaviour
     private Transform player;
     public GameObject[] itensDoCartaz;
     public  bool podeInteragir;
+    GameManagerFase3 gameManager;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
         podeInteragir = true;   
+        gameManager = FindObjectOfType<GameManagerFase3>();
     }
 
     void Update()
@@ -42,24 +44,28 @@ public class CartazFase3 : MonoBehaviour
        for (int i = 0; i < itensDoCartaz.Length; i++) 
        {
             itensDoCartaz[i].SetActive(Qual);
-        
+            
             
        }
         if (Time.timeScale == 1)
         {
+            gameManager.possoAbrirTelefone = false;
             Time.timeScale = 0;
             Cursor.visible = true;
+            Debug.Log("ativei");
+           
 
         }
         else
         {
-
+            gameManager.possoAbrirTelefone = true;
             Time.timeScale = 1;
             Cursor.visible = false;
+            Debug.Log("desativei");
 
         }
         podeInteragir = false;
-
+        
     }
     public void PodeInteragir()
     {
