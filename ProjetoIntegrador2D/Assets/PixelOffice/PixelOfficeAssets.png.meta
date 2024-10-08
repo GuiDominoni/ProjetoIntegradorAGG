@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -3503,22 +3503,22 @@ TextureImporter:
       PixelOfficeAssets_139: 1294197258
       PixelOfficeAssets_47: -1006612226
       PixelOfficeAssets_54: -272274232
+      PixelOfficeAssets_147: 677062246
       PixelOfficeAssets_31: 1799745014
-      PixelOfficeAssets_59: -567193794
       PixelOfficeAssets_14: 434374368
       PixelOfficeAssets_25: -651157046
+      PixelOfficeAssets_59: -567193794
       PixelOfficeAssets_110: 131613306
-      PixelOfficeAssets_60: -275428567
       PixelOfficeAssets_141: -911084966
       PixelOfficeAssets_117: 1374481114
+      PixelOfficeAssets_60: -275428567
       PixelOfficeAssets_124: 1831831271
-      PixelOfficeAssets_137: -338620293
       PixelOfficeAssets_87: -2087096595
-      PixelOfficeAssets_147: 677062246
       PixelOfficeAssets_16: 1398520333
       PixelOfficeAssets_0: -1893199705
       PixelOfficeAssets_98: 929503339
       PixelOfficeAssets_63: 491177156
+      PixelOfficeAssets_137: -338620293
       PixelOfficeAssets_56: -1207534274
       PixelOfficeAssets_69: -565180507
       PixelOfficeAssets_125: -1745804256
