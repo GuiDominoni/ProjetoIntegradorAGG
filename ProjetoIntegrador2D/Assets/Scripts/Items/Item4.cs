@@ -21,7 +21,7 @@ public class Item4 : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= interactionRange && podePegar)
+        if (distance <= interactionRange && podePegar && inv.possoPegarOItem)
         {
             interactionPrompt.SetActive(true);
             interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto

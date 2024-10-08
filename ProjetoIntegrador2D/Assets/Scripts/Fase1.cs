@@ -10,7 +10,7 @@ public class Fase1 : MonoBehaviour
     void Start()
     {
         inv.lugar = 1;
-
+      
 
     }
 

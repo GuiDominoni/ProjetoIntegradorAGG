@@ -6,27 +6,36 @@ using Unity.VisualScripting;
 
 public class TelefoneFase3 : MonoBehaviour
 {
-    public GameObject tudo, textoAviso, fundoFala, textoConversaGO, eletricista;
-    public TMP_Text textoTxt, textoConversa, textoCartaz;
-    public int quantosTem;
-    public string texto;
-    public bool podeLigar, falaAtivada, podeclic = true;
-    public int NumeroQueVaiSer, emQFalaEstou;
+
+    [Header("Objetos")]
+
+    public GameObject celularInteiro;
+    public GameObject textoAviso, fundoFala, textoConversaGO, eletricista;
+
+    [Space]
+
+    [Header("Textos")]
+    public TMP_Text textoTxt;
+    public TMP_Text textoConversa, textoCartaz;
+
+
+    string _texto;
+    [HideInInspector] public bool podeLigar;
+    bool _falaAtivada, _podeclic = true;
+    int _numeroQueVaiSer, _emQFalaEstou, _quantosNumerosTem;
     PortaFase3 porta;
-    bool chameiSegundaFala;
-    CartazFase3 cartasFase3;
+    bool _chameiSegundaFala;
     GameManagerFase3 gameManagerFase3;
 
     // Start is called before the first frame update
     void Start()
     {
-        texto = "";
-        NumeroQueVaiSer = Random.Range(1000, 10000);
-        textoCartaz.text = NumeroQueVaiSer.ToString();
-        
+        _texto = "";
+        _numeroQueVaiSer = Random.Range(1000, 10000);
+        textoCartaz.text = _numeroQueVaiSer.ToString();
+        _podeclic = true;
         GlobalVariaveis.emQueNivelEstou = 3;
         porta = FindObjectOfType<PortaFase3>();
-        cartasFase3 = FindObjectOfType(typeof(CartazFase3)) as CartazFase3;
         gameManagerFase3 = FindObjectOfType<GameManagerFase3>();
     }
 
@@ -34,18 +43,18 @@ public class TelefoneFase3 : MonoBehaviour
     void Update()
     {
        
-        textoTxt.text = texto;
-        if (quantosTem == 4 && texto != NumeroQueVaiSer.ToString())
+        textoTxt.text = _texto;
+        if (_quantosNumerosTem == 4 && _texto != _numeroQueVaiSer.ToString())
         {
             StartCoroutine(limpar());
 
         }
-        if (quantosTem == 4 && texto == NumeroQueVaiSer.ToString() && podeLigar)
+        if (_quantosNumerosTem == 4 && _texto == _numeroQueVaiSer.ToString() && podeLigar)
         {
             StartCoroutine(Acertou());
 
         }
-        if (quantosTem == 4 && texto == NumeroQueVaiSer.ToString() && !podeLigar)
+        if (_quantosNumerosTem == 4 && _texto == _numeroQueVaiSer.ToString() && !podeLigar)
         {
             StartCoroutine(limpar());
 
@@ -56,8 +65,8 @@ public class TelefoneFase3 : MonoBehaviour
             
         
         }
-        if (falaAtivada) { falas(); }
-        if (chameiSegundaFala && Input.GetMouseButton(0))
+        if (_falaAtivada) { falas(); }
+        if (_chameiSegundaFala && Input.GetMouseButton(0))
         {
 
             fundoFala.SetActive(false);
@@ -67,42 +76,83 @@ public class TelefoneFase3 : MonoBehaviour
     }
     public void adicionarLetra(string Letra)
     {
-        if (quantosTem < 4)
+        if (_quantosNumerosTem < 4)
         {
-            texto += Letra;
-            quantosTem++;
+            _texto += Letra;
+            _quantosNumerosTem++;
         }
 
     }
 
     public void AtivarTudo()
     {
-        if (tudo.activeSelf)
+        if (celularInteiro.activeSelf)
         {
-            tudo.SetActive(false);
+            celularInteiro.SetActive(false);
             Cursor.visible = false;
-            texto = "";
+            _texto = "";
             gameManagerFase3.possoPegarItem = true;
             gameManagerFase3.possoAbrirCartaz = true;
+            inv.possoPegarOItem = true;
+            
         }
         else
         {
-            tudo.SetActive(true);
+            celularInteiro.SetActive(true);
             Cursor.visible = true;
-            texto = "";
+            _texto = "";
             gameManagerFase3.possoPegarItem = false;
             gameManagerFase3.possoAbrirCartaz = false;
+            inv.possoPegarOItem = false;
+           
         }
-        quantosTem = 0;
+        _quantosNumerosTem = 0;
 
     }
    
-    IEnumerator limpar()
+   
+    public void falas()
+    {
+        fundoFala.SetActive(true);
+        if(_emQFalaEstou == 0)
+        {
+
+            textoConversa.text = "Dr. Frank: Olá a luz aqui caiu e eu preciso muito da sua ajuda, estou na universidade ____.";
+            
+        }
+        if (_emQFalaEstou == 1)
+        {
+
+            textoConversa.text = "Eletricista: Estou a caminho, aguarde um instante.";
+           
+        }
+        if(_emQFalaEstou == 2)
+        {
+            _falaAtivada = false;
+            fundoFala.SetActive(false);
+            textoConversaGO.SetActive(false);
+            StartCoroutine(SegundaFala());
+            podeLigar = false;
+
+        }
+        if (Input.GetMouseButton(0) && _podeclic)
+        {
+            _emQFalaEstou++;
+            StartCoroutine(podeClicar());
+        }
+
+
+
+    }
+    
+
+    #region Corroutinas
+ IEnumerator limpar()
     {
       
         yield return new WaitForSeconds(0.6f);
-        texto = "";
-        quantosTem = 0;
+        _texto = "";
+        _quantosNumerosTem = 0;
         textoAviso.SetActive(true);
         yield return new WaitForSeconds(1);
         textoAviso.SetActive(false);
@@ -112,57 +162,25 @@ public class TelefoneFase3 : MonoBehaviour
     {
 
         yield return new WaitForSeconds(1);
-        tudo.SetActive(false);
-        texto = "";
-        quantosTem = 0;
+        celularInteiro.SetActive(false);
+        _texto = "";
+        _quantosNumerosTem = 0;
         yield return new WaitForSeconds(1); 
-        falaAtivada = true;
+        _falaAtivada = true;
         
 
     }
-    public void falas()
-    {
-        fundoFala.SetActive(true);
-        if(emQFalaEstou == 0)
-        {
-
-            textoConversa.text = "Dr. Frank: Olá a luz aqui caiu e eu preciso muito da sua ajuda, estou na universidade ____.";
-            
-        }
-        if (emQFalaEstou == 1)
-        {
-
-            textoConversa.text = "Eletricista: Estou a caminho, aguarde um instante.";
-           
-        }
-        if(emQFalaEstou == 2)
-        {
-            falaAtivada = false;
-            fundoFala.SetActive(false);
-            textoConversaGO.SetActive(false);
-            StartCoroutine(SegundaFala());
-            podeLigar = false;
-
-        }
-        if (Input.GetMouseButton(0) && podeclic)
-        {
-            emQFalaEstou++;
-            StartCoroutine(podeClicar());
-        }
-
-
-
-    }
+    
     IEnumerator podeClicar()
     {
-        podeclic = false;
+        _podeclic = false;
         yield return new WaitForSeconds(1);
-        podeclic = true;
+        _podeclic = true;
 
     }
     IEnumerator SegundaFala()
     {
-        chameiSegundaFala = true;
+        _chameiSegundaFala = true;
         yield return new WaitForSeconds(4);
         fundoFala.SetActive(true);
         textoConversaGO.SetActive(true);
@@ -170,6 +188,6 @@ public class TelefoneFase3 : MonoBehaviour
         textoConversa.text = "Eletricista: Cheguei, preciso que venha aqui abrir a porta no primeiro andar.";
         eletricista.SetActive(true);
     }
-
+    #endregion
 
 }

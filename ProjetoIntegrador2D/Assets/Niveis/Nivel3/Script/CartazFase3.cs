@@ -22,10 +22,10 @@ public class CartazFase3 : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= interactionRange && podeInteragir)
+        if (distance <= interactionRange && gameManager.possoAbrirCartaz)
         {
             interactionPrompt.SetActive(true);
-            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
+            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); 
 
             if (Input.GetKeyDown(interactionKey))
             {
@@ -41,19 +41,19 @@ public class CartazFase3 : MonoBehaviour
 
     public void Interact(bool Qual)
     {
-       for (int i = 0; i < itensDoCartaz.Length; i++) 
-       {
-            itensDoCartaz[i].SetActive(Qual);
-            
-            
-       }
+       
         if (Time.timeScale == 1)
         {
             gameManager.possoAbrirTelefone = false;
             Time.timeScale = 0;
             Cursor.visible = true;
-            Debug.Log("ativei");
            
+            for (int i = 0; i < itensDoCartaz.Length; i++)
+            {
+                itensDoCartaz[i].SetActive(true);
+
+
+            }
 
         }
         else
@@ -61,8 +61,13 @@ public class CartazFase3 : MonoBehaviour
             gameManager.possoAbrirTelefone = true;
             Time.timeScale = 1;
             Cursor.visible = false;
-            Debug.Log("desativei");
+           
+            for (int i = 0; i < itensDoCartaz.Length; i++)
+            {
+                itensDoCartaz[i].SetActive(false);
 
+
+            }
         }
         podeInteragir = false;
         
