@@ -10,7 +10,7 @@ public class TelefoneFase3 : MonoBehaviour
     [Header("Objetos")]
 
     public GameObject celularInteiro;
-    public GameObject textoAviso, fundoFala, textoConversaGO, eletricista;
+    public GameObject textoAviso, textoAviso2, fundoFala, textoConversaGO, eletricista;
 
     [Space]
 
@@ -44,21 +44,18 @@ public class TelefoneFase3 : MonoBehaviour
     {
        
         textoTxt.text = _texto;
-        if (_quantosNumerosTem == 4 && _texto != _numeroQueVaiSer.ToString())
-        {
-            StartCoroutine(limpar());
-
-        }
-        if (_quantosNumerosTem == 4 && _texto == _numeroQueVaiSer.ToString() && podeLigar)
-        {
-            StartCoroutine(Acertou());
-
-        }
-        if (_quantosNumerosTem == 4 && _texto == _numeroQueVaiSer.ToString() && !podeLigar)
-        {
-            StartCoroutine(limpar());
-
-        }
+        
+            if(_texto == _numeroQueVaiSer.ToString() && _quantosNumerosTem == 4)
+            {
+               StartCoroutine(podeLigar ? Acertou() : limpar2());          
+            }
+            else
+            {
+                StartCoroutine(limpar());
+            }
+          
+        
+        
         if (Input.GetKeyDown(KeyCode.Space) && gameManagerFase3.possoAbrirTelefone) 
         {
             AtivarTudo();
@@ -143,7 +140,7 @@ public class TelefoneFase3 : MonoBehaviour
 
 
 
-    }
+    }   
     
 
     #region Corroutinas
@@ -156,6 +153,17 @@ public class TelefoneFase3 : MonoBehaviour
         textoAviso.SetActive(true);
         yield return new WaitForSeconds(1);
         textoAviso.SetActive(false);
+
+    }
+    IEnumerator limpar2()
+    {
+
+        yield return new WaitForSeconds(0.6f);
+        _texto = "";
+        _quantosNumerosTem = 0;
+        textoAviso2.SetActive(true);
+        yield return new WaitForSeconds(1);
+        textoAviso2.SetActive(false);
 
     }
     IEnumerator Acertou()

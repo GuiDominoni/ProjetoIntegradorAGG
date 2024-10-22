@@ -20,15 +20,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Creditos.unity
     guid: 6d1eb554f10641f4298376cb2f309a8d
-  - enabled: 1
-    path: Assets/Scenes/CenaTutorial.unity
-    guid: 2d2c33c682747d44e925ab8f025d39a5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Fase2.unity
     guid: ba6cfbd1c227a16429615a395959efe2
-  - enabled: 1
-    path: Assets/Scenes/Andriel.unity
-    guid: 5f5a9ea23c7fec64eaa4b8e7ec150eb5
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/TribunalV2.unity
     guid: bbcc96fbbb976dd4083305545d80afbf
@@ -42,8 +42,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Fase4.unity
     guid: 7d94443559503da43af6cb9c30fe765a
   - enabled: 1
-    path: Assets/Scenes/TesteTestinhoTestudo.unity
-    guid: d04dbdeb5b6e6bc4bb6cdf1ba389b6c1
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Fase1Tutorial.unity
     guid: 9345f7f724df7b74b830f944418a7b51
