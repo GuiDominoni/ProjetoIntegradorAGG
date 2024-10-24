@@ -22,6 +22,7 @@ public class Timer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        inv.lugar = 1;
         timer = 300;
         if(GlobalVariaveis.emQueNivelEstou == 1)
         {

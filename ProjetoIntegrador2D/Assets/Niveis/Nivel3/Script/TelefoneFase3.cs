@@ -44,18 +44,37 @@ public class TelefoneFase3 : MonoBehaviour
     {
        
         textoTxt.text = _texto;
-        
-            if(_texto == _numeroQueVaiSer.ToString() && _quantosNumerosTem == 4)
+
+
+        if (_quantosNumerosTem == 4)
+        {
+            if (_texto == _numeroQueVaiSer.ToString())
             {
-               StartCoroutine(podeLigar ? Acertou() : limpar2());          
+
+                if (podeLigar)
+                {
+                    StartCoroutine(Acertou());
+
+                }
+                else
+                {
+                    StartCoroutine(limpar2());
+
+                }
+
             }
             else
             {
+
                 StartCoroutine(limpar());
+
             }
-          
-        
-        
+
+        }
+
+
+
+
         if (Input.GetKeyDown(KeyCode.Space) && gameManagerFase3.possoAbrirTelefone) 
         {
             AtivarTudo();

@@ -28,22 +28,28 @@ public class HomemDaPonte : MonoBehaviour
     void Update()
     {
         texto2.text = MadeirasQueEuTenho.Madeiras.ToString() + "x";
-        if (Ordem <= 2 && Ordem != 0) { texto11.text = "Eu ainda preciso de " + madeirasQFalta.ToString() + " madeiras para poder construir a ponte"; }
-        if (Ordem >= 3) { texto11.text = "Valeu cara"; }
-        if (MadeirasQueEuTenho.possoPegar == true)
+        if (Ordem <= 2 && Ordem != 0)  
+                texto11.text = "Eu ainda preciso de " + madeirasQFalta.ToString() + " madeiras para poder construir a ponte"; 
+        if (Ordem >= 3) 
+                texto11.text = "Valeu cara"; 
+       /* if (MadeirasQueEuTenho.possoPegar == true)
         {
             Inventario.SetActive(true);
 
 
         }
-        if (!MadeirasQueEuTenho.possoPegar) { Inventario.SetActive(false); }
+        if (!MadeirasQueEuTenho.possoPegar)  
+                Inventario.SetActive(false); 
+        Inventario.SetActive(MadeirasQueEuTenho.possoPegar ? true : false); 
+       */
+       
 
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= interactionRange && Ordem != 3 && a == 0)
         {
             interactionPrompt.SetActive(true);
-            interactionPrompt.transform.position = transform.position + new Vector3(0, 2.6f, 0); // Posiciona o texto acima do objeto
+            interactionPrompt.transform.position = transform.position + new Vector3(0, 2.6f, 0); 
 
             if (Input.GetKeyDown(interactionKey))
             {

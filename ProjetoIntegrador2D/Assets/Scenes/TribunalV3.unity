@@ -4289,7 +4289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "As c\xE2meras da galeria mostram o caminh\xE3o de entrega chegando?"
+  m_Text: "Como explicaria a presen\xE7a da tese no escrit\xF3rio do professor?"
 --- !u!222 &384335090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4735,7 +4735,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Algu\xE9m pode confirmar a hist\xF3ria do motorista sobre o roubo?"
+  m_Text: "H\xE1 testemunhas que possam colaborar com a hist\xF3ria do professor?"
 --- !u!222 &664903000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4815,7 +4815,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Como voc\xEA pode provar que a escultura nunca chegou \xE0 galeria?"
+  m_Text: "Como pode provar que a tese foi falsamente atribu\xEDda ao professor?"
 --- !u!222 &683152861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5196,7 +5196,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "H\xE1 alguma prova de que algo aconteceu durante a entrega?\t"
+  m_Text: "Existe alguma evid\xEAncia de que o professor tentou evitar o pl\xE1gio?"
 --- !u!222 &858005576
 CanvasRenderer:
   m_ObjectHideFlags: 0

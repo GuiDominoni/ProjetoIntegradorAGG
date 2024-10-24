@@ -109,34 +109,30 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void n2()
     {
-        if (GlobalVariaveis.Venci1)
-        {
+       
             ImagemNv[1].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
             comecar[1].SetActive
                 (true);
-        }
+       
         
     }
     public void n3()
     {
-        if (GlobalVariaveis.n3 == 1)
-        {
-            ImagemNv[2].SetActive(true);
+           ImagemNv[2].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
             comecar[2].SetActive (true);    
-        }
+        
     }
     public void n4()
     {
-        if (GlobalVariaveis.n4 == 1)
-        {
+        
             ImagemNv[3].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
-        }
+        
     }
     public void n5()
     {
@@ -386,6 +382,12 @@ public class SelecaoNiveis : MonoBehaviour
 
         SceneManager.LoadScene("Fase3");
         GlobalVariaveis.emQueNivelEstou = 3;
+    }
+    public void comecarNv4()
+    {
+
+        SceneManager.LoadScene("Fase4");
+        GlobalVariaveis.emQueNivelEstou = 4;
     }
     void pretoDestivar()
     {
