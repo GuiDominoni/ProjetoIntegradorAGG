@@ -4630,7 +4630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Algu\xE9m pode confirmar a hist\xF3ria do motorista sobre o roubo?"
+  m_Text: "Alguma testemunha afirma a hist\xF3ria do roubo?"
 --- !u!222 &664903000
 CanvasRenderer:
   m_ObjectHideFlags: 0
