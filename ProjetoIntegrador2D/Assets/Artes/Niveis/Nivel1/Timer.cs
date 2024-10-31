@@ -15,7 +15,7 @@ public class Timer : MonoBehaviour
     public Image inventario;
     public UnityEvent OnPause, OnUnPause, opcoes, sairOpcoes;
     public GameObject[] verdes;
- 
+    bool pareiOTimer;
 
 
 
@@ -43,13 +43,9 @@ public class Timer : MonoBehaviour
     void Update()
     {
         QueRaiva();
-            int TimerVerdadeiro;
-            TimerVerdadeiro = Mathf.RoundToInt(timer);
-
-            texto.text = TimerVerdadeiro.ToString();
-            Invoke("timerMenos", 0);
-
-
+        
+        timer -= Time.deltaTime;
+            texto.text = timer.ToString();
         if (GlobalVariaveis.emQueNivelEstou != 3)
         {
             if (Input.GetButtonDown("Cancel") && !PretoTelas.activeSelf)
@@ -99,7 +95,6 @@ public class Timer : MonoBehaviour
 
         if (inv.lugar == 5)
         {
-            cancelInvoke();
             novaPos();
             Interações.MudouDePosição = true;
             if (GlobalVariaveis.emQueNivelEstou == 1)
@@ -111,7 +106,7 @@ public class Timer : MonoBehaviour
         }
         if (timer <= 0)
         {
-            irTrib();
+            trib();
 
 
         }
@@ -145,22 +140,9 @@ public class Timer : MonoBehaviour
     }
     public void sair()
     {
-       
         SceneManager.LoadScene("SelecaoNiveis");
         Time.timeScale = 1; 
     }
-    public void timerMenos()
-    {
-        timer -= Time.deltaTime;
-
-
-    }
-    public void cancelInvoke()
-    {
-
-        CancelInvoke("timerMenos");
-    }
-
     public void novaPos()
     {
         RectTransform rectTransform = inventario.GetComponent<RectTransform>();
@@ -169,38 +151,27 @@ public class Timer : MonoBehaviour
     }
     public void carregarNiveis()
     {
-
-
         SceneManager.LoadScene("SelecaoNiveis");
     }
-    public void irTrib()
-    {
-      
-        Invoke("trib", 1);
-
-
-    }
+   
     public void trib()
     {
-        if(GlobalVariaveis.emQueNivelEstou == 1)
+        switch (GlobalVariaveis.emQueNivelEstou)
         {
-            SceneManager.LoadScene("TribunalV");
-            
+            case 1:
+                SceneManager.LoadScene("TribunalV");
+                break;
+            case 2:
+                SceneManager.LoadScene("TribunalV2");
+                break;
+            case 3:
+                SceneManager.LoadScene("TribunalV3");
+                break;
+            case 4:
+                SceneManager.LoadScene("TribunalV4");
+                break;
 
-        }
-        if (GlobalVariaveis.emQueNivelEstou == 2)
-        {
-            SceneManager.LoadScene("TribunalV2");
-
-
-        }
-        if (GlobalVariaveis.emQueNivelEstou == 3)
-        {
-            SceneManager.LoadScene("TribunalV3");
-
-
-        }
-
+        } 
     }
     void QueRaiva()
     {
@@ -349,6 +320,16 @@ public class Timer : MonoBehaviour
         inv.i103 = false;
         inv.i104 = false;
         inv.i104 = false;
+
+    }
+    IEnumerator TimerDiminuir()
+    {
+        yield return new WaitForSeconds(1);
+        timer--;
+        if (!pareiOTimer)
+          StartCoroutine(TimerDiminuir());
+        
+
 
     }
 }

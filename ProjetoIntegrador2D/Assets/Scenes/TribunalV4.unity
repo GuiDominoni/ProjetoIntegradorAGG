@@ -4294,7 +4294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "As c\xE2meras da galeria mostram o caminh\xE3o de entrega chegando?"
+  m_Text: "H\xE1 testemunhas que possam corroborar as informa\xE7\xF5es publicadas?"
 --- !u!222 &384335090
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4740,7 +4740,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Algu\xE9m pode confirmar a hist\xF3ria do motorista sobre o roubo?"
+  m_Text: "Existem documentos internos que comprovam as alega\xE7\xF5es de Beatriz?"
 --- !u!222 &664903000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4820,7 +4820,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Como voc\xEA pode provar que a escultura nunca chegou \xE0 galeria?"
+  m_Text: "Como pode provar que as informa\xE7\xF5es nos artigos de Beatriz s\xE3o
+    verdadeiras?"
 --- !u!222 &683152861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4864,8 +4865,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 344.94376, y: -297.1964}
-  m_SizeDelta: {x: 1382.1116, y: 557.9892}
+  m_AnchoredPosition: {x: 346.217, y: -301.01477}
+  m_SizeDelta: {x: 1379.566, y: 550.353}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730061283
 MonoBehaviour:
@@ -5201,7 +5202,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "H\xE1 alguma prova de que algo aconteceu durante a entrega?\t"
+  m_Text: "Alguma an\xE1lise independente foi realizada para verificar as alega\xE7\xF5es
+    de Beatriz?"
 --- !u!222 &858005576
 CanvasRenderer:
   m_ObjectHideFlags: 0
