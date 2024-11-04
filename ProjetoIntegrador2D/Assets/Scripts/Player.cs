@@ -12,7 +12,8 @@ public class Player : MonoBehaviour
     public bool olhandoDireita;
     public GameObject preto, cinza;
     Animator anim;
-    
+   public RuntimeAnimatorController[] controller;
+    public int qualAnimator;
 
 
     // Start is called before the first frame update
@@ -30,7 +31,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        anim.runtimeAnimatorController = controller[qualAnimator];
         anim.SetFloat("MovX", rb.velocity.x);
         anim.SetFloat("MovY", rb.velocity.y);
         if (preto.activeSelf || cinza.activeSelf)
