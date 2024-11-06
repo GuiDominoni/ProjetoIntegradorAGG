@@ -9,6 +9,7 @@ TagManager:
   - Item1
   - item1
   - local
+  - Coisas
   layers:
   - Default
   - TransparentFX

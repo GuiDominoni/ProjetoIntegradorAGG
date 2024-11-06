@@ -9,26 +9,21 @@ using System.IO;
 public class Andares : MonoBehaviour
 {
     public UnityEvent ToNo1, ToNo2, ToNo3, ToNo4, Sair;
-   public GameObject interactionPrompt, item;
-    public KeyCode interactionKey = KeyCode.E;
-    public float interactionRange = 2.0f;
     private Transform player;
     public Transform[] Andar;
     bool ativei, podeDesativarFala;
     public GameObject[] luzes;
     public TMP_Text falaTxT;
-    public GameObject TextoQueApareceNaTela;
-    public Transform[] limites;
+    public GameObject TextoQueApareceNaTela;    
     TelefoneFase3 telef;
     
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindWithTag("Player").transform;
         GlobalVariaveis.emQueNivelEstou = 3;
         Interações.EmQualAndarEstouFase3 = 1;
         telef = FindObjectOfType<TelefoneFase3>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        interactionPrompt.SetActive(false);
     }
 
     // Update is called once per frame
@@ -54,21 +49,6 @@ public class Andares : MonoBehaviour
 
         }
        
-
-        if (player.position.x < limites[0].position.x && player.position.y > limites[1].position.y && player.position.y < limites[2].position.y)
-        {
-            interactionPrompt.SetActive(true);
-            interactionPrompt.transform.position = transform.position + new Vector3(0, 0, 0); 
-
-            if (Input.GetKeyDown(interactionKey))
-            {
-                Interact();
-            }
-        }
-        else
-        {
-            interactionPrompt.SetActive(false);
-        }
     }
     public void desatFala()
     {
@@ -103,7 +83,7 @@ public class Andares : MonoBehaviour
             ToNo4.Invoke();
 
         }
-        Time.timeScale = 0.0f;
+      
         Cursor.visible = true;
     }
     public void IrPara1()
