@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using TMPro;
 
 public class HomemDaPonte : MonoBehaviour
 {
@@ -13,9 +14,8 @@ public class HomemDaPonte : MonoBehaviour
     private Transform player;
     public int Ordem, OP, madeirasQFalta, a;
     public string aviso1, aviso2;
-    public UnityEvent Fala1, Fala2, Fala3, desativ1, desativ2, ativarPonte;
-    public Text texto1, texto11;
-    public Text texto2;
+    public UnityEvent Fala1, Fala2, desativ1, desativ2, ativarPonte;
+    public TMP_Text texto1, texto11, texto2;
 
     private void Start()
     {
