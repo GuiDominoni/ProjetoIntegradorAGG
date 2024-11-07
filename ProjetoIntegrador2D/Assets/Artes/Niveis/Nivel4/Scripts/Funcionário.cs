@@ -8,10 +8,16 @@ public class Funcionário : MonoBehaviour
     public KeyCode interactionKey = KeyCode.E;
     public float interactionRange = 2.0f;
     private Transform player;
+    public bool podeMover;
     Player scriptPlayer;
+    public Transform[] pontos;
+    int i;
+    Animator anim;
 
     private void Start()
     {
+
+        anim = GetComponent<Animator>();
         scriptPlayer = FindObjectOfType<Player>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
@@ -24,7 +30,7 @@ public class Funcionário : MonoBehaviour
         if (distance <= interactionRange && inv.possoPegarOItem)
         {
             interactionPrompt.SetActive(true);
-            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
+            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); 
 
             if (Input.GetKeyDown(interactionKey))
             {
@@ -35,26 +41,41 @@ public class Funcionário : MonoBehaviour
         {
             interactionPrompt.SetActive(false);
         }
+        Mover();
     }
     
     public void Interact()
     {
-       if(scriptPlayer.qualAnimator == 2)
-        {
-            falaPermitida.SetActive(true);
+        Cursor.visible = true;
+        if (scriptPlayer.qualAnimator != 2)
+            falaNaoPermitida.SetActive(true);
+        else { podeMover = true; falaPermitida.SetActive(true); }
 
-
-        }
-        else
-        {
-
-            falaNaoPermitida.SetActive(false);
-
-        }
     }
-    public void Sair()
+    public void Mover()
     {
-        falaNaoPermitida.SetActive(false);
-        falaPermitida.SetActive(false);
+        if (podeMover)
+        {
+                //anim.SetBool("Andando", true);
+             
+            
+            transform.position = Vector2.MoveTowards(transform.position, pontos[i].position, 4f * Time.deltaTime);
+
+
+
+            if (Vector3.Distance(transform.position, pontos[i].position) < 0.4f)
+            {
+
+                i++;
+                //anim.SetBool("Andando", true);
+
+
+
+
+
+            }
+
+
+        }
     }
 }

@@ -2,7 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class TypeWriterEffect : MonoBehaviour
+public class TypeWritterEffect : MonoBehaviour
 {
     public TMP_Text uiText;  // O texto que vai aparecer
     public float typingSpeed = 0.05f;  // Velocidade da escrita
@@ -13,14 +13,14 @@ public class TypeWriterEffect : MonoBehaviour
 
     void Awake()
     {
-        // Inicializa o texto base, garantindo que ele seja mantido
-        baseText = uiText.text;  // Pega o texto completo
-        uiText.text = "";  // Limpa o texto exibido inicialmente
+      
+        baseText = uiText.text;  
+        uiText.text = ""; 
     }
 
     private void OnEnable()
     {
-        RestartTyping();  // Reinicia o efeito quando o objeto é ativado
+        RestartTyping(); 
     }
 
     private void Update()
@@ -28,26 +28,26 @@ public class TypeWriterEffect : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             aa.SetActive(false);
+            Cursor.visible = false;
         }
     }
 
-    // Método para reiniciar o efeito de digitação
     public void RestartTyping()
     {
         if (typingCoroutine != null)
         {
-            StopCoroutine(typingCoroutine);  // Para a corrotina anterior se estiver ativa
+            StopCoroutine(typingCoroutine); 
         }
-        uiText.text = "";  // Limpa o texto exibido
-        typingCoroutine = StartCoroutine(ShowText());  // Inicia a corrotina
+        uiText.text = ""; 
+        typingCoroutine = StartCoroutine(ShowText());  
     }
 
     IEnumerator ShowText()
     {
         for (int i = 0; i < baseText.Length; i++)
         {
-            uiText.text += baseText[i];  // Adiciona uma letra ao texto atual
-            yield return new WaitForSeconds(typingSpeed);  // Intervalo entre cada letra
+            uiText.text += baseText[i];  
+            yield return new WaitForSeconds(typingSpeed);  
         }
     }
 }
