@@ -11,12 +11,13 @@ public class Funcionário : MonoBehaviour
     public bool podeMover;
     Player scriptPlayer;
     public Transform[] pontos;
-    int i;
+    public int i;
     Animator anim;
+    SpriteRenderer spriteRenderer;  
 
     private void Start()
     {
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         scriptPlayer = FindObjectOfType<Player>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -24,7 +25,12 @@ public class Funcionário : MonoBehaviour
     }
 
     void Update()
+
     {
+        if (i == 1)
+        {
+            spriteRenderer.flipX = false;
+        }
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= interactionRange && inv.possoPegarOItem)
@@ -56,22 +62,19 @@ public class Funcionário : MonoBehaviour
     {
         if (podeMover)
         {
-                //anim.SetBool("Andando", true);
-             
+            print(Vector3.Distance(transform.position, pontos[i].position));
+                anim.SetBool("Andando", true);
+          
             
             transform.position = Vector2.MoveTowards(transform.position, pontos[i].position, 4f * Time.deltaTime);
 
 
 
-            if (Vector3.Distance(transform.position, pontos[i].position) < 0.4f)
+            if (Vector3.Distance(transform.position, pontos[i].position) < 0.85f)
             {
 
                 i++;
-                //anim.SetBool("Andando", true);
-
-
-
-
+                anim.SetBool("Andando", true);
 
             }
 
