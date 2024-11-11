@@ -45,19 +45,7 @@ public class Player : MonoBehaviour
         anim.runtimeAnimatorController = controller[qualAnimator];
         anim.SetFloat("MovX", rb.velocity.x);
         anim.SetFloat("MovY", rb.velocity.y);
-        if (preto.activeSelf || cinza.activeSelf)
-        {
-            velocidade = 0;
-
-
-        }
-        else
-        {
-
-            velocidade = 5;
-
-
-        }
+       
         movimento();
         Flip();
 
