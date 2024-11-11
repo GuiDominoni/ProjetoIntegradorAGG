@@ -327,7 +327,7 @@ public class Timer : MonoBehaviour
         yield return new WaitForSeconds(1);
         timer--;
         if (!pareiOTimer)
-          StartCoroutine(TimerDiminuir());
+              StartCoroutine(TimerDiminuir());
         
 
 
