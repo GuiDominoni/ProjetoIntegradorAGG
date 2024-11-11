@@ -28,6 +28,12 @@ public class Item7 : MonoBehaviour
             if (Input.GetKeyDown(interactionKey))
             {
                 Interact();
+
+                if(GlobalVariaveis.emQueNivelEstou == 3)
+                {
+
+                    podeInteragir = false;
+                }
             }
         }
         else

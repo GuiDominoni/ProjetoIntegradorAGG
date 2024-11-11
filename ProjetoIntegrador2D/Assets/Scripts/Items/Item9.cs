@@ -9,18 +9,20 @@ public class Item9 : MonoBehaviour
     public float interactionRange = 2.0f;
     private Transform player;
     public GameObject preto, pega, ignorar;
+    bool podeInteragir;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         interactionPrompt.SetActive(false);
+        podeInteragir = true;
     }
 
     void Update()
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= interactionRange && inv.possoPegarOItem)
+        if (distance <= interactionRange && inv.possoPegarOItem && podeInteragir)
         {
             interactionPrompt.SetActive(true);
             interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
@@ -28,6 +30,13 @@ public class Item9 : MonoBehaviour
             if (Input.GetKeyDown(interactionKey))
             {
                 Interact();
+                if(GlobalVariaveis.emQueNivelEstou == 3)
+                {
+
+                    podeInteragir = false;
+
+
+                }
             }
         }
         else
