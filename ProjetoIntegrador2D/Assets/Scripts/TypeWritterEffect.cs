@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class TypeWritterEffect : MonoBehaviour
 {
@@ -27,7 +28,11 @@ public class TypeWritterEffect : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            aa.SetActive(false);
+            if (aa != null)
+            {
+                aa.SetActive(false);
+            }
+            if(SceneManager.GetActiveScene().name != "Cutscene")
             Cursor.visible = false;
         }
     }

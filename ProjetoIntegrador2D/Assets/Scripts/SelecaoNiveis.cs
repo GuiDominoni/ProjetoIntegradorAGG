@@ -6,7 +6,7 @@ public class SelecaoNiveis : MonoBehaviour
 {
     public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto;
     public GameObject[] ImagemNv, checkList, pretos;
-    public GameObject[] comecar;
+    public GameObject[] comecar, Casos;
 
     //Professor alexandre me desculpa, no inicio do ano eu fiz esse codigo, na segunda semana de pi e eu achava mais facil começar um array pelo indice 1 e nao 0, foi mau mas eu compreendo meu erro
     private void Start()
@@ -102,6 +102,7 @@ public class SelecaoNiveis : MonoBehaviour
         comecar[0].SetActive(true);
         sairDaImagem1.SetActive(true);
         prox1.SetActive(false);
+        MudarEstadoTodos(false);
     }
     public void n2()
     {
@@ -111,16 +112,17 @@ public class SelecaoNiveis : MonoBehaviour
             prox1.SetActive(false);
             comecar[1].SetActive
                 (true);
-       
-        
+        MudarEstadoTodos(false);
+
+
     }
     public void n3()
     {
            ImagemNv[2].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
-            comecar[2].SetActive (true);    
-        
+            comecar[2].SetActive (true);
+        MudarEstadoTodos(false);
     }
     public void n4()
     {
@@ -128,8 +130,9 @@ public class SelecaoNiveis : MonoBehaviour
             ImagemNv[3].SetActive(true);
             sairDaImagem1.SetActive(true);
             prox1.SetActive(false);
-        
+        MudarEstadoTodos(false);
     }
+    #region  funcoes desnecessarias
     public void n5()
     {
         if (GlobalVariaveis.n5 == 1)
@@ -284,22 +287,19 @@ public class SelecaoNiveis : MonoBehaviour
             ant2.SetActive(false);
         }
     }
+    #endregion
     public void sair1()
     {
         ImagemNv[0].SetActive(false);
         ImagemNv[1].SetActive(false);
         ImagemNv[2].SetActive(false);
         ImagemNv[3].SetActive(false);
-        ImagemNv[4].SetActive(false);
-        ImagemNv[5].SetActive(false);
-        ImagemNv[6].SetActive(false);
-        ImagemNv[7].SetActive(false);
+        
         comecar[0].SetActive(false) ;
         comecar[1].SetActive(false);
         comecar[2].SetActive(false);
-
-        
         sairDaImagem1.SetActive(false);
+        MudarEstadoTodos(true);
 
     }
     public void sair2()
@@ -401,6 +401,15 @@ public class SelecaoNiveis : MonoBehaviour
     public void MainMenuCarregar()
     {
         SceneManager.LoadScene("MainMenu");
+
+    }
+    public void MudarEstadoTodos(bool qualEstado)
+    {
+        for (int i = 0; i < Casos.Length; i++) 
+        {
+            Casos[i].SetActive(qualEstado);
+
+        }
 
     }
 
