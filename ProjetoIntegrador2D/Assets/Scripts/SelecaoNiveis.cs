@@ -11,6 +11,7 @@ public class SelecaoNiveis : MonoBehaviour
     //Professor alexandre me desculpa, no inicio do ano eu fiz esse codigo, na segunda semana de pi e eu achava mais facil começar um array pelo indice 1 e nao 0, foi mau mas eu compreendo meu erro
     private void Start()
     {
+        cutcene.cut = 1;
         Invoke("pretoDestivar", 1f);
         inv.i11 = false;
         inv.i12 = false;
