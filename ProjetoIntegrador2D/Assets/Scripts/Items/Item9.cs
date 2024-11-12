@@ -30,13 +30,7 @@ public class Item9 : MonoBehaviour
             if (Input.GetKeyDown(interactionKey))
             {
                 Interact();
-                if(GlobalVariaveis.emQueNivelEstou == 3)
-                {
-
-                    podeInteragir = false;
-
-
-                }
+                
             }
         }
         else
@@ -72,32 +66,43 @@ public class Item9 : MonoBehaviour
             item1[3].SetActive(true);
             inv.lugar++;
             inv.i94 = true;
-            Destroy(gameObject);
+           
         }
         else if (inv.lugar == 3)
         {
             item1[2].SetActive(true);
             inv.lugar++;
             inv.i93 = true;
-            Destroy(gameObject);
+           
         }
         else if (inv.lugar == 2)
         {
             item1[1].SetActive(true);
             inv.lugar++;
             inv.i92 = true;
-            Destroy(gameObject);
+            
         }
         else if (inv.lugar == 1)
         {
             item1[0].SetActive(true);
             inv.lugar++;
             inv.i91 = true;
+          
+        }
+        if (GlobalVariaveis.emQueNivelEstou != 3) 
+        {
             Destroy(gameObject);
         }
+        
         ignora();
         Cursor.visible = false;
+        if(GlobalVariaveis.emQueNivelEstou == 3)
+                {
 
+                    podeInteragir = false;
+
+
+                }
 
     }
 }

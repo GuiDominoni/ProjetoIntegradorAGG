@@ -39,10 +39,12 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        int timerArredondado;
+        timerArredondado = Mathf.RoundToInt(timer);
         QueRaiva();
         
         timer -= Time.deltaTime;
-            texto.text = timer.ToString();
+            texto.text = timerArredondado.ToString();
         if (GlobalVariaveis.emQueNivelEstou != 3)
         {
             if (Input.GetButtonDown("Cancel") && !PretoTelas.activeSelf)

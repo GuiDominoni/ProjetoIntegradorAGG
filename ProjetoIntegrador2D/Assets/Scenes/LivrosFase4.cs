@@ -16,6 +16,7 @@ public class LivrosFase4 : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
         scriptPlayer = FindObjectOfType<Player>();
         interactionPrompt.SetActive(false);
+        GlobalVariaveis.emQueNivelEstou = 4;
     }
 
     void Update()

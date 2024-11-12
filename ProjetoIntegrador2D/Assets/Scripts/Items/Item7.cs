@@ -29,11 +29,6 @@ public class Item7 : MonoBehaviour
             {
                 Interact();
 
-                if(GlobalVariaveis.emQueNivelEstou == 3)
-                {
-
-                    podeInteragir = false;
-                }
             }
         }
         else
@@ -97,12 +92,18 @@ public class Item7 : MonoBehaviour
             podeInteragir = false;
 
         }
-        if (GlobalVariaveis.emQueNivelEstou == 1)
+        if (GlobalVariaveis.emQueNivelEstou == 1 || GlobalVariaveis.emQueNivelEstou == 4)
         {
 
             Destroy(gameObject);
         }
         ignora();
         Cursor.visible = false;
+
+        if (GlobalVariaveis.emQueNivelEstou == 3)
+        {
+
+            podeInteragir = false;
+        }
     }
 }
