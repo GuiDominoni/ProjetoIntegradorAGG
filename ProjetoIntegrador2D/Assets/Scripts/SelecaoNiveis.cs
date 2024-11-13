@@ -1,4 +1,5 @@
 
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,7 @@ public class SelecaoNiveis : MonoBehaviour
     public GameObject  sairDaImagem1,  sairDaImagem2, sairDaImagem3, prox1, ant1, prox2, ant2, noveDezesseis, dezesseteVinte, umOito, preto, outroPreto;
     public GameObject[] ImagemNv, checkList, pretos;
     public GameObject[] comecar, Casos;
-
+    public GameObject pretoAparecer, pretoDesaparecer;
     //Professor alexandre me desculpa, no inicio do ano eu fiz esse codigo, na segunda semana de pi e eu achava mais facil começar um array pelo indice 1 e nao 0, foi mau mas eu compreendo meu erro
     private void Start()
     {
@@ -367,23 +368,25 @@ public class SelecaoNiveis : MonoBehaviour
     }
     public void comecarNv1()
     {
-        SceneManager.LoadScene("Fase1Tutorial");
+       
+        StartCoroutine(MudarCena("Fase1Tutorial"));
         GlobalVariaveis.emQueNivelEstou = 1;
     }
     public void comecarNv2()
     {
-        SceneManager.LoadScene("Fase2");
+        StartCoroutine(MudarCena("Fase2"));
         GlobalVariaveis.emQueNivelEstou = 2;
     }
     public void comecarNv3() {
 
-        SceneManager.LoadScene("Fase3");
+        StartCoroutine(MudarCena("Fase3"));
+    
         GlobalVariaveis.emQueNivelEstou = 3;
     }
     public void comecarNv4()
     {
 
-        SceneManager.LoadScene("Fase4");
+        StartCoroutine(MudarCena("Fase4"));
         GlobalVariaveis.emQueNivelEstou = 4;
     }
     void pretoDestivar()
@@ -412,6 +415,13 @@ public class SelecaoNiveis : MonoBehaviour
 
         }
 
+    }
+    IEnumerator MudarCena(string cena)
+    {
+
+        pretoAparecer.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        SceneManager.LoadScene(cena);
     }
 
 

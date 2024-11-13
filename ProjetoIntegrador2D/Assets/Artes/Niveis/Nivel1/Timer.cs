@@ -21,12 +21,7 @@ public class Timer : MonoBehaviour
     {
         inv.lugar = 1;
         timer = 300;
-        if(GlobalVariaveis.emQueNivelEstou == 1)
-        {
-
-            Time.timeScale = 0;
-
-        }
+        
         if (GlobalVariaveis.emQueNivelEstou != 1)
         {
             Cursor.visible = false;

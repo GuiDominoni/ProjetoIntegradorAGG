@@ -10,15 +10,19 @@ public class Unfade : MonoBehaviour
 
     private void Start()
     {
-        Invoke("desat", 1);
+        if (preto != null)
+        {
+
+            Invoke("desat", fadeDuration + 0.2f);
+        }
         if (imageToUnfade != null)
         {
-            // Inicialmente, certifique-se de que a imagem esteja visível
+           
             var tempColor = imageToUnfade.color;
             tempColor.a = 1f;
             imageToUnfade.color = tempColor;
 
-            // Ativar a imagem e iniciar a coroutine de unfade
+            
             StartCoroutine(nfade());
         }
     }
