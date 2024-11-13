@@ -36,7 +36,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108, y: 229}
+  m_AnchoredPosition: {x: -118, y: 118}
   m_SizeDelta: {x: 493.428, y: 68.931}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4057621929481701737
@@ -309,7 +309,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108.00006, y: 229.00006}
+  m_AnchoredPosition: {x: -158, y: 94.00006}
   m_SizeDelta: {x: 493.428, y: 68.931}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4057621929980998004
@@ -446,7 +446,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108, y: 51}
+  m_AnchoredPosition: {x: -118, y: -60.000015}
   m_SizeDelta: {x: 493.428, y: 71.804}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4057621930066785172
@@ -990,7 +990,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72, y: 444}
+  m_AnchoredPosition: {x: 29.779, y: 294}
   m_SizeDelta: {x: 711.288, y: 118.783}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4057621930226581878
@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: -34.21
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -1556,9 +1556,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -207, y: 430}
+  m_AnchoredPosition: {x: 0.000012398, y: 268}
   m_SizeDelta: {x: 620.928, y: 118.783}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.49999997, y: 0.5}
 --- !u!222 &4057621930561412987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1626,7 +1626,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
-  m_wordSpacing: 0
+  m_wordSpacing: -24.08
   m_lineSpacing: 0
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
@@ -2318,7 +2318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -108.00006, y: 51}
+  m_AnchoredPosition: {x: -158, y: -84}
   m_SizeDelta: {x: 493.428, y: 71.804}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4057621931072349960
