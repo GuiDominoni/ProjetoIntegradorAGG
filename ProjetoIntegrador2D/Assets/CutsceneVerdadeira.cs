@@ -46,6 +46,10 @@ public class CutsceneVerdadeira : MonoBehaviour
         }
 
     }
+    public void Creditos()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
     IEnumerator ResetarCooldownClick()
     {
         podeClicar = false;
