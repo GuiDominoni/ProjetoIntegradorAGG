@@ -16,11 +16,12 @@ public class Player : MonoBehaviour
     Andares andares;
     public int livros;
     public TMP_Text livrosFase4Txt;
-
+   
 
     // Start is called before the first frame update
     void Start()
     {
+      
         anim = GetComponent<Animator>();
         andares = FindObjectOfType<Andares>();
         olhandoDireita = false;
@@ -84,8 +85,9 @@ public class Player : MonoBehaviour
             andares.Interact();
 
 
-        }    
-    
+        }
+        
+
     }
     private void OnTriggerExit2D(Collider2D collision)
     {

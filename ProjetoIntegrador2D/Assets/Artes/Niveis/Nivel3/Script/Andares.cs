@@ -32,7 +32,7 @@ public class Andares : MonoBehaviour
         {
             desatFala();
             podeDesativarFala = false;
-            Cursor.visible = false  ;
+            
 
         }
        
@@ -83,21 +83,21 @@ public class Andares : MonoBehaviour
 
         }
       
-        Cursor.visible = true;
+        
     }
     public void IrPara1()
     {
         player.transform.position = Andar[0].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 1;
-        Cursor.visible = false;
+       
     }
     public void IrPara2()
     {
         player.transform.position = Andar[1].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 2;
-        Cursor.visible = false;
+       
     }
     public void IrPara3()
     {
@@ -105,7 +105,7 @@ public class Andares : MonoBehaviour
         player.transform.position = Andar[2].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 3;
-        Cursor.visible = false;
+       
     }
     public void IrPara4()
     {
@@ -113,13 +113,13 @@ public class Andares : MonoBehaviour
         player.transform.position = Andar[3].transform.position;
         Time.timeScale = 1.0f;
         Interações.EmQualAndarEstouFase3 = 4;
-        Cursor.visible = false;
+      
     }
     public void sair()
     {
        Sair.Invoke();
         Time.timeScale = 1.0f;
-        Cursor.visible = false;
+        
     }
     IEnumerator Escurecer()
     {
@@ -136,7 +136,7 @@ public class Andares : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         TextoQueApareceNaTela.SetActive(true);
-        Cursor.visible = true;
+       
         podeDesativarFala = true;
     }
 }

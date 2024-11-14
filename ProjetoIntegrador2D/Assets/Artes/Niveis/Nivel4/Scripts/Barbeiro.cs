@@ -41,14 +41,14 @@ public class Barbeiro : MonoBehaviour
         if (barbeariaUI.activeSelf)
         {
             barbeariaUI.SetActive(false);
-            Cursor.visible = false;
+            
 
         }
         else
         {
 
             barbeariaUI.SetActive(true);
-            Cursor.visible = true;
+           
         }
     }
 }

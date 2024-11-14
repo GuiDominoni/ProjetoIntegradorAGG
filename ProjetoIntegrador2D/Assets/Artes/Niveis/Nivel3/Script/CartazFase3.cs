@@ -46,7 +46,7 @@ public class CartazFase3 : MonoBehaviour
         {
             gameManager.possoAbrirTelefone = false;
             Time.timeScale = 0;
-            Cursor.visible = true;
+          
            
             for (int i = 0; i < itensDoCartaz.Length; i++)
             {
@@ -60,7 +60,7 @@ public class CartazFase3 : MonoBehaviour
         {
             gameManager.possoAbrirTelefone = true;
             Time.timeScale = 1;
-            Cursor.visible = false;
+           
            
             for (int i = 0; i < itensDoCartaz.Length; i++)
             {

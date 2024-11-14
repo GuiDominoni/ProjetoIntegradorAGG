@@ -105,7 +105,7 @@ public class TelefoneFase3 : MonoBehaviour
         if (celularInteiro.activeSelf)
         {
             celularInteiro.SetActive(false);
-            Cursor.visible = false;
+         
             _texto = "";
             gameManagerFase3.possoPegarItem = true;
             gameManagerFase3.possoAbrirCartaz = true;
@@ -115,7 +115,7 @@ public class TelefoneFase3 : MonoBehaviour
         else
         {
             celularInteiro.SetActive(true);
-            Cursor.visible = true;
+          
             _texto = "";
             gameManagerFase3.possoPegarItem = false;
             gameManagerFase3.possoAbrirCartaz = false;

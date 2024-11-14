@@ -5841,7 +5841,7 @@ PrefabInstance:
     - target: {fileID: 4057621930135053919, guid: fd7bb1f1c67626948b2cfcf97cc3b1c6,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: selecaoDeNiveis
+      value: CutsceneFinal
       objectReference: {fileID: 0}
     - target: {fileID: 4057621930444428774, guid: fd7bb1f1c67626948b2cfcf97cc3b1c6,
         type: 3}
@@ -5862,6 +5862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057621930887724621, guid: fd7bb1f1c67626948b2cfcf97cc3b1c6,
+        type: 3}
+      propertyPath: m_text
+      value: "Avan\xE7ar\n"
       objectReference: {fileID: 0}
     - target: {fileID: 4057621931013914767, guid: fd7bb1f1c67626948b2cfcf97cc3b1c6,
         type: 3}

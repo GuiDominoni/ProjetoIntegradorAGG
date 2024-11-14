@@ -624,6 +624,12 @@ public class Tribunal : MonoBehaviour
 
 
     }
+    public void CutsceneFinal()
+    {
+        SceneManager.LoadScene("CutsceneFinal");
+
+
+    }
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();

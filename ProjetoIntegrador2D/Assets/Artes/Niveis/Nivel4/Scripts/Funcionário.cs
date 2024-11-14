@@ -51,7 +51,7 @@ public class Funcionário : MonoBehaviour
     
     public void Interact()
     {
-        Cursor.visible = true;
+      
         if (scriptPlayer.qualAnimator != 2)
             falaNaoPermitida.SetActive(true);
         else { podeMover = true; falaPermitida.SetActive(true); }
