@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using UnityEngine.SceneManagement;
+
 
 public class TypeWritterEffect : MonoBehaviour
 {

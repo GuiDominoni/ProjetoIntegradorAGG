@@ -31,18 +31,7 @@ public class HomemDaPonte : MonoBehaviour
                 texto11.text = "Eu ainda preciso de " + madeirasQFalta.ToString() + " madeiras para poder construir a ponte"; 
         if (Ordem >= 3) 
                 texto11.text = "Valeu cara"; 
-       /* if (MadeirasQueEuTenho.possoPegar == true)
-        {
-            Inventario.SetActive(true);
-
-
-        }
-        if (!MadeirasQueEuTenho.possoPegar)  
-                Inventario.SetActive(false); 
-        Inventario.SetActive(MadeirasQueEuTenho.possoPegar ? true : false); 
-       */
        
-
         float distance = Vector2.Distance(transform.position, player.position);
 
         if (distance <= interactionRange && Ordem != 3 && a == 0)
@@ -91,7 +80,7 @@ public class HomemDaPonte : MonoBehaviour
 
 
         }
-        Cursor.visible = true;
+      
 
     }
     public void vouTeAjudar()
@@ -100,19 +89,19 @@ public class HomemDaPonte : MonoBehaviour
         desativ1.Invoke();
         OP = 1;
         MadeirasQueEuTenho.possoPegar = true;
-        Cursor.visible = false;
+        
     }
     public void tchau1()
     {
         desativ1.Invoke();
-        Cursor.visible = false;
+      
 
     }
     public void tchau2()
     {
         desativ2.Invoke();
 
-        Cursor.visible = false;
+        
     }
 
 }
