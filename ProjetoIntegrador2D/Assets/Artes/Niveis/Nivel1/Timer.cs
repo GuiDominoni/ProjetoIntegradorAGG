@@ -13,6 +13,7 @@ public class Timer : MonoBehaviour
     public UnityEvent OnPause, OnUnPause, opcoes, sairOpcoes;
     public GameObject[] verdes;
     bool pareiOTimer;
+    float timer2;
 
 
 
@@ -33,8 +34,14 @@ public class Timer : MonoBehaviour
     {
         int timerArredondado;
         timerArredondado = Mathf.RoundToInt(timer);
-        QueRaiva();
         
+        timer2 += Time.deltaTime;
+        if(timer2 >= 4)
+        {
+            QueRaiva();
+            timer2 = 0;
+
+        }
         timer -= Time.deltaTime;
             texto.text = timerArredondado.ToString();
         if (GlobalVariaveis.emQueNivelEstou != 3)
