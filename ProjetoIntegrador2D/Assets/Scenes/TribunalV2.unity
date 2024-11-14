@@ -6330,6 +6330,7 @@ MonoBehaviour:
   RespostasCertas2: {fileID: 1097656587}
   perder: {fileID: 8300000, guid: bfed9fca3afed4f4fa02a26271178702, type: 3}
   vencer: {fileID: 8300000, guid: f2dd743898010ba41abe7d1421db337c, type: 3}
+  ganharNivel: {fileID: 8300000, guid: abe231cb866cfc346bae13b498d635e4, type: 3}
 --- !u!4 &1389986147
 Transform:
   m_ObjectHideFlags: 0

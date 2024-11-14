@@ -44,7 +44,7 @@ public class Item4 : MonoBehaviour
         pega.SetActive(false);
         ignorar.SetActive(false);
         Time.timeScale = 1;
-        Cursor.visible = false;
+      
     }
 
     public void Interact()
@@ -54,7 +54,7 @@ public class Item4 : MonoBehaviour
         pega.SetActive(true);
         ignorar.SetActive(true);
         Time.timeScale = 0;
-        Cursor.visible = true;
+        
     }
     public void pegar()
     {
@@ -89,7 +89,7 @@ public class Item4 : MonoBehaviour
         }
          podePegar = false;
         ignora();
-        Cursor.visible = false;
+       
         if(GlobalVariaveis.emQueNivelEstou != 1 && GlobalVariaveis.emQueNivelEstou != 4)
         {
             Destroy(gameObject);

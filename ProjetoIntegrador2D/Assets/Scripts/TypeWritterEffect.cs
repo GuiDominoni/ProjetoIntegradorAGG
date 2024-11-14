@@ -32,8 +32,8 @@ public class TypeWritterEffect : MonoBehaviour
             {
                 aa.SetActive(false);
             }
-            if(SceneManager.GetActiveScene().name != "Cutscene")
-            Cursor.visible = false;
+          
+            
         }
     }
 

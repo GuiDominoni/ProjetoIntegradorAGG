@@ -16,7 +16,7 @@ public class Tribunal : MonoBehaviour
     public Image healthBarFill;
     float vida, vidaMaxima, vidaMinima;
     public TMP_Text  RespostasCertas, RespostasCertas2;
-    public AudioClip perder, vencer;
+    public AudioClip perder, vencer, ganharNivel;
     AudioSource audioSource;
     bool jaTocou;
     public void Verde()
@@ -56,7 +56,7 @@ public class Tribunal : MonoBehaviour
         {
             clicou1 = true;
             cond++;
-
+            audioSource.PlayOneShot(ganharNivel);
         }
     }
     public void Vermelho()
@@ -160,7 +160,7 @@ public class Tribunal : MonoBehaviour
 
             clicou3 = true;
             cond++;
-
+            audioSource.PlayOneShot(ganharNivel);
 
         }
         if (clicou1 == true && clicou2 == false)
@@ -234,7 +234,7 @@ public class Tribunal : MonoBehaviour
 
             clicou4 = true;
             cond++;
-
+            audioSource.PlayOneShot(ganharNivel);
 
         }
         if (clicou1 == true && clicou2 == true && clicou3 == false)
@@ -291,7 +291,7 @@ public class Tribunal : MonoBehaviour
 
             clicou2 = true;
             cond++;
-
+            audioSource.PlayOneShot(ganharNivel);
         }
 
         if (clicou1 == false)
