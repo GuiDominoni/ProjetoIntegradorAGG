@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
         timer = 300;
         
        
-        zerarStatico();
+       zerarStatico();
        
     }
 
@@ -38,7 +38,7 @@ public class Timer : MonoBehaviour
         timer2 += Time.deltaTime;
         if(timer2 >= 4)
         {
-            QueRaiva();
+            VerdeStatico();
             timer2 = 0;
 
         }
@@ -171,7 +171,7 @@ public class Timer : MonoBehaviour
 
         } 
     }
-    void QueRaiva()
+    void VerdeStatico()
     {
         if (Interações.MudouDePosição)
         {
