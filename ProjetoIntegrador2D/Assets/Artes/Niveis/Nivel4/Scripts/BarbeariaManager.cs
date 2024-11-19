@@ -7,6 +7,7 @@ public class BarbeariaManager : MonoBehaviour
     public GameObject[] Visuais;
     Player player;
     Barbeiro barbeiro;
+    public GameObject tileX, tileY;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,8 +36,8 @@ public class BarbeariaManager : MonoBehaviour
                 break;
             case false:
                 Visuais[emQualEsta].SetActive(false);
-                if (emQualEsta == 0)               
-                    emQualEsta = 2;                
+                if (emQualEsta == 0)
+                    emQualEsta = 2;
                 else emQualEsta--;  
                 break;
         }
@@ -58,4 +59,10 @@ public class BarbeariaManager : MonoBehaviour
             barbeiro.Interact();
         }
     }
+    public void InverterEscala()
+    {
+        tileX.transform.localScale = new Vector3(tileX.transform.localScale.x * -1, tileX.transform.localScale.y, tileX.transform.localScale.z);
+        tileY.transform.localScale = new Vector3(tileY.transform.localScale.x, tileY.transform.localScale.y * -1, tileY.transform.localScale.z);
+    }
+
 }

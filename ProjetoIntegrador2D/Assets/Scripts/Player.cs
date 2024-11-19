@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 
 
     public float horizontal, vertical, velocidade;
-    Rigidbody2D rb;
+    [HideInInspector]public Rigidbody2D rb;
     public bool olhandoDireita;
     public GameObject preto, cinza;
     Animator anim;
@@ -54,6 +54,7 @@ public class Player : MonoBehaviour
 
     void movimento()
     {
+       
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
@@ -62,6 +63,7 @@ public class Player : MonoBehaviour
 
 
         rb.velocity = movimento * velocidade;
+       
 
     }
 
