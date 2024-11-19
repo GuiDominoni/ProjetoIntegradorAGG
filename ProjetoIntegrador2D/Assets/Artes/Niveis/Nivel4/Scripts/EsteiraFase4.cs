@@ -9,14 +9,13 @@ public class EsteiraFase4 : MonoBehaviour
    
     Player player;
     public int x, y;
-    bool aplicandoForca;
     Vector2 forca = new Vector2(0, 0);
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<Player>();
-        x *= 130;
-        y *= 130;
+        x *= 180;
+        y *= 180;
 
     }
 
@@ -43,12 +42,5 @@ public class EsteiraFase4 : MonoBehaviour
         }
        
     }
-    public void InverterVelo()
-    {
-        x *= -1;
-        y *= -1;
-        
-
-    }
-
+ 
 }
