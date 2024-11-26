@@ -23,11 +23,10 @@ public class LanternaFase3 : MonoBehaviour
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance <= interactionRange && luzGlobal.activeSelf    )
+        if (distance <= interactionRange)
         {
             interactionPrompt.SetActive(true);
-            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); // Posiciona o texto acima do objeto
-
+            interactionPrompt.transform.position = transform.position + new Vector3(0, 1.5f, 0); 
             if (Input.GetKeyDown(interactionKey))
             {
                 Interact();
@@ -37,6 +36,7 @@ public class LanternaFase3 : MonoBehaviour
         {
             interactionPrompt.SetActive(false);
         }
+
     }
 
     public void Interact()
