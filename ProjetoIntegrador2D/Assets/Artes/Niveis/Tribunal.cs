@@ -14,7 +14,7 @@ public class Tribunal : MonoBehaviour
     public GameObject menuVenceu, menuPerdeu, unfade, fade;
     int cond = 0;
     public Image healthBarFill;
-    float vida, vidaMaxima, vidaMinima;
+    float vida;
     public TMP_Text  RespostasCertas, RespostasCertas2;
     public AudioClip perder, vencer, ganharNivel;
     AudioSource audioSource;
@@ -633,8 +633,6 @@ public class Tribunal : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         Invoke("desatPreto", 1);
-        vidaMaxima = 100;
-        vidaMinima = 0;
         vida = 0;
 
     }

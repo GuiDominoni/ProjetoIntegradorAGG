@@ -7001,6 +7001,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4365380153865975917, guid: a0eae2a1bc9d522409e85e20920962c1,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4365380153865975919, guid: a0eae2a1bc9d522409e85e20920962c1,
         type: 3}
       propertyPath: vida
