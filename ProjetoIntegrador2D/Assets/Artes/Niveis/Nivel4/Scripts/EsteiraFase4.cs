@@ -14,8 +14,8 @@ public class EsteiraFase4 : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<Player>();
-        x *= 180;
-        y *= 180;
+        x *= 230;
+        y *= 230;
 
     }
 

@@ -4839,7 +4839,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Como voc\xEA pode provar que a escultura nunca chegou \xE0 galeria?"
+  m_Text: "h\xE1 uma lista de invent\xE1rio que mostre que a escultura de fato estaria
+    no museu?"
 --- !u!222 &683152861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7258,10 +7259,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 154141769}
     m_Modifications:
+    - target: {fileID: 3571141419640034759, guid: a0eae2a1bc9d522409e85e20920962c1,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4365380153865975917, guid: a0eae2a1bc9d522409e85e20920962c1,
         type: 3}
       propertyPath: m_FillAmount
-      value: 0.049
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4365380154711406973, guid: a0eae2a1bc9d522409e85e20920962c1,
         type: 3}
@@ -7372,6 +7378,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365380155103722100, guid: a0eae2a1bc9d522409e85e20920962c1,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4365380155103722102, guid: a0eae2a1bc9d522409e85e20920962c1,
         type: 3}

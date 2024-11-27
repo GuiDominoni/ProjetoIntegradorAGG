@@ -520,7 +520,7 @@ public class Tribunal : MonoBehaviour
     }
     private void Update()
     {
-
+        vida = cond * 25;
         RespostasCertas.text = cond.ToString();
         RespostasCertas2.text = RespostasCertas.text;
 
@@ -562,20 +562,19 @@ public class Tribunal : MonoBehaviour
 
         }
 
-        vida = cond * 25;
-        if (vida >= vidaMinima && vida <= vidaMaxima)
-        {
+       
+        
             healthBarFill.fillAmount = vida / 100;
 
 
-        }
-        if(clicou4 == true && cond >= 3)
+        
+        if(clicou4 == true && cond >= 2)
         {
             venceu = true;
 
 
         }
-        if (clicou4 == true && cond <= 2)
+        if (clicou4 == true && cond <= 1)
         {
             perdeu = true;
 

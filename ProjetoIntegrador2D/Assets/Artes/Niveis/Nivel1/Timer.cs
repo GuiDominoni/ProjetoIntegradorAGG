@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         inv.lugar = 1;
-        timer = 300;
+        timer = 600;
         
        
        zerarStatico();

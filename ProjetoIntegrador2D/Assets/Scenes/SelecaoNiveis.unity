@@ -7289,6 +7289,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PretoDesaparecendo
       objectReference: {fileID: 0}
+    - target: {fileID: 1504592164160577566, guid: e1eaef020675c7a45b317ee0de955e1d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e1eaef020675c7a45b317ee0de955e1d, type: 3}
 --- !u!224 &1666657904 stripped
@@ -8888,31 +8893,30 @@ PrefabInstance:
     - target: {fileID: 2062578264001219232, guid: 0457263812b2b294fa20598dbbfeae34,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 621.529
+      value: 656.42
       objectReference: {fileID: 0}
     - target: {fileID: 2062578264001219232, guid: 0457263812b2b294fa20598dbbfeae34,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 521.43
+      value: 555.671
       objectReference: {fileID: 0}
     - target: {fileID: 2062578264001219232, guid: 0457263812b2b294fa20598dbbfeae34,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -202
+      value: -184.56
       objectReference: {fileID: 0}
     - target: {fileID: 2062578264001219232, guid: 0457263812b2b294fa20598dbbfeae34,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.0000038147
+      value: -17.121
       objectReference: {fileID: 0}
     - target: {fileID: 2062578264001219233, guid: 0457263812b2b294fa20598dbbfeae34,
         type: 3}
       propertyPath: m_Text
-      value: "Hist\xF3ria: Professor Alberto, \xE9 acusado de plagiar uma tese de
-        doutorado. Ele afirma que a tese foi falsamente atribu\xEDda a ele e que
-        o documento apareceu em seus arquivos sem explica\xE7\xE3o. Com a reputa\xE7\xE3o
-        em risco e a carreira amea\xE7ada, Alberto recorre ao Dr. Frank para provar
-        sua inoc\xEAncia e limpar seu nome."
+      value: "Professor Alberto, \xE9 acusado de plagiar uma tese de doutorado. Ele
+        afirma que a tese foi falsamente atribu\xEDda a ele e que o documento apareceu
+        em seus arquivos sem explica\xE7\xE3o. Com a reputa\xE7\xE3o em risco e a
+        carreira amea\xE7ada."
       objectReference: {fileID: 0}
     - target: {fileID: 2062578264001219233, guid: 0457263812b2b294fa20598dbbfeae34,
         type: 3}
@@ -8944,6 +8948,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062578264001219235, guid: 0457263812b2b294fa20598dbbfeae34,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0457263812b2b294fa20598dbbfeae34, type: 3}

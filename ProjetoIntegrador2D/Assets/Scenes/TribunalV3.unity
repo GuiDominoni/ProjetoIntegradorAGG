@@ -4944,7 +4944,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Como pode provar que a tese foi falsamente atribu\xEDda ao professor?"
+  m_Text: "H\xE1 algo que prove que o professor estava ciente que a tese poderia
+    ser acusada de pl\xE1gio?"
 --- !u!222 &683152861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7363,6 +7364,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 154141769}
     m_Modifications:
+    - target: {fileID: 3571141419640034759, guid: a0eae2a1bc9d522409e85e20920962c1,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4365380153865975917, guid: a0eae2a1bc9d522409e85e20920962c1,
         type: 3}
       propertyPath: m_FillAmount

@@ -21,12 +21,11 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      
+        velocidade = 8;
         anim = GetComponent<Animator>();
         andares = FindObjectOfType<Andares>();
         olhandoDireita = false;
         rb = GetComponent<Rigidbody2D>();
-        velocidade = 5;
         Interações.TenhoCartaoFase2 = false;
         Interações.MudouDePosição = false;
 

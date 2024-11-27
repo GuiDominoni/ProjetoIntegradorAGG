@@ -54,7 +54,7 @@ public class TelefoneFase3 : MonoBehaviour
                 if (podeLigar)
                 {
                     StartCoroutine(Acertou());
-
+                    inv.possoPegarOItem = true;
                 }
                 else
                 {
