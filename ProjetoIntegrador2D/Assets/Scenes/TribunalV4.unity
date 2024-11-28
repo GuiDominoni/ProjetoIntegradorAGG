@@ -7384,6 +7384,11 @@ PrefabInstance:
       propertyPath: m_FillAmount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4365380153865975919, guid: a0eae2a1bc9d522409e85e20920962c1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4365380154711406973, guid: a0eae2a1bc9d522409e85e20920962c1,
         type: 3}
       propertyPath: m_Name
@@ -7521,6 +7526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6336128067757913658, guid: a0eae2a1bc9d522409e85e20920962c1, type: 3}
+    - {fileID: 4365380153865975919, guid: a0eae2a1bc9d522409e85e20920962c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a0eae2a1bc9d522409e85e20920962c1, type: 3}
 --- !u!224 &1973151168 stripped
 RectTransform:
